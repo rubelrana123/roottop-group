@@ -3,9 +3,15 @@ import type { NextConfig } from 'next';
 const nextConfig: NextConfig = {
   reactCompiler: true,
   images: {
-    localPatterns: [
+    formats: ['image/avif', 'image/webp'],
+    remotePatterns: [
       {
-        pathname: '/assets/**',
+        protocol: 'https',
+        hostname: '**',
+      },
+      {
+        protocol: 'http',
+        hostname: '**',
       },
     ],
   },

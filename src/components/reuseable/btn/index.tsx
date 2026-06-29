@@ -2,6 +2,7 @@ import FavIcon from '@/icon/favIcon';
 import { cn } from '@/lib';
 import React from 'react';
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function UploadBtn({ className, ...props }: any) {
   return (
     <label

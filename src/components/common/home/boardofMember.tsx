@@ -89,7 +89,7 @@ export default function BoardOfDirectors() {
           {directors.map((director) => (
             <motion.div
               key={director.id}
-              variants={cardVariants}
+              // variants={cardVariants}
               whileHover={{
                 y: -10,
                 transition: {

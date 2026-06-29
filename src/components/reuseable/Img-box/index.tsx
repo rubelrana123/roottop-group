@@ -3,6 +3,7 @@ import Image from 'next/image';
 import React from 'react';
 
 interface ImgProps {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   src: any;
   alt?: string;
   className?: string;
