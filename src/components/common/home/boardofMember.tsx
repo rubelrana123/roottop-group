@@ -9,25 +9,25 @@ const directors = [
     id: 1,
     name: 'ABDUL WAHED',
     role: 'Chairman',
-    image: '/md.jpg',
+    image: '/demoboardofDirector.jpg',
   },
   {
     id: 2,
-    name: 'M. A. JABBAR',
+    name: 'Mehedi Hasan',
     role: 'Managing Director',
-       image: '/md.jpg',
-    },
+    image: '/md.jpg',
+  },
   {
     id: 3,
     name: 'M. A. RAHIM',
     role: 'Vice Chairman',
-       image: '/md.jpg',
+    image: '/demoboardofDirector.jpg',
   },
   {
     id: 4,
     name: 'M. A. QUADER',
     role: 'Deputy Managing Director & Group CEO',
-    image: '/md.jpg',
+    image: '/demoboardofDirector.jpg',
   },
 ];
 
@@ -59,23 +59,20 @@ export default function BoardOfDirectors() {
   return (
     <section className="relative overflow-hidden bg-[#f7f7f7] py-24">
       <div className="container mx-auto px-4 lg:px-8">
+ 
+        {/* Heading */}
+        <div className="relative z-10 mb-16 text-center">
+          <span className="text-primary text-sm font-semibold uppercase tracking-[4px]">
+            Leadership Team
+          </span>
 
-        {/* Background title */}
-        <h2 className="absolute left-0 top-0 text-[60px] md:text-[100px] lg:text-[130px] font-bold text-gray-200/80 select-none pointer-events-none">
-          BOARD OF DIRECTORS
-        </h2>
+          <h2 className="mt-3 text-3xl font-bold text-slate-900 md:text-5xl">
+            Board of Directors
+          </h2>
 
-        {/* Small heading */}
-        <div className="relative z-10 mb-16">
-          <div className="inline-flex items-center gap-2">
-            <div className="h-[3px] w-7 bg-blue-900" />
-            <span className="font-semibold uppercase text-sm tracking-wide text-slate-900">
-              Board Of Directors
-            </span>
-          </div>
+          <div className="bg-primary mx-auto mt-6 h-1 w-24 rounded-full" />
         </div>
-
-        {/* Cards */}
+        {/* Director Cards */}
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -89,40 +86,32 @@ export default function BoardOfDirectors() {
           {directors.map((director) => (
             <motion.div
               key={director.id}
-              // variants={cardVariants}
-              whileHover={{
-                y: -10,
-                transition: {
-                  duration: 0.3,
-                },
-              }}
-              className="group cursor-pointer"
+              variants={cardVariants}
+              className="cursor-pointer"
             >
-              {/* image */}
-              <div className="relative overflow-hidden bg-gray-200">
+              {/* Image */}
+              <div className="group relative overflow-hidden bg-gray-200">
                 <Image
                   src={director.image}
                   alt={director.name}
                   width={500}
                   height={650}
-                  className="h-[380px] w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="h-[380px] w-full object-cover transition-transform duration-1000 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-105"
                 />
 
-                {/* subtle overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 transition duration-500 group-hover:opacity-100" />
+                {/* Image Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
               </div>
 
-              {/* content */}
+              {/* Content */}
               <div className="pt-5">
                 <h3 className="text-[24px] font-bold uppercase text-slate-900">
                   {director.name}
                 </h3>
 
-                <p className="mt-2 text-gray-600">
-                  {director.role}
-                </p>
+                <p className="mt-2 text-gray-600">{director.role}</p>
 
-                <button className="mt-4 flex items-center gap-1 text-sm font-semibold uppercase text-lime-600 transition hover:gap-2">
+                <button className="mt-4 flex items-center gap-1 text-sm font-semibold uppercase text-lime-600 transition-all duration-300 hover:gap-2">
                   Read Bio
                   <ChevronDown size={16} />
                 </button>

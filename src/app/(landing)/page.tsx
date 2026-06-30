@@ -1,4 +1,5 @@
 import BoardOfDirectors from '@/components/common/home/boardofMember';
+import GroupCompanies from '@/components/common/home/groupCompany';
 
 import HeroSec from '@/components/common/home/heroSec';
 
@@ -10,6 +11,7 @@ export default function RootHome() {
     <>
     <Navbar/>
       <HeroSec />
+      <GroupCompanies />
       <OurClients />
       <BoardOfDirectors />
    
