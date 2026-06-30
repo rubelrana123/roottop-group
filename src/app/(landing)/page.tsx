@@ -9,7 +9,7 @@ import OurClients from '@/components/common/home/OurClients';
 export default function RootHome() {
   return (
     <>
-    <Navbar/>
+    
       <HeroSec />
       <GroupCompanies />
       <OurClients />

@@ -96,7 +96,7 @@ export default function GroupCompanies() {
           </span>
 
           <h2 className="mt-3 text-3xl font-bold text-slate-900 md:text-5xl">
-            Our Group Companies
+            Our Sisters Concern
           </h2>
  
 
