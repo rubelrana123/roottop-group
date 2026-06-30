@@ -1,6 +1,9 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay, EffectFade } from "swiper/modules";
 
@@ -12,52 +15,52 @@ const slides = [
   {
     id: 1,
     title: "A DIVERSIFIED \n CONGLOMERATE",
-    image:
-      "/sliderImage2.webp",
+    image: "/sliderImage2.webp",
     buttonText: "SEE DETAILS",
   },
   {
     id: 2,
     title: "BUILDING THE FUTURE \n TOGETHER",
-image:
-      "/sliderImage5.webp",
+    image: "/sliderImage5.webp",
     buttonText: "SEE DETAILS",
   },
   {
     id: 3,
     title: "DELIVERING QUALITY \n & EXCELLENCE",
-    image:
-      "/sliderImage2.webp",
+    image: "/sliderImage2.webp",
     buttonText: "SEE DETAILS",
   },
 ];
 
 export default function HeroSec() {
+  const [activeIndex, setActiveIndex] = useState(0);
+
   return (
     <section className="relative w-full">
       <Swiper
         modules={[Pagination, Autoplay, EffectFade]}
+        effect="fade"
+        loop
+        speed={1200}
         pagination={{
           clickable: true,
         }}
-        effect="fade"
-        loop={true}
         autoplay={{
           delay: 5000,
           disableOnInteraction: false,
         }}
+        onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
         className="heroSwiper"
       >
-        {slides.map((slide) => (
+        {slides.map((slide, index) => (
           <SwiperSlide key={slide.id}>
-            <div className="relative h-[80vh] min-h-150 w-full overflow-hidden">
-
+            <div className="relative h-[80vh] min-h-[600px] w-full overflow-hidden">
               {/* Background Image */}
               <Image
                 src={slide.image}
                 alt={slide.title}
                 fill
-                priority
+                priority={index === 0}
                 className="object-cover"
               />
 
@@ -66,52 +69,93 @@ export default function HeroSec() {
 
               {/* Content */}
               <div className="absolute inset-0 z-10 flex items-center justify-center">
-
                 <div className="max-w-6xl px-5 text-center">
-
-          <h1
-            className="
-              mx-auto
-              max-w-5xl
-              text-white
-              font-extrabold
-              uppercase
-              tracking-tight
-              leading-[0.9]
-              text-4xl
-              sm:text-5xl
-              md:text-6xl
-              lg:text-7xl
-              xl:text-[90px]
-            "
-          >
-            {slide.title.split("\n").map((line, i) => (
-              <span key={i} className="block">
-                {line}
-              </span>
-            ))}
-          </h1>
-                  <button
+                  {/* Animated Title */}
+                  <motion.h1
+                    key={`title-${activeIndex}`}
                     className="
-                    mt-8
-                    bg-green-600
-                    hover:bg-green-700
-                    text-white
-                    font-bold
-                    uppercase
-                    tracking-[2px]
-                    px-10
-                    py-4
-                    transition-all
-                    duration-300
-                  "
+                      mx-auto
+                      max-w-5xl
+                      text-white
+                      font-extrabold
+                      uppercase
+                      tracking-tight
+                      leading-[0.9]
+                      text-4xl
+                      sm:text-5xl
+                      md:text-6xl
+                      lg:text-7xl
+                      xl:text-[90px]
+                    "
+                    initial="hidden"
+                    animate="visible"
+                    variants={{
+                      hidden: {},
+                      visible: {
+                        transition: {
+                          staggerChildren: 0.15,
+                        },
+                      },
+                    }}
+                  >
+                    {slide.title.split("\n").map((line, i) => (
+                      <motion.span
+                        key={i}
+                        className="block"
+                        variants={{
+                          hidden: {
+                            opacity: 0,
+                            y: 80,
+                          },
+                          visible: {
+                            opacity: 1,
+                            y: 0,
+                            transition: {
+                              duration: 0.8,
+                              ease: [0.22, 1, 0.36, 1] as const,
+                            },
+                          },
+                        }}
+                      >
+                        {line}
+                      </motion.span>
+                    ))}
+                  </motion.h1>
+
+                  {/* Animated Button */}
+                  <motion.button
+                    key={`button-${activeIndex}`}
+                    initial={{
+                      opacity: 0,
+                      y: 40,
+                    }}
+                    animate={{
+                      opacity: 1,
+                      y: 0,
+                    }}
+                    transition={{
+                      duration: 0.8,
+                      delay: 0.45,
+                      ease: [0.22, 1, 0.36, 1] as const,
+                    }}
+                    className="
+                      mt-8
+                      bg-green-600
+                      hover:bg-green-700
+                      text-white
+                      font-bold
+                      uppercase
+                      tracking-[2px]
+                      px-10
+                      py-4
+                      transition-colors
+                      duration-300
+                    "
                   >
                     {slide.buttonText}
-                  </button>
-
+                  </motion.button>
                 </div>
               </div>
-
             </div>
           </SwiperSlide>
         ))}
