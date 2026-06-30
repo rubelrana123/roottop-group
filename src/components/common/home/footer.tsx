@@ -1,8 +1,8 @@
 'use client';
-import { Mail, Phone, MapPin } from 'lucide-react';
+ 
 import { motion } from 'framer-motion';
 import FavIcon from '@/icon/favIcon';
-import Logo from '@/components/reuseable/logo';
+ 
 import Link from 'next/link';
 import Image from 'next/image';
 

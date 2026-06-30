@@ -4,7 +4,6 @@ import Link from 'next/link';
 import { Menu, X} from 'lucide-react';
 import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import Logo from '@/components/reuseable/logo';
  
 import { CiYoutube } from "react-icons/ci";
 import Image from 'next/image';
