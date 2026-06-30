@@ -68,7 +68,7 @@ const navItems = [
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
-  const [activeDropdown, setActiveDropdown] = useState(null);
+  const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
 
   return (
     <>
@@ -92,10 +92,10 @@ export default function Navbar() {
           <nav className="hidden lg:flex items-center gap-10 h-full">
             {navItems.map((item) => (
               <div
-                key={item.name}
+                key={item?.name}
                 className="relative h-full flex items-center"
                 onMouseEnter={() =>
-                  item.dropdown && setActiveDropdown(item.name)
+                  item?.dropdown && setActiveDropdown(item?.name)
                 }
                 onMouseLeave={() => setActiveDropdown(null)}
               >
