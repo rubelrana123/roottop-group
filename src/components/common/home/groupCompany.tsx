@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { AnimatePresence, motion } from 'framer-motion';
 import { ArrowUpRight } from 'lucide-react';
 
+
 type Company = {
   id: number;
   name: string;
@@ -26,7 +27,7 @@ const companies: Company[] = [
   {
     id: 2,
     name: 'RootTOP Limited',
-    logo: '/groupCompany.png',
+    logo: '/arinternational.png',
     description:
       'RootTOP Limited (RTL) is a premier contractor specializing in construction, consultancy, interior design, IT solutions, and agriculture.',
     website: '#',
@@ -34,7 +35,7 @@ const companies: Company[] = [
   {
     id: 3,
     name: 'Orisin Limited',
-    logo: '/groupCompany.png',
+    logo: '/orisin.png',
     description:
       'RootTOP Limited (RTL) is a premier contractor specializing in construction, consultancy, interior design, IT solutions, and agriculture.',
     website: '#',
@@ -50,7 +51,7 @@ const companies: Company[] = [
   {
     id: 5,
     name: 'Khamar Bari',
-    logo: '/groupCompany.png',
+    logo: '/khamarbari.png',
     description:
       'RootTOP Limited (RTL) is a premier contractor specializing in construction, consultancy, interior design, IT solutions, and agriculture.',
     website: '#',
@@ -81,9 +82,18 @@ const companies: Company[] = [
   },
 ];
 
+
+const toggleCompany = (company: Company) => {
+  setActiveCompany((prev) =>
+    prev?.id === company.id ? null : company
+  );
+};
+ 
+
+
 export default function GroupCompanies() {
   const [activeCompany, setActiveCompany] = useState<Company | null>(null);
-
+ 
   return (
     <section className="bg-[#f7f7f7] py-24">
       <div className="container mx-auto px-4 lg:px-8">
@@ -108,22 +118,23 @@ export default function GroupCompanies() {
         <div className="grid gap-8 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2">
 
   {companies.map((company) => (
-  <div
-    key={company.id}
-    className="relative"
-    onMouseEnter={() => setActiveCompany(company)}
-    onMouseLeave={() => setActiveCompany(null)}
-  >
+<div
+  key={company.id}
+  className="relative"
+  onMouseEnter={() => setActiveCompany(company)}
+  onMouseLeave={() => setActiveCompany(null)}
+  onClick={() => toggleCompany(company)}
+>
     {/* Logo Card */}
     <motion.div
       whileHover={{ y: -6 }}
       transition={{ duration: 0.25 }}
-      className={`group relative flex h-36 cursor-pointer items-center justify-center overflow-hidden rounded-2xl border hover:border-[#4FA73F] bg-white transition-all duration-300
-      ${
-        activeCompany?.id === company.id
-          ? 'border-primary shadow-2xl'
-          : 'border-gray-200 hover:border-[#4FA73F]/50 hover:shadow-xl'
-      }`}
+className={`group relative flex h-36 cursor-pointer touch-manipulation items-center justify-center overflow-hidden rounded-2xl border bg-white transition-all duration-300
+${
+  activeCompany?.id === company.id
+    ? "border-primary shadow-2xl"
+    : "border-gray-200 hover:border-primary/50 hover:shadow-xl"
+}`}
     >
       <Image
         src={company.logo}
@@ -135,7 +146,7 @@ export default function GroupCompanies() {
 
       {/* Arrow */}
       <div
-        className={`absolute right-4 top-4 flex h-9 w-9 items-center justify-center rounded-full bg-[#4FA73F] text-white transition-all duration-300
+        className={`absolute right-4 top-4 flex h-9 w-9 items-center justify-center rounded-full bg-primary text-white transition-all duration-300
         ${
           activeCompany?.id === company.id
             ? 'translate-y-0 opacity-100'
@@ -168,7 +179,7 @@ export default function GroupCompanies() {
             <div className="mt-6 flex gap-2">
               <Link
                 href={company.website}
-                className="flex-1 rounded-sm bg-[#4FA73F] px-5 py-3 text-center text-sm font-semibold text-white transition hover:opacity-90"
+                className="flex-1 rounded-sm bg-primary px-5 py-3 text-center text-sm font-semibold text-white transition hover:opacity-90"
               >
                 Visit Website
               </Link>
@@ -186,4 +197,8 @@ export default function GroupCompanies() {
       </div>
     </section>
   );
+}
+
+function setActiveCompany(arg0: (prev: any) => Company | null) {
+  throw new Error('Function not implemented.');
 }

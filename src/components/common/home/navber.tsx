@@ -73,7 +73,7 @@ export default function Navbar() {
   return (
     <>
       <header className="w-full bg-[#f3f3f3] border-b">
-        <div className="max-w-7xl mx-auto h-24 px-6 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto h-20  px-6 flex items-center justify-between">
 
           {/* Logo */}
 
@@ -111,7 +111,7 @@ export default function Navbar() {
                     uppercase
                     tracking-wide
                     transition-colors
-                    hover:text-[#4FA73F]
+                    hover:text-primary
                     group
                   "
                 >
@@ -126,7 +126,7 @@ export default function Navbar() {
                       left-0
                       h-[3px]
                       w-0
-                      bg-[#4FA73F]
+                      bg-primary
                       transition-all
                       duration-300
                       group-hover:w-full
@@ -171,7 +171,7 @@ export default function Navbar() {
                     >
                       {/* Top Green Line */}
 
-                      <div className="h-[3px] bg-[#4FA73F]" />
+                      <div className="h-[3px] bg-primary" />
 
                       {item.dropdown.map((subItem) => (
                         <Link
@@ -187,7 +187,7 @@ export default function Navbar() {
                             border-b
                             last:border-b-0
                             hover:bg-gray-50
-                            hover:text-[#4FA73F]
+                            hover:text-primary
                             transition-all
                           "
                         >
@@ -288,7 +288,7 @@ export default function Navbar() {
                             key={sub.name}
                             href={sub.href}
                             onClick={() => setOpen(false)}
-                            className="block text-sm text-gray-600 hover:text-[#4FA73F]"
+                            className="block text-sm text-gray-600 hover:text-primary"
                           >
                             {sub.name}
                           </Link>

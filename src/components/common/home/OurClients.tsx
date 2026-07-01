@@ -51,7 +51,7 @@ export default function OurClients() {
             <div key={client.id} className="mx-6">
 
               {/* Outer animated wrapper */}
-              <div className="group relative w-[180px] h-[100px] rounded-xl p-[2px] overflow-hidden">
+              <div className="group relative w-45 h-25 rounded-xl p-0.5 overflow-hidden">
 
                 {/* Animated border */}
                 <div className="absolute inset-0 rounded-xl bg-[conic-gradient(#4FA73F,transparent,#4FA73F)] opacity-0 group-hover:opacity-100 animate-borderRotate transition-opacity duration-500" />

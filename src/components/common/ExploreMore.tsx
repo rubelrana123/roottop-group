@@ -58,7 +58,7 @@ export default function ExploreMore() {
             bg-white
             p-5
             transition-all duration-300
-            hover:border-[#4FA73F]
+            hover:border-primary
             hover:shadow-lg
           "
         >
@@ -70,7 +70,7 @@ export default function ExploreMore() {
                 leading-[1.3]
                 text-[#0B1E3C]
                 transition-colors duration-300
-                group-hover:text-[#4FA73F]
+                group-hover:text-primary
               "
             >
               {item.title}
@@ -96,9 +96,9 @@ export default function ExploreMore() {
                 font-bold
                 uppercase
                 tracking-[1.2px]
-                text-[#4FA73F]
+                text-primary
                 transition-all duration-300
-                group-hover:text-[#4FA73F]/60
+                group-hover:text-primary/60
               "
             >
               Learn More

@@ -1,34 +1,40 @@
-"use client";
+'use client';
 
-import { useState } from "react";
-import Image from "next/image";
-import { motion } from "framer-motion";
+import { useState } from 'react';
+import Image from 'next/image';
+import { motion } from 'framer-motion';
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Autoplay, EffectFade } from "swiper/modules";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, Autoplay, EffectFade } from 'swiper/modules';
 
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/effect-fade";
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/effect-fade';
 
 const slides = [
   {
     id: 1,
-    title: "A DIVERSIFIED \n CONGLOMERATE",
-    image: "/sliderImage2.webp",
-    buttonText: "SEE DETAILS",
+    title: 'A DIVERSIFIED \n CONGLOMERATE',
+    image: '/cargoship.jpg',
+    buttonText: 'SEE DETAILS',
   },
   {
     id: 2,
-    title: "BUILDING THE FUTURE \n TOGETHER",
-    image: "/sliderImage5.webp",
-    buttonText: "SEE DETAILS",
+    title: 'BUILDING THE FUTURE \n TOGETHER',
+    image: '/buildconstruction.jpg',
+    buttonText: 'SEE DETAILS',
   },
   {
     id: 3,
-    title: "DELIVERING QUALITY \n & EXCELLENCE",
-    image: "/sliderImage2.webp",
-    buttonText: "SEE DETAILS",
+    title: 'DELIVERING QUALITY \n & EXCELLENCE',
+    image: '/roadconstruction.jpg',
+    buttonText: 'SEE DETAILS',
+  },
+  {
+    id: 4,
+    title: "QUALITY \n YOU'VE GOT IT",
+    image: '/cargoship.jpg',
+    buttonText: 'SEE DETAILS',
   },
 ];
 
@@ -54,7 +60,16 @@ export default function HeroSec() {
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={slide.id}>
-            <div className="relative h-[80vh] min-h-[600px] w-full overflow-hidden">
+            <div
+              className="
+      relative
+      w-full
+      overflow-hidden
+      h-[60vh]
+      md:h-[80vh]
+      lg:h-[calc(100vh-5rem)]
+    "
+            >
               {/* Background Image */}
               <Image
                 src={slide.image}
@@ -68,25 +83,26 @@ export default function HeroSec() {
               <div className="absolute inset-0 bg-black/35" />
 
               {/* Content */}
-              <div className="absolute inset-0 z-10 flex items-center justify-center">
-                <div className="max-w-6xl px-5 text-center">
+              <div className="absolute inset-0 z-10 flex items-center justify-center px-4">
+                <div className="max-w-6xl text-center">
                   {/* Animated Title */}
                   <motion.h1
                     key={`title-${activeIndex}`}
                     className="
-                      mx-auto
-                      max-w-5xl
-                      text-white
-                      font-extrabold
-                      uppercase
-                      tracking-tight
-                      leading-[0.9]
-                      text-4xl
-                      sm:text-5xl
-                      md:text-6xl
-                      lg:text-7xl
-                      xl:text-[90px]
-                    "
+            mx-auto
+            max-w-5xl
+            text-white
+            font-extrabold
+            uppercase
+            tracking-tight
+            leading-[0.95]
+
+            text-3xl
+            sm:text-4xl
+            md:text-6xl
+            lg:text-7xl
+            xl:text-[90px]
+          "
                     initial="hidden"
                     animate="visible"
                     variants={{
@@ -98,7 +114,7 @@ export default function HeroSec() {
                       },
                     }}
                   >
-                    {slide.title.split("\n").map((line, i) => (
+                    {slide.title.split('\n').map((line, i) => (
                       <motion.span
                         key={i}
                         className="block"
@@ -139,18 +155,33 @@ export default function HeroSec() {
                       ease: [0.22, 1, 0.36, 1] as const,
                     }}
                     className="
-                      mt-8
-                      bg-green-600
-                      hover:bg-green-700
-                      text-white
-                      font-bold
-                      uppercase
-                      tracking-[2px]
-                      px-10
-                      py-4
-                      transition-colors
-                      duration-300
-                    "
+            mt-6
+            md:mt-8
+
+            cursor-pointer
+            bg-primary/80
+            hover:bg-primary
+
+            text-white
+            font-bold
+            uppercase
+            tracking-[2px]
+
+            px-6
+            py-3
+
+            md:px-8
+            md:py-4
+
+            lg:px-10
+            lg:py-4
+
+            text-sm
+            md:text-base
+
+            transition-all
+            duration-300
+          "
                   >
                     {slide.buttonText}
                   </motion.button>
