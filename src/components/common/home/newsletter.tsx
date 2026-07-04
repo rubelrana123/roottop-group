@@ -1,5 +1,4 @@
-"use client";
-
+ 
 import { ArrowRight } from "lucide-react";
 
 export default function Newsletter() {

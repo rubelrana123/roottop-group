@@ -1,4 +1,4 @@
-import FavIcon from '@/icon/favIcon';
+ 
 import { cn } from '@/lib';
 import React from 'react';
 
@@ -12,7 +12,7 @@ export function UploadBtn({ className, ...props }: any) {
         className
       )}
     >
-      <FavIcon name="upload" />
+      
     </label>
   );
 }
