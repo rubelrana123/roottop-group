@@ -74,7 +74,7 @@ export default function MissionVisionValues() {
 
             <div className="relative aspect-[4/5] overflow-hidden">
               <Image
-                src="/mission/future-visions-business-technology-concept.jpg"
+                src="/mission/future-visions-business-technology-concept.avif"
                 alt="Mission"
                 fill
                 className="object-cover transition duration-500 hover:scale-105"
@@ -83,7 +83,7 @@ export default function MissionVisionValues() {
 
             <div className="relative mt-8 aspect-[4/5] overflow-hidden">
               <Image
-                src="/mission/technological-futuristic-holograms-logistics-means-transport.jpg"
+                src="/mission/technological-futuristic-holograms-logistics-means-transport.avif"
                 alt="Vision"
                 fill
                 className="object-cover transition duration-500 hover:scale-105"
@@ -92,7 +92,7 @@ export default function MissionVisionValues() {
 
             <div className="relative aspect-[4/5] overflow-hidden">
               <Image
-               src="/mission/technological-futuristic-holograms-logistics-means-transport.jpg"
+               src="/mission/technological-futuristic-holograms-logistics-means-transport.avif"
 
                 alt="Building"
                 fill
@@ -102,7 +102,7 @@ export default function MissionVisionValues() {
 
             <div className="relative mt-8 aspect-[4/5] overflow-hidden">
               <Image
-                src="/mission/businessman-big-office.jpg"
+                src="/mission/businessman-big-office.avif"
                 alt="Sustainability"
                 fill
                 className="object-cover transition duration-500 hover:scale-105"

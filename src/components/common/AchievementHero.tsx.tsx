@@ -8,7 +8,7 @@ export default function AchievementHero() {
     <section
       className="relative h-80 sm:h-100 md:h-112.5 lg:h-125 bg-cover bg-center bg-scroll lg:bg-fixed"
       style={{
-        backgroundImage: "url('/acheivementhero.jpg')",
+        backgroundImage: "url('/acheivementhero.avif')",
       }}
     >
       {/* Overlay */}

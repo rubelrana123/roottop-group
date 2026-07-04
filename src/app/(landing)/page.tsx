@@ -1,6 +1,7 @@
 import AchievementSection from '@/components/common/home/achivement';
 import GroupCompanies from '@/components/common/home/groupCompany';
 import HeroSec from '@/components/common/home/heroSec';
+import Newsletter from '@/components/common/home/newsletter';
 import OurClients from '@/components/common/home/OurClients';
 import JsonLd from '@/components/common/JsonLd';
 import MissionVisionValues from '@/components/common/MissionVisionValues';
@@ -26,6 +27,7 @@ export default function RootHome() {
       <AchievementSection />
       <MissionVisionValues />
       <OurClients />
+      <Newsletter/>
     </>
   );
 }

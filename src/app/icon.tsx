@@ -23,7 +23,7 @@ export default function Icon() {
           width: "100%",
         }}
       >
-        R
+        <img src="/app/favicon.ico" alt="RootTOP Group Logo" width={32} height={32} />
       </div>
     ),
     size
