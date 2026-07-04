@@ -71,7 +71,7 @@ export default function AboutUs() {
     <div>
       <MissionVisionValues />
     </div>
-    <BoardOfDirectors/>
+    {/* <BoardOfDirectors/> */}
    
     </section>
   );

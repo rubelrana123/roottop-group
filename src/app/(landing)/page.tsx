@@ -5,6 +5,7 @@ import GroupCompanies from '@/components/common/home/groupCompany';
 import HeroSec from '@/components/common/home/heroSec';
  
 import OurClients from '@/components/common/home/OurClients';
+import MissionVisionValues from '@/components/common/MissionVisionValues';
 import ScrollIndicator from '@/components/common/ScrollAnimation';
 
 export default function RootHome() {
@@ -16,8 +17,9 @@ export default function RootHome() {
       <GroupCompanies />
 
       <AchievementSection />
+      <MissionVisionValues />
       <OurClients />
-      <BoardOfDirectors />
+      {/* <BoardOfDirectors /> */}
    
     </>
   );

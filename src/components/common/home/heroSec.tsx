@@ -88,14 +88,7 @@ export default function HeroSec() {
                   {/* Animated Title */}
                   <motion.h1
                     key={`title-${activeIndex}`}
-                    className="
-            mx-auto
-            max-w-5xl
-            text-white
-            font-extrabold
-            uppercase
-            tracking-tight
-            leading-[0.95]
+                    className="   mx-auto   max-w-5xl   text-white   font-extrabold uppercase  tracking-tight leading-[0.95]
 
             text-3xl
             sm:text-4xl

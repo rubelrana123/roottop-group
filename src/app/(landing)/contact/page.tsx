@@ -1,31 +1,71 @@
 "use client";
 
 import ContactForm from "@/components/common/ContactForm";
+import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function ContactMap() {
   return (
-    <section className="bg-white py-20">
-      <div className="container mx-auto px-4">
+    <section className="bg-white ">
+      <div className="">
 
-        {/* Section Header */}
-        <div className="mb-16 text-center">
-          <span className="text-primary text-sm font-semibold uppercase tracking-[5px]">
-            Contact Us
-          </span>
+   <div className="relative h-105 overflow-hidden md:h-125">
+        <Image
+          src="/silderImage3.webp" // Replace with your contact banner
+          alt="Contact Us"
+          fill
+          priority
+          className="object-cover"
+        />
 
-          <h2 className="mt-3 text-3xl font-bold text-slate-900 md:text-5xl">
-            We’re Ready to Support Your Next Project
-          </h2>
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-[#173C5A]/55" />
 
-          <p className="mx-auto mt-5 max-w-2xl leading-7 text-slate-600">
-            Whether you need quality materials, business support, or have
-            any questions about our services, reach out to us and our team
-            will respond promptly.
-          </p>
+        {/* Content */}
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="px-6 text-center text-white">
+            <motion.span
+              initial={{ opacity: 0, y: 25 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+              className="text-primary text-sm font-semibold uppercase tracking-[5px]"
+            >
+              Get In Touch
+            </motion.span>
 
-          <div className="bg-primary mx-auto mt-6 h-1 w-24 rounded-full" />
+            <motion.h1
+              initial={{ opacity: 0, y: 35 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7 }}
+              viewport={{ once: true }}
+              className="mt-4 text-5xl font-extrabold uppercase tracking-wide md:text-7xl"
+            >
+              CONTACT US
+            </motion.h1>
+
+            <motion.p
+              initial={{ opacity: 0, y: 35 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.9 }}
+              viewport={{ once: true }}
+              className="mx-auto mt-6 max-w-3xl text-base leading-8 text-white/90 md:text-lg"
+            >
+              Whether you need quality materials, business support, or have
+              questions about our services, our team is ready to assist you.
+              Contact us today and let&apos;s build something great together.
+            </motion.p>
+
+            <motion.div
+              initial={{ opacity: 0, scaleX: 0 }}
+              whileInView={{ opacity: 1, scaleX: 1 }}
+              transition={{ duration: 0.7, delay: 0.4 }}
+              viewport={{ once: true }}
+              className="bg-primary mx-auto mt-8 h-1 w-24 rounded-full"
+            />
+          </div>
         </div>
-
+      </div>
         {/* Contact Form */}
         <div className="mb-20">
           <ContactForm />
@@ -148,7 +188,7 @@ export default function ContactMap() {
           <h2 className="text-4xl font-bold leading-tight">
             RootTOP
             <br />
-            Limited
+            Group
           </h2>
 
           <div className="mt-8 space-y-6 text-sm leading-7">

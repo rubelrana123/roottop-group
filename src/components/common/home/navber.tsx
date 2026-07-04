@@ -39,23 +39,12 @@ const navItems = [
     href: "/sister-concerns",
   },
   {
-    name: "MEDIA",
-    href: "/media",
-    dropdown: [
-      {
-        name: "Newsroom",
-        href: "/media/newsroom",
-      },
-      {
-        name: "Gallery",
-        href: "/media/gallery",
-      },
-      {
-        name: "Media Stellar",
-        href: "/media/media-stellar",
-      },
-    ],
+  
+    name: "SERVICES",
+    href: "/services",
+ 
   },
+ 
   {
     name: "CAREER",
     href: "/career",
