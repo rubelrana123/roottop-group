@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 import { CiYoutube } from "react-icons/ci";
@@ -22,15 +23,12 @@ const navItems = [
       },
       {
         name: "Mission, Vision & Values",
-        href: "/mission-vision-values",
+        href: "/about-us#mission-vision-values",
       },
-      {
-        name: "Board of Directors",
-        href: "/board-of-directors",
-      },
+ 
       {
         name: "Awards & Achievements",
-        href: "/awards-achievements",
+        href: "/about-us",
       },
     ],
   },
@@ -46,18 +44,17 @@ const navItems = [
   },
  
   {
-    name: "CAREER",
-    href: "/career",
-  },
-  {
     name: "CONTACT",
     href: "/contact",
   },
 ];
 
 export default function Navbar() {
+  const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const isActive = (href: string) =>
+    href === "/" ? pathname === "/" : pathname.startsWith(href);
 
   return (
     <>
@@ -66,19 +63,24 @@ export default function Navbar() {
 
           {/* Logo */}
 
-          <Link href="/">
+          <Link
+            href="/"
+            aria-label="RootTOP Group home"
+            className="focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+          >
             <Image
               src="/logo.png"
               alt="RootTOP Group"
               width={140}
               height={70}
               priority
+              fetchPriority="high"
             />
           </Link>
 
           {/* Desktop Navigation */}
 
-          <nav className="hidden lg:flex items-center gap-10 h-full">
+          <nav className="hidden lg:flex items-center gap-10 h-full" aria-label="Primary navigation">
             {navItems.map((item) => (
               <div
                 key={item?.name}
@@ -90,6 +92,7 @@ export default function Navbar() {
               >
                 <Link
                   href={item.href}
+                  aria-current={isActive(item.href) ? "page" : undefined}
                   className="
                     relative
                     h-full
@@ -101,6 +104,10 @@ export default function Navbar() {
                     tracking-wide
                     transition-colors
                     hover:text-primary
+                    focus-visible:outline
+                    focus-visible:outline-2
+                    focus-visible:outline-offset-2
+                    focus-visible:outline-primary
                     group
                   "
                 >
@@ -164,8 +171,9 @@ export default function Navbar() {
 
                       {item.dropdown.map((subItem) => (
                         <Link
-                          key={subItem.name}
+                      key={subItem.name}
                           href={subItem.href}
+                          aria-current={isActive(subItem.href) ? "page" : undefined}
                           className="
                             flex
                             items-center
@@ -177,6 +185,10 @@ export default function Navbar() {
                             last:border-b-0
                             hover:bg-gray-50
                             hover:text-primary
+                            focus-visible:outline
+                            focus-visible:outline-2
+                            focus-visible:outline-offset-2
+                            focus-visible:outline-primary
                             transition-all
                           "
                         >
@@ -195,40 +207,48 @@ export default function Navbar() {
           <div className="hidden lg:flex items-center gap-3">
             <Link
               href="#"
+              aria-label="RootTOP Group X profile placeholder"
               className="border p-2 rounded hover:bg-white transition"
             >
-              <X size={18} />
+              <X size={18} aria-hidden="true" />
             </Link>
 
             <Link
               href="#"
+              aria-label="RootTOP Group YouTube channel placeholder"
               className="border p-2 rounded hover:bg-white transition"
             >
-              <CiYoutube size={18} />
+              <CiYoutube size={18} aria-hidden="true" />
             </Link>
 
             <Link
               href="#"
+              aria-label="RootTOP Group secondary X profile placeholder"
               className="border p-2 rounded hover:bg-white transition"
             >
-              <X size={18} />
+              <X size={18} aria-hidden="true" />
             </Link>
 
             <Link
               href="#"
+              aria-label="RootTOP Group secondary YouTube channel placeholder"
               className="border p-2 rounded hover:bg-white transition"
             >
-              <CiYoutube size={18} />
+              <CiYoutube size={18} aria-hidden="true" />
             </Link>
           </div>
 
           {/* Mobile Menu Button */}
 
           <button
+            type="button"
             onClick={() => setOpen(true)}
-            className="lg:hidden"
+            className="lg:hidden focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+            aria-label="Open navigation menu"
+            aria-expanded={open}
+            aria-controls="mobile-navigation"
           >
-            <Menu />
+            <Menu aria-hidden="true" />
           </button>
         </div>
       </header>
@@ -244,9 +264,14 @@ export default function Navbar() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               onClick={() => setOpen(false)}
+              aria-hidden="true"
             />
 
             <motion.div
+              id="mobile-navigation"
+              role="dialog"
+              aria-modal="true"
+              aria-label="Mobile navigation"
               className="fixed right-0 top-0 h-full w-[280px] bg-white z-50 p-6"
               initial={{ x: 300 }}
               animate={{ x: 0 }}
@@ -254,17 +279,23 @@ export default function Navbar() {
               transition={{ duration: 0.3 }}
             >
               <div className="flex justify-end mb-8">
-                <button onClick={() => setOpen(false)}>
-                  <X />
+                <button
+                  type="button"
+                  onClick={() => setOpen(false)}
+                  className="focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                  aria-label="Close navigation menu"
+                >
+                  <X aria-hidden="true" />
                 </button>
               </div>
 
-              <div className="flex flex-col gap-5">
+              <nav className="flex flex-col gap-5" aria-label="Mobile primary navigation">
                 {navItems.map((item) => (
                   <div key={item.name}>
                     <Link
                       href={item.href}
                       onClick={() => setOpen(false)}
+                      aria-current={isActive(item.href) ? "page" : undefined}
                       className="font-semibold block py-2"
                     >
                       {item.name}
@@ -277,6 +308,7 @@ export default function Navbar() {
                             key={sub.name}
                             href={sub.href}
                             onClick={() => setOpen(false)}
+                            aria-current={isActive(sub.href) ? "page" : undefined}
                             className="block text-sm text-gray-600 hover:text-primary"
                           >
                             {sub.name}
@@ -286,7 +318,7 @@ export default function Navbar() {
                     )}
                   </div>
                 ))}
-              </div>
+              </nav>
             </motion.div>
           </>
         )}

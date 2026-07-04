@@ -26,7 +26,7 @@ export default function ServiceCard({
   reverse = false,
 }: Props) {
   return (
-    <motion.div
+    <motion.article
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
@@ -41,9 +41,11 @@ export default function ServiceCard({
       >
         <Image
           src={service.image}
-          alt={service.title}
+          alt={`${service.title} services from RootTOP Group`}
           width={600}
           height={350}
+          sizes="(min-width: 1024px) 50vw, 100vw"
+          quality={85}
           className="w-full aspect-[16/9] object-cover transition duration-500 hover:scale-105"
         />
       </div>
@@ -57,7 +59,7 @@ export default function ServiceCard({
         <div className="h-1 w-12 lg:w-16 bg-lime-500" />
 
         <h2 className="text-2xl font-bold uppercase lg:text-4xl">
-          {service.title}
+          {service.title} Services
         </h2>
 
         <p className="text-sm leading-6 text-gray-600 lg:text-lg lg:leading-9 line-clamp-4">
@@ -66,12 +68,13 @@ export default function ServiceCard({
 
         <Link
           href={`/services/${service.slug}`}
+          aria-label={`View details about RootTOP Group ${service.title} services`}
           className="inline-flex items-center gap-2 border px-4 py-2 text-xs font-semibold uppercase transition hover:border-lime-500 hover:bg-lime-500 hover:text-white lg:px-6 lg:py-3 lg:text-sm"
         >
           See Details
-          <ArrowRight size={18} />
+          <ArrowRight size={18} aria-hidden="true" />
         </Link>
       </div>
-    </motion.div>
+    </motion.article>
   );
 }

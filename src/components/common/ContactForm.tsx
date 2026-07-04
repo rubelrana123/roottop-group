@@ -72,9 +72,6 @@ export default function ContactForm() {
       );
 
       toast.success("Message sent successfully");
-      toast.success("Message sent successfully");
-
-
       reset();
     } catch (error) {
       console.error(error);
@@ -89,17 +86,23 @@ export default function ContactForm() {
       <div className="container mx-auto px-4">
         <form
           onSubmit={handleSubmit(onSubmit)}
+          noValidate
           className="mx-auto max-w-6xl space-y-7"
+          aria-label="Contact RootTOP Group"
         >
           {/* Full Name */}
           <div>
-            <label className="mb-2 block text-sm font-medium text-gray-700">
+            <label htmlFor="fullName" className="mb-2 block text-sm font-medium text-gray-700">
               Full Name *
             </label>
 
             <input
+              id="fullName"
               type="text"
               {...register("fullName")}
+              autoComplete="name"
+              aria-invalid={Boolean(errors.fullName)}
+              aria-describedby={errors.fullName ? "fullName-error" : undefined}
               className={`w-full border bg-white px-4 py-3 outline-none transition
               ${
                 errors.fullName
@@ -109,7 +112,7 @@ export default function ContactForm() {
             />
 
             {errors.fullName && (
-              <p className="mt-1 text-sm text-red-500">
+              <p id="fullName-error" className="mt-1 text-sm text-red-500" role="alert">
                 {errors.fullName.message}
               </p>
             )}
@@ -118,13 +121,17 @@ export default function ContactForm() {
           {/* Email + Phone */}
           <div className="grid gap-5 md:grid-cols-2">
             <div>
-              <label className="mb-2 block text-sm font-medium text-gray-700">
+              <label htmlFor="email" className="mb-2 block text-sm font-medium text-gray-700">
                 Email *
               </label>
 
               <input
+                id="email"
                 type="email"
                 {...register("email")}
+                autoComplete="email"
+                aria-invalid={Boolean(errors.email)}
+                aria-describedby={errors.email ? "email-error" : undefined}
                 className={`w-full border bg-white px-4 py-3 outline-none transition
                 ${
                   errors.email
@@ -134,20 +141,25 @@ export default function ContactForm() {
               />
 
               {errors.email && (
-                <p className="mt-1 text-sm text-red-500">
+                <p id="email-error" className="mt-1 text-sm text-red-500" role="alert">
                   {errors.email.message}
                 </p>
               )}
             </div>
 
             <div>
-              <label className="mb-2 block text-sm font-medium text-gray-700">
+              <label htmlFor="phone" className="mb-2 block text-sm font-medium text-gray-700">
                 Phone
               </label>
 
               <input
+                id="phone"
                 type="text"
                 {...register("phone")}
+                autoComplete="tel"
+                inputMode="tel"
+                aria-invalid={Boolean(errors.phone)}
+                aria-describedby={errors.phone ? "phone-error" : undefined}
                 className={`w-full border bg-white px-4 py-3 outline-none transition
                 ${
                   errors.phone
@@ -157,7 +169,7 @@ export default function ContactForm() {
               />
 
               {errors.phone && (
-                <p className="mt-1 text-sm text-red-500">
+                <p id="phone-error" className="mt-1 text-sm text-red-500" role="alert">
                   {errors.phone.message}
                 </p>
               )}
@@ -166,13 +178,16 @@ export default function ContactForm() {
 
           {/* Subject */}
           <div>
-            <label className="mb-2 block text-sm font-medium text-gray-700">
+            <label htmlFor="subject" className="mb-2 block text-sm font-medium text-gray-700">
               Subject *
             </label>
 
             <input
+              id="subject"
               type="text"
               {...register("subject")}
+              aria-invalid={Boolean(errors.subject)}
+              aria-describedby={errors.subject ? "subject-error" : undefined}
               className={`w-full border bg-white px-4 py-3 outline-none transition
               ${
                 errors.subject
@@ -182,7 +197,7 @@ export default function ContactForm() {
             />
 
             {errors.subject && (
-              <p className="mt-1 text-sm text-red-500">
+              <p id="subject-error" className="mt-1 text-sm text-red-500" role="alert">
                 {errors.subject.message}
               </p>
             )}
@@ -190,13 +205,16 @@ export default function ContactForm() {
 
           {/* Message */}
           <div>
-            <label className="mb-2 block text-sm font-medium text-gray-700">
+            <label htmlFor="message" className="mb-2 block text-sm font-medium text-gray-700">
               Message *
             </label>
 
             <textarea
+              id="message"
               rows={5}
               {...register("message")}
+              aria-invalid={Boolean(errors.message)}
+              aria-describedby={errors.message ? "message-error" : undefined}
               className={`w-full resize-none border bg-white px-4 py-3 outline-none transition
               ${
                 errors.message
@@ -206,7 +224,7 @@ export default function ContactForm() {
             />
 
             {errors.message && (
-              <p className="mt-1 text-sm text-red-500">
+              <p id="message-error" className="mt-1 text-sm text-red-500" role="alert">
                 {errors.message.message}
               </p>
             )}
@@ -216,12 +234,14 @@ export default function ContactForm() {
           <button
             type="submit"
             disabled={loading}
-            className="group flex items-center cursor-pointer gap-3 border border-primary bg-white px-6 py-3 text-sm font-medium uppercase transition hover:bg-primary hover:text-white disabled:cursor-not-allowed disabled:opacity-60"
+            aria-busy={loading}
+            className="group flex cursor-pointer items-center gap-3 border border-primary bg-white px-6 py-3 text-sm font-medium uppercase transition hover:bg-primary hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary disabled:cursor-not-allowed disabled:opacity-60"
           >
             {loading ? "Sending..." : "Submit"}
 
             <ArrowRight
               size={18}
+              aria-hidden="true"
               className="transition-transform duration-300 group-hover:translate-x-1"
             />
           </button>

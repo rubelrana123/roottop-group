@@ -1,6 +1,3 @@
-'use client';
-
-import Image from 'next/image';
 import Link from 'next/link';
 
 const footerLinks = [
@@ -10,15 +7,15 @@ const footerLinks = [
       { name: 'About Us', href: '/about-us' },
       {
         name: 'Mission, Vision & Values',
-        href: '/mission-vision-values',
+        href: '/about-us#mission-vision-values',
       },
       {
         name: 'Board of Directors',
-        href: '/board-of-directors',
+        href: '/about-us',
       },
       {
         name: 'Awards & Achievements',
-        href: '/awards-achievements',
+        href: '/about-us',
       },
     ],
   },
@@ -36,15 +33,15 @@ const footerLinks = [
     links: [
       {
         name: 'Newsroom',
-        href: '/media/newsroom',
+        href: '/media',
       },
       {
         name: 'Gallery',
-        href: '/media/gallery',
+        href: '/media',
       },
       {
         name: 'Media Stellar',
-        href: '/media/media-stellar',
+        href: '/media',
       },
     ],
   },
@@ -53,7 +50,7 @@ const footerLinks = [
     links: [
       {
         name: 'Career',
-        href: '/career',
+        href: '/contact',
       },
       {
         name: 'Contact',
@@ -75,35 +72,63 @@ export default function Footer() {
               Contact Us
             </h3>
 
-            <div className="mt-5 space-y-3 text-sm leading-7 text-gray-300">
+            <address className="mt-8 space-y-6 text-sm leading-7 text-gray-300 not-italic">
               <p>
-                South Avenue Tower
+                House #263 (2nd Floor)
                 <br />
-                House # 50 (6th Floor)
+                Road #19
                 <br />
-                Road # 03, Gulshan Avenue
+                Mohakhali DOHS
                 <br />
-                Dhaka-1212, Bangladesh
+                Dhaka Cantonment
+                <br />
+                Dhaka 1206
+                <br />
+                Bangladesh
               </p>
 
-              <p>
-                <span className="font-semibold text-white">Telephone:</span>
-                <br />
-                +88-02-58817735-6
-              </p>
+              <div className="space-y-3">
+                <p>
+                  <span className="font-semibold text-white">Contact:</span>{" "}
+                  <a
+                    href="tel:+8801746644478"
+                    className="text-gray-300 transition-colors duration-200 hover:text-green-400"
+                  >
+                    +88 01746-644478
+                  </a>
+                </p>
 
-              <p>
-                <span className="font-semibold text-white">Fax:</span>
-                <br />
-                +88-02-58817737
-              </p>
+                <div>
+                  <p className="font-semibold text-white">Email:</p>
 
-              <p className="break-all">
-                <span className="font-semibold text-white">Email:</span>
-                <br />
-                info@yourcompany.com
-              </p>
-            </div>
+                  <a
+                    href="mailto:roottoplimited@gmail.com"
+                    className="block text-gray-300 transition-colors duration-200 hover:text-green-400"
+                  >
+                    roottoplimited@gmail.com
+                  </a>
+
+                  <a
+                    href="mailto:info@roottopltd.com"
+                    className="block text-gray-300 transition-colors duration-200 hover:text-green-400"
+                  >
+                    info@roottopltd.com
+                  </a>
+                </div>
+
+                <p>
+                  <span className="font-semibold text-white">Website:</span>{" "}
+                  <a
+                    href="https://www.roottopltd.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-300 transition-colors duration-200 hover:text-green-400"
+                  >
+                    www.roottopltd.com
+                  </a>
+                </p>
+              </div>
+            </address>
           </div>
 
           {/* Navigation */}
@@ -118,7 +143,7 @@ export default function Footer() {
                   <li key={link.href}>
                     <Link
                       href={link.href}
-                      className="inline-block text-sm text-gray-300 transition-colors duration-200 hover:text-green-400"
+                      className="inline-block text-sm text-gray-300 transition-colors duration-200 hover:text-green-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-400"
                     >
                       {link.name}
                     </Link>
@@ -165,7 +190,7 @@ export default function Footer() {
           </p>
 
           <p>
-            Made with <span className="text-red-500">❤</span> by Rooftop Group
+            Built by Rooftop Group
           </p>
         </div>
       </div>

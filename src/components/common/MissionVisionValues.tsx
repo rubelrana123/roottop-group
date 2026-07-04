@@ -13,7 +13,7 @@ const values = [
 
 export default function MissionVisionValues() {
   return (
-    <section className="bg-white py-20">
+    <section id="mission-vision-values" className="bg-white py-20">
       <div className="container mx-auto px-4">
 
         <div className="grid items-start gap-14 lg:grid-cols-2">
