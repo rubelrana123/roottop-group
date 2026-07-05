@@ -68,7 +68,7 @@ export default function AboutUsContent() {
       </section>
 
       <section aria-label="RootTOP Group achievements" className="container mx-auto">
-        <AchievementStats className="grid grid-cols-4" />
+        <AchievementStats   />
       </section>
 
       <MissionVisionValues />

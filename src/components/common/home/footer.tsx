@@ -1,165 +1,99 @@
-import Link from 'next/link';
+"use client";
 
-const footerLinks = [
+import Link from "next/link";
+
+const footerData = [
   {
-    title: 'ABOUT',
+    title: "EXPLORE",
     links: [
-      {
-        name: 'About Us',
-        href: '/about-us',
-      },
-      {
-        name: 'Mission, Vision & Values',
-        href: '/about-us#mission-vision-values',
-      },
-      {
-        name: 'Board of Directors',
-        href: '/about-us',
-      },
-      {
-        name: 'Awards & Achievements',
-        href: '/about-us',
-      },
+      { name: "About Us", href: "/" },
+      { name: "Services", href: "/" },
+      { name: "Contact Us", href: "/contact" },
+      { name: "Our Clients", href: "/" },
     ],
   },
   {
-    title: 'BUSINESSES',
+    title: "INDUSTRIES",
     links: [
-      {
-        name: 'Sisters Concern',
-        href: '/sister-concerns',
-      },
+      { name: "RootTOP Limited", href: "/" },
+      { name: "Satelite Enterprises", href: "/" },
+      { name: "Orisin Limited", href: "/" },
+      { name: "AR International", href: "/" },
+      { name: "Khamarbari Corporation", href: "/" },
+      
+      { name: "Crossborder Trading", href: "/" },
     ],
   },
   {
-    title: 'CAREER',
+    title: "SOCIALS",
     links: [
-      {
-        name: 'Career',
-        href: '/',
-      },
-      {
-        name: 'Contact',
-        href: '/',
-      },
+      { name: "LinkedIn", href: "/" },
+      { name: "Instagram", href: "/" },
+      { name: "TikTok", href: "/" },
+      { name: "Youtube", href: "/" },
     ],
   },
 ];
 
-export default function Footer() {
+export default function ModernFooter() {
   return (
     <footer className="bg-[#1E2340] text-white">
-      <div className="container mx-auto px-6 py-16 lg:px-8">
+      <div className="    ">
 
-        {/* Top */}
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-6 lg:gap-6">
+        <div className="rounded-3xl bg-[#1E2340] p-8 md:p-10">
+          
+          <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
 
-          {/* Contact */}
-          <div className="sm:col-span-2 lg:col-span-2">
-            <h3 className="text-lg font-bold uppercase tracking-wide">
-              Contact Us
-            </h3>
+            {/* Left Side */}
+            <div className="lg:col-span-1">
 
-            <address className="mt-8 not-italic space-y-6 text-sm leading-7 text-gray-300">
-              <p>
-                House #263 (2nd Floor)
-                <br />
-                Road #19
-                <br />
-                Mohakhali DOHS
-                <br />
-                Dhaka Cantonment
-                <br />
-                Dhaka 1206
-                <br />
-                Bangladesh
+              {/* Logo */}
+              <div className="inline-block border border-white px-4 py-2 text-lg font-bold tracking-wide">
+                ROOFTOP
+              </div>
+
+              {/* Description */}
+              <p className="mt-6 max-w-sm text-sm leading-7 text-gray-300">
+                Rooftop Group helps businesses build modern
+                solutions and innovative digital experiences
+                with quality, reliability, and growth.
               </p>
 
-              <div className="space-y-3">
-                <p>
-                  <span className="font-semibold text-white">
-                    Contact:
-                  </span>{' '}
-                  <a
-                    href="tel:+8801746644478"
-                    className="transition-colors duration-200 hover:text-green-400"
-                  >
-                    +88 01746-644478
-                  </a>
-                </p>
+              {/* Copyright */}
+              <p className="mt-8 text-sm text-gray-400">
+                © {new Date().getFullYear()} All Rights Reserved
+                to Rooftop Group.
+              </p>
 
-                <div>
-                  <p className="font-semibold text-white">
-                    Email:
-                  </p>
-
-                  <a
-                    href="mailto:roottoplimited@gmail.com"
-                    className="block transition-colors duration-200 hover:text-green-400"
-                  >
-                    roottoplimited@gmail.com
-                  </a>
-
-                  <a
-                    href="mailto:info@roottopltd.com"
-                    className="block transition-colors duration-200 hover:text-green-400"
-                  >
-                    info@roottopltd.com
-                  </a>
-                </div>
-
-                <p>
-                  <span className="font-semibold text-white">
-                    Website:
-                  </span>{' '}
-                  <a
-                    href="https://www.roottopltd.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="transition-colors duration-200 hover:text-green-400"
-                  >
-                    www.roottopltd.com
-                  </a>
-                </p>
+              {/* Credit */}
+              <div className="mt-5 inline-flex rounded-lg bg-white/5 px-3 py-2 text-xs text-gray-400">
+                Website crafted with ❤ by Rooftop Group
               </div>
-            </address>
-          </div>
-
-          {/* Navigation */}
-          {footerLinks.map((section) => (
-            <div key={section.title}>
-              <h3 className="text-lg font-bold uppercase tracking-wide">
-                {section.title}
-              </h3>
-
-              <ul className="mt-5 space-y-3">
-                {section.links.map((link) => (
-                  <li
-                    key={`${section.title}-${link.name}-${link.href}`}
-                  >
-                    <Link
-                      href={link.href}
-                      className="inline-block text-sm text-gray-300 transition-colors duration-200 hover:text-green-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-400"
-                    >
-                      {link.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
             </div>
-          ))}
-        </div>
 
-        {/* Divider */}
-        <div className="my-10 border-t border-white/10" />
+            {/* Navigation */}
+            {footerData.map((section) => (
+              <div key={section.title}>
+                <h3 className="mb-5 text-sm font-bold tracking-widest text-gray-400">
+                  {section.title}
+                </h3>
 
-        {/* Bottom */}
-        <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 text-sm text-gray-400 md:flex-row">
-          <p>
-            © {new Date().getFullYear()} Rooftop Group. All Rights Reserved.
-          </p>
+                <ul className="space-y-4">
+                  {section.links.map((link) => (
+                    <li key={link.name}>
+                      <Link
+                        href={link.href}
+                        className="text-sm text-gray-300 transition-all duration-300 hover:translate-x-1 hover:text-green-400"
+                      >
+                        {link.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
 
-          <p>Built by Rooftop Group</p>
+          </div>
         </div>
       </div>
     </footer>

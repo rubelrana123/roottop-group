@@ -79,7 +79,7 @@ export default function ScrollIndicator() {
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.25 }}
-          className="fixed bottom-8 right-8 z-50 rounded-full bg-primary p-3 text-white shadow-xl transition hover:scale-110"
+          className="fixed bottom-8 right-8 z-50 cursor-pointer rounded-full bg-primary p-3 text-white shadow-xl transition hover:scale-110"
         >
           <ChevronUp size={24} />
         </motion.button>
