@@ -3,41 +3,99 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 
+const fadeUp = {
+  hidden: {
+    opacity: 0,
+    y: 20,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+  },
+};
+
 export default function AchievementContent() {
   return (
-    <motion.div
-      initial={{ opacity: 0, x: -40 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.8 }}
-      viewport={{ once: true }}
-      className="flex h-full flex-col justify-center bg-secondary px-6 py-12 text-white sm:px-8 sm:py-14 lg:px-12 lg:py-16 xl:px-16"
-    >
-      {/* Section Title */}
-      <span className="text-lg font-semibold uppercase tracking-wider text-primary sm:text-xl">
-        Our Achievements
-      </span>
+    <div className="flex h-full flex-col justify-center bg-secondary px-6 py-10 text-white sm:px-8 sm:py-12 lg:px-12 lg:py-16 xl:px-16">
 
-      {/* Heading */}
-      <h2 className="mt-4 max-w-xl text-3xl font-bold leading-tight sm:text-4xl lg:text-5xl xl:text-6xl">
-        Numbers That <br className="hidden sm:block" />
-        Tell Our Story
-      </h2>
-
-      {/* Description */}
-      <p className="mt-6 max-w-xl text-sm leading-7 text-gray-200 sm:text-base sm:leading-8">
-        Our success is reflected in the numbers. From completed
-        projects to partnerships and financial milestones, our
-        impact speaks for itself. These figures showcase our
-        dedication to excellence, growth, and long-term success.
-      </p>
-
-      {/* Button */}
-      <Link
-        href="/about"
-        className="mt-8 inline-flex w-fit items-center justify-center rounded-md bg-primary px-6 py-3 text-sm font-semibold uppercase tracking-wide transition-all duration-300 hover:bg-primary/90 sm:mt-10 sm:px-8 sm:py-4"
+      <motion.span
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{ duration: 0.4 }}
+        className="text-base font-semibold uppercase tracking-wider text-primary sm:text-lg"
       >
-        Explore More
-      </Link>
-    </motion.div>
+        Our Achievements
+      </motion.span>
+
+      <motion.h2
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{
+          duration: 0.5,
+          delay: 0.1,
+        }}
+        className="mt-4 text-3xl font-bold leading-tight sm:text-4xl lg:text-5xl"
+      >
+        Numbers That
+        <br className="hidden sm:block" />
+        Tell Our Story
+      </motion.h2>
+
+      <motion.p
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{
+          duration: 0.5,
+          delay: 0.2,
+        }}
+        className="mt-6 max-w-xl text-sm leading-7 text-gray-200 sm:text-base"
+      >
+        Our success is reflected in the numbers.
+        From completed projects to partnerships
+        and financial milestones, our impact
+        speaks for itself.
+      </motion.p>
+
+      <motion.div
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{
+          duration: 0.5,
+          delay: 0.3,
+        }}
+      >
+        <Link
+          href="/about-us"
+          className="
+            mt-8
+            inline-flex
+            w-fit
+            items-center
+            rounded-md
+            bg-primary
+            px-6
+            py-3
+            text-sm
+            font-semibold
+            uppercase
+            tracking-wide
+            transition-all
+            duration-300
+            hover:scale-[1.02]
+            hover:bg-primary/90
+          "
+        >
+          Explore More
+        </Link>
+      </motion.div>
+    </div>
   );
 }

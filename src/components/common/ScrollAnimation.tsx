@@ -36,39 +36,41 @@ export default function ScrollIndicator() {
   return (
     <AnimatePresence mode="wait">
       {isTop ? (
-        <motion.button
-          key="down"
-          onClick={scrollDown}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          className="fixed bottom-9 right-4 z-50 -translate-x-1/2 cursor-pointer"
-        >
-          <div className="relative h-14 w-8">
-            {[0, 1, 2].map((i) => (
-              <motion.div
-                key={i}
-                className="absolute left-0 right-0 flex justify-center"
-                animate={{
-                  y: [0, 16, 32],
-                  opacity: [0, 1, 0],
-                }}
-                transition={{
-                  duration: 1.3,
-                  repeat: Infinity,
-                  delay: i * 0.2,
-                  ease: 'easeInOut',
-                }}
-              >
-                <ChevronDown
-                  size={28}
-                  className="lg:text-white text-primary/50"
-                  strokeWidth={2.5}
-                />
-              </motion.div>
-            ))}
-          </div>
-        </motion.button>
+<motion.button
+  key="down"
+  onClick={scrollDown}
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  exit={{ opacity: 0 }}
+  aria-label="Scroll down"
+  className="fixed bottom-9 right-4 z-50 -translate-x-1/2 cursor-pointer"
+>
+  <div className="relative h-14 w-8">
+    {[0, 1, 2].map((i) => (
+      <motion.div
+        key={i}
+        className="absolute left-0 right-0 flex justify-center"
+        animate={{
+          y: [0, 16, 32],
+          opacity: [0, 1, 0],
+        }}
+        transition={{
+          duration: 1.3,
+          repeat: Infinity,
+          delay: i * 0.2,
+          ease: 'easeInOut',
+        }}
+      >
+        <ChevronDown
+          aria-hidden="true"
+          size={28}
+          className="lg:text-white text-primary/50"
+          strokeWidth={2.5}
+        />
+      </motion.div>
+    ))}
+  </div>
+</motion.button>
       ) : (
         <motion.button
           key="up"

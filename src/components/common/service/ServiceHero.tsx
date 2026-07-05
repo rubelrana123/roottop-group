@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export default function ServicesHero() {
   return (
-    <section className="relative h-[300px] md:h-[420px] overflow-hidden">
+    <section className="relative h-75 md:h-105 overflow-hidden">
       <Image
-        src="/exportimport.jpg"
+        src="/exportimport.avif"
         alt="RootTOP Group diversified business services"
         fill
         priority

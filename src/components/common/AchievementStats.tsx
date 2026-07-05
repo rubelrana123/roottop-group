@@ -1,5 +1,6 @@
 "use client";
 
+import { motion } from "framer-motion";
 import StatCard from "./StatCard";
 
 export const stats = [
@@ -17,9 +18,9 @@ export const stats = [
   },
   {
     id: 3,
-    number: "$200+",
-    title: "Million Turnover",
-    subtitle: "Revenue",
+    number: "6+",
+    title: "Sister Concerns",
+   subtitle: "Group Companies"
   },
   {
     id: 4,
@@ -29,25 +30,59 @@ export const stats = [
   },
 ];
 
-interface AchievementStatsProps {
-  className?: string;
-}
+const container = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.1,
+    },
+  },
+};
 
-export default function AchievementStats({
-  className,
-}: AchievementStatsProps) {
+const item = {
+  hidden: {
+    opacity: 0,
+    y: 20,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+  },
+};
+
+export default function AchievementStats() {
   return (
-    <div
-      className={`grid grid-cols-1 md:grid-cols-2 ${className ?? ""}`}
+    <motion.div
+      variants={container}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{
+        once: true,
+        amount: 0.2,
+      }}
+      className="
+        grid
+        grid-cols-1
+        sm:grid-cols-2
+        p-8
+        gap-2
+      "
     >
-      {stats.map((item) => (
-        <StatCard
-          key={item.id}
-          number={item.number}
-          title={item.title}
-          subtitle={item.subtitle}
-        />
+      {stats.map((stat) => (
+        <motion.div
+          key={stat.id}
+          variants={item}
+          transition={{
+            duration: 0.5,
+          }}
+        >
+          <StatCard
+            number={stat.number}
+            title={stat.title}
+            subtitle={stat.subtitle}
+          />
+        </motion.div>
       ))}
-    </div>
+    </motion.div>
   );
 }

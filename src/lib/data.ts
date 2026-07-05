@@ -9,7 +9,7 @@ export const services = [
     description:
       "As a trusted first-class contractor in Bangladesh, we provide complete construction services for government, commercial, and private sectors. Our expertise spans building construction, infrastructure development, steel fabrication, and material supply, ensuring every project is delivered with excellence, safety, and reliability.",
 
-    image: "/buildconstruction.jpg",
+    image: "/buildconstruction.avif",
 
     items: [
       "Building Construction",
@@ -66,7 +66,7 @@ export const services = [
     description:
       "Our Electrical & Mechanical division delivers complete power and engineering solutions, from equipment supply and installation to maintenance, overhauling, and system optimization. We ensure safe, efficient, and uninterrupted operations for every client.",
 
-    image: "/eeeandme.jpg",
+    image: "/eeeandme.avif",
 
     items: [
       "Generator, ATS & Canopy",
@@ -95,7 +95,7 @@ export const services = [
     description:
       "Our agriculture division is committed to sustainable farming and food production through livestock farming, quality seed supply, and aquaculture. We promote innovative agricultural practices that enhance productivity and long-term growth.",
 
-    image: "/agriculture.jpg",
+    image: "/agriculture.avif",
 
     items: [
       "Cattle Farm",
@@ -121,7 +121,7 @@ export const services = [
     description:
       "We facilitate efficient import and export operations by sourcing high-quality products from permitted international markets. Our team ensures regulatory compliance, timely delivery, and seamless logistics for every transaction.",
 
-    image: "/exportimport.jpg",
+    image: "/exportimport.avif",
 
     items: [
       "Global Product Sourcing",

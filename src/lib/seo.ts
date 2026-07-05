@@ -164,15 +164,6 @@ export const pageMetadata = {
     image: "/groupCompany.png",
     category: "Corporate Group",
   }),
-  media: createMetadata({
-    title: "Media Gallery | RootTOP Group Projects and Activities",
-    description:
-      "View RootTOP Group media highlights, project images, corporate activities, client engagements, and field operations across its diversified business sectors.",
-    path: "/media",
-    keywords: ["RootTOP media gallery", "project gallery Bangladesh"],
-    image: "/gallary-view/gallary1.jpeg",
-    category: "Media",
-  }),
   contact: createMetadata({
     title: "Contact RootTOP Group | Dhaka Office, Phone and Email",
     description:

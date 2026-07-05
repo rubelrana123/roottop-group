@@ -34,13 +34,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       images: [absoluteUrl("/groupCompany.png")],
     },
     {
-      url: absoluteUrl("/media"),
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.6,
-      images: [absoluteUrl("/gallary-view/gallary1.jpeg")],
-    },
-    {
       url: absoluteUrl("/contact"),
       lastModified,
       changeFrequency: "monthly",

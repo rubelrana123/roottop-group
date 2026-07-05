@@ -65,26 +65,7 @@ const nextConfig: NextConfig = {
         ],
       },
     ];
-  },
-  async redirects() {
-    return [
-      {
-        source: '/media/gallery',
-        destination: '/media',
-        permanent: true,
-      },
-      {
-        source: '/media/newsroom',
-        destination: '/media',
-        permanent: true,
-      },
-      {
-        source: '/media/media-stellar',
-        destination: '/media',
-        permanent: true,
-      },
-    ];
-  },
+  }
 };
 
 export default nextConfig;

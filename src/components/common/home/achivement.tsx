@@ -12,15 +12,24 @@ export default function AchievementSection() {
       <AchievementHero />
 
       {/* Floating Card */}
-      <div className="container relative z-20 mx-auto -mt-36 px-4">
-        <div className="overflow-hidden bg-white shadow-2xl lg:grid lg:grid-cols-2">
-          {/* Left */}
-          <AchievementContent />
+<div className="container relative z-20 mx-auto -mt-16 px-4 sm:-mt-20 md:-mt-24 lg:-mt-32 xl:-mt-36">
+  <div
+    className="
+      overflow-hidden
+      rounded-xl
+      bg-white
+      shadow-2xl
+      lg:grid
+      lg:grid-cols-2
+    "
+  >
+    {/* Left */}
+    <AchievementContent />
 
-          {/* Right */}
-          <AchievementStats />
-        </div>
-      </div>
+    {/* Right */}
+    <AchievementStats />
+  </div>
+</div>
     </section>
   );
 }
