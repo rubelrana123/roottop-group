@@ -134,7 +134,7 @@ export function createMetadata({
 
 export const pageMetadata = {
   home: createMetadata({
-    title: "RootTOP Group | Diversified Business Conglomerate in Bangladesh",
+    title: "RootTOP Group | QUALITY \n YOU'VE GOT IT | Diversified Business Solutions in Bangladesh",
     description:
       "RootTOP Group delivers construction, engineering, IT, agriculture, consultancy, logistics, and import-export solutions for government, corporate, and private clients in Bangladesh.",
     path: "/",
