@@ -20,7 +20,7 @@ export default function MissionVisionValues() {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="mb-16 text-center">
-          <span className="text-primary text-sm font-semibold uppercase tracking-[5px]">
+          <span className="text-green-700 text-sm font-semibold uppercase tracking-[5px]">
             Our Purpose
           </span>
 

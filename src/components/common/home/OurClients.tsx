@@ -29,7 +29,7 @@ export default function OurClients() {
 
         {/* Heading */}
         <div className="text-center mb-14">
-          <span className="text-sm font-semibold uppercase tracking-[4px] text-primary">
+          <span className="text-sm font-semibold uppercase tracking-[4px] text-green-700">
             Trusted Partners
           </span>
 

@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
-import Link from "next/link";
+import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 const fadeUp = {
   hidden: {
@@ -17,7 +17,6 @@ const fadeUp = {
 export default function AchievementContent() {
   return (
     <div className="flex h-full flex-col justify-center bg-secondary px-6 py-10 text-white sm:px-8 sm:py-12 lg:px-12 lg:py-16 xl:px-16">
-
       <motion.span
         variants={fadeUp}
         initial="hidden"
@@ -56,10 +55,8 @@ export default function AchievementContent() {
         }}
         className="mt-6 max-w-xl text-sm leading-7 text-gray-200 sm:text-base"
       >
-        Our success is reflected in the numbers.
-        From completed projects to partnerships
-        and financial milestones, our impact
-        speaks for itself.
+        Our success is reflected in the numbers. From completed projects to
+        partnerships and financial milestones, our impact speaks for itself.
       </motion.p>
 
       <motion.div
@@ -74,24 +71,35 @@ export default function AchievementContent() {
       >
         <Link
           href="/about-us"
-          className="
-            mt-8
-            inline-flex
-            w-fit
-            items-center
-            rounded-md
-            bg-primary
-            px-6
-            py-3
-            text-sm
-            font-semibold
-            uppercase
-            tracking-wide
-            transition-all
-            duration-300
-            hover:scale-[1.02]
-            hover:bg-primary/90
-          "
+          className=" mt-6
+                  md:mt-8
+
+                  pointer-events-auto
+                  cursor-pointer
+
+                  bg-primary/80
+                  hover:bg-primary
+
+                  text-white
+                  font-bold
+                  uppercase
+                  tracking-[2px]
+
+                  px-6
+                  py-3
+
+                  md:px-8
+                  md:py-4
+
+                  lg:px-8
+                  lg:py-3.5
+
+                  text-sm
+                  md:text-base
+
+                  transition-colors
+                  duration-300
+                  inline-flex "
         >
           Explore More
         </Link>
