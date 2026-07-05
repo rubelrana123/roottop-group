@@ -44,6 +44,9 @@ type PageMetadataInput = {
   image?: string;
   type?: "website" | "article";
   category?: string;
+  verification?: {
+    google?: string;
+  };
 };
 
 export function absoluteUrl(path = "/") {
@@ -136,6 +139,10 @@ export const pageMetadata = {
       "RootTOP Group delivers construction, engineering, IT, agriculture, consultancy, logistics, and import-export solutions for government, corporate, and private clients in Bangladesh.",
     path: "/",
     keywords: ["diversified conglomerate", "RootTOP Limited", "business group Dhaka"],
+
+    verification: {
+      google: "jw-gQKycM6N8_P0OayaS1qCUHlUzvrvkXWFYwJFoPDk",
+    },
   }),
   about: createMetadata({
     title: "About RootTOP Group | Corporate Profile and Values",

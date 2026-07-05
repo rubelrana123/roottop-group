@@ -17,7 +17,7 @@ export default function RootHome() {
         data={webpageJsonLd({
           title: 'RootTOP Group',
           description:
-            'Diversified business conglomerate in Bangladesh serving construction, engineering, IT, agriculture, consultancy, logistics, and trade.',
+             "RootTOP Group is a leading Bangladesh-based business conglomerate providing construction, engineering, IT solutions, agriculture, consultancy, logistics, and global trade services.",
           path: '/',
         })}
       />
