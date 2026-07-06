@@ -92,7 +92,7 @@ function MapFrame({ className }: { className: string }) {
 export default function ContactPageContent() {
   return (
     <article className="bg-white">
-      <section aria-labelledby="contact-page-title" className="relative h-105 overflow-hidden md:h-125">
+      <section aria-labelledby="contact-page-title" className="relative h-105 overflow-hidden md:h-125 ">
         <Image
           src="/silderImage3.webp"
           alt="RootTOP Group contact and corporate office"
@@ -134,10 +134,8 @@ export default function ContactPageContent() {
               transition={{ duration: 0.9 }}
               viewport={{ once: true }}
               className="mx-auto mt-6 max-w-3xl text-base leading-8 text-white/90 md:text-lg"
-            >
-              Whether you need quality materials, business support, or have
-              questions about our services, our team is ready to assist you.
-              Contact us today and let&apos;s build something great together.
+            >Connect with us for inquiries, support, or business opportunities.
+
             </motion.p>
 
             <motion.div
@@ -159,7 +157,7 @@ export default function ContactPageContent() {
         <ContactForm />
       </section>
 
-      <section aria-labelledby="office-location-heading" className="container mx-auto px-4">
+      <section aria-labelledby="office-location-heading" className="container mx-auto px-4 mb-20">
         <h2 id="office-location-heading" className="sr-only">
           RootTOP Group Office Location
         </h2>
@@ -184,7 +182,7 @@ export default function ContactPageContent() {
           <div className="relative h-[600px] overflow-hidden rounded-2xl shadow-lg">
             <MapFrame className="absolute inset-0 h-full w-full border-0" />
             <div className="absolute inset-0 bg-black/30" aria-hidden="true" />
-            <div className="absolute left-8 top-8 z-20 w-[380px] bg-secondary/95 p-10 text-white shadow-2xl">
+            <div className="absolute left-8 top-8 z-20 w-[380px] bg-[#F46326]/95 p-10 text-white shadow-2xl">
               <ContactAddress />
             </div>
           </div>

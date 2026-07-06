@@ -20,7 +20,7 @@ export const stats = [
     id: 3,
     number: "6+",
     title: "Sister Concerns",
-   subtitle: "Group Companies"
+    subtitle: "Group Companies",
   },
   {
     id: 4,
@@ -50,7 +50,13 @@ const item = {
   },
 };
 
-export default function AchievementStats() {
+interface AchievementStatsProps {
+  className?: string;
+}
+
+export default function AchievementStats({
+  className,
+}: AchievementStatsProps) {
   return (
     <motion.div
       variants={container}
@@ -60,21 +66,16 @@ export default function AchievementStats() {
         once: true,
         amount: 0.2,
       }}
-      className="
-        grid
-        grid-cols-1
-        sm:grid-cols-2
-        p-8
-        gap-2
-      "
+      className={
+        className ??
+        "grid grid-cols-2 p-8 gap-2"
+      }
     >
       {stats.map((stat) => (
         <motion.div
           key={stat.id}
           variants={item}
-          transition={{
-            duration: 0.5,
-          }}
+          transition={{ duration: 0.5 }}
         >
           <StatCard
             number={stat.number}
