@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 
 const footerData = [
@@ -48,8 +49,14 @@ export default function ModernFooter() {
             <div className="lg:col-span-1">
 
               {/* Logo */}
-              <div className="inline-block border border-white px-4 py-2 text-lg font-bold tracking-wide">
-                ROOFTOP
+              <div className="inline-block  px-4 py-2 text-lg font-bold tracking-wide">
+                
+                <Image
+                  src="/logo.png"
+                  alt="RootTOP Group Logo"
+                  width={100}
+                  height={50}
+                />
               </div>
 
               {/* Description */}

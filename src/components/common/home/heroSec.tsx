@@ -37,7 +37,7 @@ const slides = [
   {
     id: 4,
     title: "QUALITY \n YOU'VE GOT IT",
-    image: '/cargoship.avif',
+    image: '/exportimport.avif',
     alt: 'Cross border trading and logistics by RootTOP Group',
     buttonText: 'SEE DETAILS',
   },

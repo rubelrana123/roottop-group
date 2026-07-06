@@ -1,4 +1,5 @@
 import AchievementSection from '@/components/common/home/achivement';
+import CompanyOverview from '@/components/common/home/companyOverview';
 import GroupCompanies from '@/components/common/home/groupCompany';
 import HeroSec from '@/components/common/home/heroSec';
 import Newsletter from '@/components/common/home/newsletter';
@@ -22,7 +23,9 @@ export default function RootHome() {
         })}
       />
       <HeroSec />
+      
       <ScrollIndicator />
+      <CompanyOverview/>
       <GroupCompanies />
       <AchievementSection />
       <MissionVisionValues />
