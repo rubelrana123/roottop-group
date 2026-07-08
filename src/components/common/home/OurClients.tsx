@@ -1,56 +1,241 @@
- 
 'use client';
 
 import Image from 'next/image';
 import Marquee from 'react-fast-marquee';
 import SectionHeading from '../SectionHeading';
 
-const clients = [
-  { id: 1, logo: '/clients/client1.png', name: 'Client 1' },
-  { id: 2, logo: '/clients/client2.png', name: 'Client 2' },
-  { id: 3, logo: '/clients/client3.png', name: 'Client 3' },
-  { id: 4, logo: '/clients/client4.png', name: 'Client 4' },
-  { id: 5, logo: '/clients/client5.png', name: 'Client 5' },
-  { id: 6, logo: '/clients/client6.png', name: 'Client 6' },
-  { id: 7, logo: '/clients/client7.png', name: 'Client 7' },
-  { id: 8, logo: '/clients/client8.png', name: 'Client 8' },
-  { id: 9, logo: '/clients/client9.png', name: 'Client 9' },
-  { id: 10, logo: '/clients/client10.png', name: 'Client 10' },
-  { id: 11, logo: '/clients/client11.png', name: 'Client 11' },
-  { id: 12, logo: '/clients/client12.png', name: 'Client 12' },
-  { id: 13, logo: '/clients/client13.png', name: 'Client 13' },
-  { id: 14, logo: '/clients/client14.webp', name: 'Client 14' },
-  { id: 15, logo: '/clients/client15.jpg', name: 'Client 15' },
-  { id: 16, logo: '/clients/client16.png', name: 'Client 16' },
-  { id: 17, logo: '/clients/client17.png', name: 'Client 17' },
-  { id: 18, logo: '/clients/client18.png', name: 'Client 18' },
-  { id: 19, logo: '/clients/client19.png', name: 'Client 19' },
-  { id: 20, logo: '/clients/client20.png', name: 'Client 20' },
-  { id: 21, logo: '/clients/client21.png', name: 'Client 21' },
-  { id: 22, logo: '/clients/client22.png', name: 'Client 22' },
-  { id: 23, logo: '/clients/client23.png', name: 'Client 23' },
-  { id: 24, logo: '/clients/client24.png', name: 'Client 24' },
-  { id: 25, logo: '/clients/client25.png', name: 'Client 25' },
-  { id: 26, logo: '/clients/client26.png', name: 'Client 26' },
-  { id: 27, logo: '/clients/client27.png', name: 'Client 27' },
-  { id: 28, logo: '/clients/client28.png', name: 'Client 28' },
-  { id: 29, logo: '/clients/client29.png', name: 'Client 29' },
-  { id: 30, logo: '/clients/client30.png', name: 'Client 30' },
-  { id: 31, logo: '/clients/client31.png', name: 'Client 31' },
-  { id: 32, logo: '/clients/client32.png', name: 'Client 32' },
-  { id: 33, logo: '/clients/client33.png', name: 'Client 33' },
-  { id: 34, logo: '/clients/client34.png', name: 'Client 34' },
-  { id: 35, logo: '/clients/client35.png', name: 'Client 35' },
-  { id: 36, logo: '/clients/client36.png', name: 'Client 36' },
-  { id: 37, logo: '/clients/client37.png', name: 'Client 37' },
-  { id: 38, logo: '/clients/client38.png', name: 'Client 38' },
-  { id: 39, logo: '/clients/client39.png', name: 'Client 39' },
-  { id: 40, logo: '/clients/client40.png', name: 'Client 40' },
-  { id: 41, logo: '/clients/client41.png', name: 'Client 41' },
-  { id: 42, logo: '/clients/client42.png', name: 'Client 42' },
-  { id: 43, logo: '/clients/client43.png', name: 'Client 43' },
-  { id: 44, logo: '/clients/client44.svg', name: 'Client 44' },
-  { id: 45, logo: '/clients/client45.png', name: 'Client 45' },
+export const clients = [
+  {
+    id: 1,
+    logo: '/clients/24engineerconstructionbrigade.png',
+    name: '24 Engineer Construction Brigade',
+  },
+  {
+    id: 2,
+    logo: '/clients/armymedicalcore.webp',
+    name: 'Army Medical Corps',
+  },
+  {
+    id: 3,
+    logo: '/clients/armywalfaretrust.png',
+    name: 'Army Welfare Trust',
+  },
+  {
+    id: 4,
+    logo: '/clients/banbatunmiss.png',
+    name: 'Bangladesh Battalion UN Mission',
+  },
+  {
+    id: 5,
+    logo: '/clients/bangladeshnavy.png',
+    name: 'Bangladesh Navy',
+  },
+  {
+    id: 6,
+    logo: '/clients/bau.png',
+    name: 'Bangladesh Agricultural University',
+  },
+  {
+    id: 7,
+    logo: '/clients/bcc.png',
+    name: 'Bangladesh Computer Council',
+  },
+  {
+    id: 8,
+    logo: '/clients/bdairforce.png',
+    name: 'Bangladesh Air Force',
+  },
+  {
+    id: 9,
+    logo: '/clients/bdarmy.png',
+    name: 'Bangladesh Army',
+  },
+  {
+    id: 10,
+    logo: '/clients/bdbattalion.png',
+    name: 'Bangladesh Ansar Battalion',
+  },
+  {
+    id: 11,
+    logo: '/clients/bddscasc.png',
+    name: 'Defence Services Command and Staff College',
+  },
+  {
+    id: 12,
+    logo: '/clients/bdmtfl.png',
+    name: 'Bangladesh Machine Tools Factory Limited',
+  },
+  {
+    id: 13,
+    logo: '/clients/bdnavy.png',
+    name: 'Bangladesh Navy',
+  },
+  {
+    id: 14,
+    logo: '/clients/bdof.png',
+    name: 'Bangladesh Ordnance Factory',
+  },
+  {
+    id: 15,
+    logo: '/clients/biaa.png',
+    name: 'Bangladesh Institute of Administration and Management',
+  },
+  {
+    id: 16,
+    logo: '/clients/biam.png',
+    name: 'Bangladesh Institute of Administration and Management (BIAM)',
+  },
+  {
+    id: 17,
+    logo: '/clients/bncc.png',
+    name: 'Bangladesh National Cadet Corps',
+  },
+  {
+    id: 18,
+    logo: '/clients/borderguard.png',
+    name: 'Border Guard Bangladesh',
+  },
+  {
+    id: 19,
+    logo: '/clients/BUET.png',
+    name: 'Bangladesh University of Engineering and Technology',
+  },
+  {
+    id: 20,
+    logo: '/clients/BUP.png',
+    name: 'Bangladesh University of Professionals',
+  },
+  {
+    id: 21,
+    logo: '/clients/civilaviaton.png',
+    name: 'Civil Aviation Authority of Bangladesh',
+  },
+  {
+    id: 22,
+    logo: '/clients/ovijatrik-17.png',
+    name: 'Ovijatrik-17',
+  },
+ 
+  {
+    id: 23,
+    logo: '/clients/baf.png',
+    name: 'Bangladesh Air Force',
+  },
+  {
+    id: 24,
+    logo: '/clients/ru.png',
+    name: 'University of Rajshahi',
+  },
+  {
+    id: 25,
+    logo: '/clients/cmhdhaka.png',
+    name: 'Combined Military Hospital Dhaka',
+  },
+  {
+    id: 26,
+    logo: '/clients/cu.png',
+    name: 'Cumilla University',
+  },
+  {
+    id: 27,
+    logo: '/clients/daraz.png',
+    name: 'Daraz Bangladesh',
+  },
+  {
+    id: 28,
+    logo: '/clients/departmentofimmigrationandpassports.jpg',
+    name: 'Department of Immigration and Passports',
+  },
+  {
+    id: 29,
+    logo: '/clients/dgdp.png',
+    name: 'Directorate General of Defence Purchase',
+  },
+  {
+    id: 30,
+    logo: '/clients/du.png',
+    name: 'University of Dhaka',
+  },
+  {
+    id: 31,
+    logo: '/clients/ictdivision.png',
+    name: 'ICT Division',
+  },
+  {
+    id: 32,
+    logo: '/clients/independentinfrantrybrigades.png',
+    name: 'Independent Infantry Brigades',
+  },
+  {
+    id: 33,
+    logo: '/clients/jolshiri.png',
+    name: 'Jolshiri Abashon',
+  },
+  {
+    id: 34,
+    logo: '/clients/ju.png',
+    name: 'Jahangirnagar University',
+  },
+  {
+    id: 35,
+    logo: '/clients/metro.svg',
+    name: 'Dhaka Mass Transit Company Limited',
+  },
+  {
+    id: 36,
+    logo: '/clients/mist.png',
+    name: 'Military Institute of Science and Technology',
+  },
+  {
+    id: 37,
+    logo: '/clients/nationaldefencecollage.png',
+    name: 'National Defence College',
+  },
+  {
+    id: 38,
+    logo: '/clients/pgr.png',
+    name: 'President Guard Regiment',
+  },
+  {
+    id: 39,
+    logo: '/clients/pstu.png',
+    name: 'Patuakhali Science and Technology University',
+  },
+  {
+    id: 40,
+    logo: '/clients/pwd.png',
+    name: 'Public Works Department',
+  },
+  {
+    id: 41,
+    logo: '/clients/rfl.png',
+    name: 'RFL Group',
+  },
+  {
+    id: 42,
+    logo: '/clients/RIC.png',
+    name: 'Research and Innovation Centre',
+  },
+  {
+    id: 43,
+    logo: '/clients/ruet.png',
+    name: 'Rajshahi University of Engineering and Technology',
+  },
+  {
+    id: 44,
+    logo: '/clients/staoffrsmesssylhetcantoment.png',
+    name: "Staff Officers' Mess, Sylhet Cantonment",
+  },
+  {
+    id: 45,
+    logo: '/clients/theeastbengalregiment.png',
+    name: 'The East Bengal Regiment',
+  },
+  {
+    id: 46,
+    logo: '/clients/uttrabank.png',
+    name: 'Uttara Bank PLC',
+  },
 ];
 // Split into two rows
 const firstRow = clients.slice(0, Math.ceil(clients.length / 2));
@@ -60,18 +245,10 @@ export default function OurClients() {
     <section className="overflow-hidden bg-white py-20">
       <div className="container mx-auto px-4">
         {/* Heading */}
-<SectionHeading
-  badge="Trusted Partners"
-  title="Our Valuable Clients"
-/>
+        <SectionHeading badge="Trusted Partners" title="Our Valuable Clients" />
 
         {/* First Row */}
-        <Marquee
-          speed={70}
-          pauseOnHover
-          gradient
-          gradientWidth={80}
-        >
+        <Marquee speed={70} pauseOnHover gradient gradientWidth={80}>
           {firstRow.map((client) => (
             <ClientCard key={client.id} client={client} />
           ))}
@@ -107,21 +284,23 @@ function ClientCard({
   };
 }) {
   return (
-    <div className="mx-5">
-      <div className="group relative h-24 w-44 overflow-hidden rounded-xl p-[1px]">
-        {/* Animated Border */}
-        <div className="absolute inset-0 rounded-xl bg-[conic-gradient(from_180deg,#4FA73F,transparent,#4FA73F)] opacity-0 transition-opacity duration-500 group-hover:opacity-100 group-hover:animate-spin" />
-
-        {/* Card */}
-        <div className="relative z-10 flex h-full w-full items-center justify-center rounded-xl border border-gray-100 bg-white p-5 shadow-sm transition-all duration-500 group-hover:shadow-xl">
+    <div className="group mx-5">
+      <div className="flex h-48 w-48 flex-col rounded-2xl border border-slate-200 bg-white p-5 transition-all duration-300 hover:-translate-y-2 hover:border-transparent hover:ring-2 hover:ring-[#4FA73F] hover:bg-[#4FA73F]/5 hover:shadow-xl">
+        
+        <div className="flex h-24 items-center justify-center">
           <Image
             src={client.logo}
             alt={client.name}
-            width={130}
-            height={80}
-            className="max-h-16 w-auto object-contain transition-transform duration-500 group-hover:scale-105"
+            width={90}
+            height={90}
+            className="max-h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-110"
           />
         </div>
+
+<h3 className="mt-4 line-clamp-2 min-h-10 px-2 text-center text-[14px] font-semibold leading-5 text-slate-700 transition-colors duration-300 group-hover:text-[#4FA73F]">
+  {client.name}
+</h3>
+
       </div>
     </div>
   );
