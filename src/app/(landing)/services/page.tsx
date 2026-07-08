@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Breadcrumbs from "@/components/common/Breadcrumbs";
 import JsonLd from "@/components/common/JsonLd";
-import ServicesHero from "@/components/common/service/ServiceHero";
+
 import ServicesSection from "@/components/common/service/ServicesSection";
 import { pageMetadata, webpageJsonLd } from "@/lib/seo";
 import PageHero from "@/components/common/PageHero";
@@ -20,7 +20,7 @@ export default function ServicesPage() {
         })}
       />
       <PageHero
-      title="Services"
+      title="Business Areas"
       subtitle="What We Do"
       description="Explore our comprehensive range of professional services, delivering quality, innovation, and sustainable solutions across multiple industries."
       image="/exportimport.avif"
@@ -29,7 +29,7 @@ export default function ServicesPage() {
       <Breadcrumbs
         items={[
           { name: "Home", href: "/" },
-          { name: "Services", href: "/services" },
+          { name: "Business Areas", href: "/services" },
         ]}
       />
       <ServicesSection />

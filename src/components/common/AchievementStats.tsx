@@ -6,25 +6,29 @@ import StatCard from "./StatCard";
 export const stats = [
   {
     id: 1,
-    number: "150+",
+    number: 150,
+    suffix: "+",
     title: "Major Infrastructure",
     subtitle: "Projects Completed",
   },
   {
     id: 2,
-    number: "5+",
+    number: 5,
+    suffix: "+",
     title: "Years of Experience",
     subtitle: "With Pride",
   },
   {
     id: 3,
-    number: "6+",
+    number: 6,
+    suffix: "+",
     title: "Sister Concerns",
     subtitle: "Group Companies",
   },
   {
     id: 4,
-    number: "500+",
+    number: 500,
+    suffix: "+",
     title: "Skilled Professionals",
     subtitle: "Employed",
   },
@@ -77,11 +81,12 @@ export default function AchievementStats({
           variants={item}
           transition={{ duration: 0.5 }}
         >
-          <StatCard
-            number={stat.number}
-            title={stat.title}
-            subtitle={stat.subtitle}
-          />
+      <StatCard
+        number={stat.number}
+        suffix={stat.suffix}
+        title={stat.title}
+        subtitle={stat.subtitle}
+      />
         </motion.div>
       ))}
     </motion.div>

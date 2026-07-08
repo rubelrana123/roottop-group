@@ -18,7 +18,7 @@ const companies: Company[] = [
   {
     id: 1,
     name: "RootTOP Limited",
-    logo: "/roottoplimited.png",
+    logo: "/roottopltdtm.png",
     description:
       "RootTOP Limited (RTL) is a premier contractor specializing in construction, consultancy, interior design, IT solutions, and agriculture.",
     website: "https://roottopltd.com/",

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { easeOut } from "framer-motion";
+import CountNumber from "@/components/ui/countNumber";
 
 const container = {
   hidden: {},
@@ -63,7 +64,7 @@ const fadeUp = {
 
 export default function CompanyOverview() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-slate-50 via-white to-primary/5 py-16 lg:py-18">
+    <section className="relative overflow-hidden bg-linear-to-br from-slate-50 via-white to-primary/5 py-16 lg:py-18">
       {/* Background Glow */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
@@ -116,7 +117,14 @@ export default function CompanyOverview() {
               className="absolute left-0 top-0 z-20 bg-white shadow-2xl"
             >
               <div className="flex items-center gap-6 border-l-4 border-primary px-7 py-6">
-                <h2 className="text-5xl font-extrabold text-primary">5+</h2>
+ 
+                      <CountNumber
+                        end={5}
+                        suffix="+"
+                        duration={2}
+                        className="text-5xl font-extrabold text-primary"
+                    />
+   
 
                 <div>
                   <p className="text-lg font-bold uppercase text-gray-900">

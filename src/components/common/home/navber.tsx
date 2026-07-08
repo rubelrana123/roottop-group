@@ -7,7 +7,7 @@ import { usePathname } from 'next/navigation';
 import { Menu, X } from 'lucide-react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { CiYoutube } from 'react-icons/ci';
-import { FaXTwitter } from 'react-icons/fa6';
+import { FaFacebook, FaLinkedin, FaXTwitter } from 'react-icons/fa6';
 
 const navItems = [
   {
@@ -37,12 +37,12 @@ const navItems = [
     ],
   },
   {
-    name: 'SISTERS CONCERN',
-    href: '/sister-concerns',
+    name: 'Busniess Areas',
+    href: '/services',
   },
   {
-    name: 'SERVICES',
-    href: '/services',
+    name: 'SISTERS CONCERN',
+    href: '/sister-concerns',
   },
   {
     name: 'CONTACT',
@@ -230,7 +230,7 @@ export default function Navbar() {
               title="X (Twitter)"
               className="rounded border p-2 transition hover:bg-white"
             >
-              <FaXTwitter size={18} aria-hidden="true" />
+              <FaFacebook size={18} aria-hidden="true" />
             </a>
 
             <a
@@ -241,7 +241,7 @@ export default function Navbar() {
               title="YouTube"
               className="rounded border p-2 transition hover:bg-white"
             >
-              <CiYoutube size={18} aria-hidden="true" />
+              <FaLinkedin size={18} aria-hidden="true" />
             </a>
           </div>
           {/* Mobile Button */}
