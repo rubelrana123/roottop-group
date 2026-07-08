@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import { easeOut } from "framer-motion";
 
 const container = {
   hidden: {},
@@ -24,7 +25,7 @@ const fadeLeft = {
     x: 0,
     transition: {
       duration: 0.8,
-      ease: "easeOut",
+      ease: easeOut,
     },
   },
 };
@@ -39,7 +40,7 @@ const fadeRight = {
     x: 0,
     transition: {
       duration: 0.8,
-      ease: "easeOut",
+      ease: easeOut,
       staggerChildren: 0.15,
     },
   },
@@ -55,14 +56,14 @@ const fadeUp = {
     y: 0,
     transition: {
       duration: 0.6,
-      ease: "easeOut",
+      ease: easeOut,
     },
   },
 };
 
 export default function CompanyOverview() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-slate-50 via-white to-primary/5 py-20 lg:py-28">
+    <section className="relative overflow-hidden bg-gradient-to-br from-slate-50 via-white to-primary/5 py-16 lg:py-18">
       {/* Background Glow */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
@@ -141,7 +142,7 @@ export default function CompanyOverview() {
                 }}
               >
                 <Image
-                  src="/logo.png"
+                  src="/rootopgrouptm.png"
                   alt="RootTOP Group Logo"
                   width={550}
                   height={420}

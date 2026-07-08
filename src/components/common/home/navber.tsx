@@ -28,8 +28,12 @@ const navItems = [
       },
       {
         name: 'Awards & Achievements',
-        href: '/about-us',
+        href: '/about-us#awards-achievements',
       },
+      {
+        name: 'Our Clients',
+        href: '/about-us#ourclients',
+      }
     ],
   },
   {

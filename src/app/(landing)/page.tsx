@@ -1,4 +1,5 @@
 import AchievementSection from '@/components/common/home/achivement';
+import BusinessAreas from '@/components/common/home/BusinessAreas';
 import CompanyOverview from '@/components/common/home/companyOverview';
 import GroupCompanies from '@/components/common/home/groupCompany';
 import HeroSec from '@/components/common/home/heroSec';
@@ -28,6 +29,7 @@ export default function RootHome() {
       <CompanyOverview/>
       <GroupCompanies />
       <AchievementSection />
+      <BusinessAreas/>
       <MissionVisionValues />
       <OurClients />
       <Newsletter/>

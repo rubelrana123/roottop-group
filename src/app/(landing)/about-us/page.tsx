@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
-import AboutUsContent from "@/components/common/AboutUsContent";
+ 
 import JsonLd from "@/components/common/JsonLd";
 import {
   organizationJsonLd,
   pageMetadata,
   webpageJsonLd,
 } from "@/lib/seo";
+import LicenseAwardsSection from "@/components/common/LicenseAward";
+import AboutUsContent from "@/components/common/AboutUsContent";
+import OurClients from "@/components/common/home/OurClients";
 
 export const metadata: Metadata = pageMetadata.about;
 
@@ -25,6 +28,8 @@ export default function AboutUs() {
         ]}
       />
       <AboutUsContent />
+      <LicenseAwardsSection/>
+      <OurClients />
     </>
   );
 }

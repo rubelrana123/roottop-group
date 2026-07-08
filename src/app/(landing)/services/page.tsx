@@ -4,6 +4,7 @@ import JsonLd from "@/components/common/JsonLd";
 import ServicesHero from "@/components/common/service/ServiceHero";
 import ServicesSection from "@/components/common/service/ServicesSection";
 import { pageMetadata, webpageJsonLd } from "@/lib/seo";
+import PageHero from "@/components/common/PageHero";
 
 export const metadata: Metadata = pageMetadata.services;
  
@@ -18,7 +19,13 @@ export default function ServicesPage() {
           path: "/services",
         })}
       />
-      <ServicesHero />
+      <PageHero
+      title="Services"
+      subtitle="What We Do"
+      description="Explore our comprehensive range of professional services, delivering quality, innovation, and sustainable solutions across multiple industries."
+      image="/exportimport.avif"
+      imageAlt="RootTOP Group professional business services"
+    />
       <Breadcrumbs
         items={[
           { name: "Home", href: "/" },

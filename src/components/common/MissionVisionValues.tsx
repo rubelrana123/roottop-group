@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import SectionHeading from "./SectionHeading";
 
 const values = [
   "Integrity: We uphold the highest ethical standards in all our dealings.",
@@ -19,22 +20,12 @@ export default function MissionVisionValues() {
     >
       <div className="container mx-auto px-4">
         {/* Section Header */}
-        <div className="mb-16 text-center">
-          <span className="text-green-700 text-sm font-semibold uppercase tracking-[5px]">
-            Our Purpose
-          </span>
-
-          <h2 className="mt-3 text-3xl font-bold text-secondary md:text-5xl">
-            Mission, Vision &amp; Values
-          </h2>
-
-          <p className="mx-auto mt-4 max-w-2xl text-base text-gray-600 md:text-lg">
-            Guided by a clear mission, driven by a strong vision, and built on
-            strong values that shape every decision and action we take.
-          </p>
-
-          <div className="bg-primary mx-auto mt-6 h-1 w-24 rounded-full" />
-        </div>
+<SectionHeading
+  // subtitle="Who We Are"
+  badge="Our Purpose"
+  title="Mission, Vision & Values"
+  description="Guided by a clear mission, driven by a strong vision, and built on strong values that shape every decision and action we take."
+/>
 
         {/* Main Content */}
         <div className="grid items-start gap-14 lg:grid-cols-2">
