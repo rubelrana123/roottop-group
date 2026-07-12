@@ -1,13 +1,13 @@
 export const services = [
   {
     id: 1,
-    slug: "construction",
-    title: "Construction",
+    slug: "Civil Engineering",
+    title: "Civil Engineering",
     shortDescription:
-      "Delivering comprehensive construction solutions with quality, safety, and innovation.",
+      "Delivering comprehensive civil Engineering solutions with quality, safety, and innovation.",
 
     description:
-      "As a trusted first-class contractor in Bangladesh, we provide complete construction services for government, commercial, and private sectors. Our expertise spans building construction, infrastructure development, steel fabrication, and material supply, ensuring every project is delivered with excellence, safety, and reliability.",
+      "As a trusted first-class civil engineering firm in Bangladesh, we provide complete construction services for government, commercial, and private sectors. Our expertise spans building construction, infrastructure development, steel fabrication, and material supply, ensuring every project is delivered with excellence, safety, and reliability.",
 
     image: "/buildconstruction.avif",
 
@@ -59,7 +59,7 @@ export const services = [
   {
     id: 3,
     slug: "electrical-mechanical",
-    title: "Electrical & Mechanical",
+    title: "Electrical & Mechanical Engineering",
     shortDescription:
       "Reliable electrical and mechanical engineering solutions for industrial and commercial projects.",
 
@@ -87,13 +87,13 @@ export const services = [
 
   {
     id: 4,
-    slug: "agriculture",
-    title: "Agriculture",
+    slug: "agro",
+    title: "Agro",
     shortDescription:
-      "Sustainable agricultural solutions supporting livestock, fisheries, and crop development.",
+      "Sustainable agro solutions supporting livestock, fisheries, and crop development.",
 
     description:
-      "Our agriculture division is committed to sustainable farming and food production through livestock farming, quality seed supply, and aquaculture. We promote innovative agricultural practices that enhance productivity and long-term growth.",
+      "Our agro division is committed to sustainable farming and food production through livestock farming, quality seed supply, and aquaculture. We promote innovative agricultural practices that enhance productivity and long-term growth.",
 
     image: "/agriculture.avif",
 

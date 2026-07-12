@@ -37,7 +37,7 @@ const navItems = [
     ],
   },
   {
-    name: 'Busniess Areas',
+    name: 'Business',
     href: '/services',
   },
   {

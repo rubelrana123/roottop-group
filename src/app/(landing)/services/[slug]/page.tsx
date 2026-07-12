@@ -78,7 +78,7 @@ export default async function ServiceDetailsPage({ params }: Props) {
       <Breadcrumbs
         items={[
           { name: "Home", href: "/" },
-          { name: "Services", href: "/services" },
+          { name: "Business Areas", href: "/services" },
           { name: service.title, href: `/services/${service.slug}` },
         ]}
       />
