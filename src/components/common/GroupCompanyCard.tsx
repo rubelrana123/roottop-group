@@ -18,7 +18,7 @@ const companies: Company[] = [
   {
     id: 1,
     name: "RootTOP Limited",
-    logo: "/roottopltdtm.png",
+    logo: "/roottop.png",
     description:
       "RootTOP Limited (RTL) is a premier contractor specializing in construction, consultancy, interior design, IT solutions, and agriculture.",
     website: "https://roottopltd.com/",
@@ -33,10 +33,10 @@ const companies: Company[] = [
   },
   {
     id: 3,
-    name: "Orisin Limited",
-    logo: "/orisin.png",
+    name: "Orisyn Limited",
+    logo: "/orisyn.png",
     description:
-      "Orisin Limited is a premier contractor specializing in construction, consultancy, interior design, IT solutions, and agriculture.",
+      "Orisyn Limited is a premier contractor specializing in construction, consultancy, interior design, IT solutions, and agriculture.",
     website: "https://roottopltd.com/",
   },
   {
@@ -69,7 +69,7 @@ export default function GroupCompanyCard() {
   const [activeCompany, setActiveCompany] = useState<number | null>(null);
 
   return (
-    <div className="py-16 lg:py-20">
+    <div >
       <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {companies.map((company) => (
           <div

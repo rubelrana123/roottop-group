@@ -61,7 +61,7 @@ export default function ModernFooter() {
 
               {/* Description */}
               <p className="mt-6 max-w-sm text-sm leading-7 text-gray-300">
-                Rooftop Group helps businesses build modern
+                RootTOP Group helps businesses build modern
                 solutions and innovative digital experiences
                 with quality, reliability, and growth.
               </p>
@@ -69,12 +69,12 @@ export default function ModernFooter() {
               {/* Copyright */}
               <p className="mt-8 text-sm text-gray-400">
                 © {new Date().getFullYear()} All Rights Reserved
-                to Rooftop Group.
+                to RootTOP Group.
               </p>
 
               {/* Credit */}
               <div className="mt-5 inline-flex rounded-lg bg-white/5 px-3 py-2 text-xs text-gray-400">
-                Website crafted with ❤ by Rooftop Group
+                Website crafted with ❤ by RootTOP Group
               </div>
             </div>
 

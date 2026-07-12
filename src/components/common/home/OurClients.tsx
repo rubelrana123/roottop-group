@@ -285,7 +285,8 @@ function ClientCard({
 }) {
   return (
     <div className="group mx-5">
-      <div className="flex h-48 w-48 flex-col rounded-2xl border border-slate-200 bg-white p-5 transition-all duration-300 hover:-translate-y-2 hover:border-transparent hover:ring-2 hover:ring-[#4FA73F] hover:bg-[#4FA73F]/5 hover:shadow-xl">
+      <div className="flex h-48 w-48 flex-col rounded-2xl border border-slate-200 
+      bg-white p-5 transition-all duration-300 hover:-translate-y-2 hover:border-transparent hover:ring-2 hover:ring-[#4FA73F] hover:bg-[#4FA73F]/5 hover:shadow-xl">
         
         <div className="flex h-24 items-center justify-center">
           <Image

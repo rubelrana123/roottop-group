@@ -160,65 +160,63 @@ export default function CompanyOverview() {
               </motion.div>
             </div>
           </motion.div>
+{/* ================= Right Side ================= */}
+<motion.div
+  variants={container}
+  initial="hidden"
+  whileInView="visible"
+  viewport={{ once: true, amount: 0.3 }}
+  className="max-w-xl"
+>
+  {/* Badge */}
+  <motion.div variants={fadeUp}>
+    <span className="inline-flex items-center rounded-full bg-primary/10 px-4 py-2 text-sm font-semibold uppercase tracking-[0.2em] text-primary">
+      About RootTOP Group
+    </span>
+  </motion.div>
 
-          {/* ================= Right Side ================= */}
-          <motion.div
-            variants={container}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }}
-          >
-            <motion.h2
-              variants={fadeUp}
-              className="mb-6 text-4xl font-bold leading-tight text-slate-900 lg:text-5xl"
-            >
-              RootTOP Group
-            </motion.h2>
+  {/* Heading */}
+  <motion.h2
+    variants={fadeUp}
+    className="mt-6 text-4xl font-extrabold leading-tight text-slate-900 md:text-5xl"
+  >
+    Building Trust Across
+    <br />
+    Multiple Industries
+  </motion.h2>
 
-            <motion.div variants={fadeUp} className="relative pl-8">
-              <motion.span
-                initial={{ height: 0 }}
-                whileInView={{ height: "100%" }}
-                viewport={{ once: true }}
-                transition={{
-                  duration: 1,
-                }}
-                className="absolute left-0 top-0 w-1 rounded-full bg-primary"
-              />
+  {/* Description */}
+  <motion.p
+    variants={fadeUp}
+    className="mt-8 text-base leading-8 text-slate-600 md:text-lg"
+  >
+    Since 2021, <span className="font-semibold text-slate-800">RootTOP Group</span> has
+    been delivering trusted solutions across construction, IT,
+    consultancy, supply, trading, and other business sectors. Guided by
+    quality, integrity, and innovation, we continue to create lasting
+    value for our clients, partners, and communities.
+  </motion.p>
 
-              <p className="text-lg leading-9 text-gray-600">
-                Since 2021, RootTOP Group has been successfully contributing to
-                various industries with dedication, integrity, and excellence.
-                Through innovation, sustainable development, and customer-first
-                values, we have built a reputation for delivering quality
-                projects with precision, professionalism, and long-term trust.
-              </p>
-            </motion.div>
+  {/* Button */}
+  <motion.div
+    variants={fadeUp}
+    className="mt-10 flex flex-wrap gap-5"
+  >
+    <Link
+      href="/about-us"
+      className="group inline-flex items-center gap-3 overflow-hidden bg-primary px-8 py-4 text-sm font-bold uppercase tracking-[2px] text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-primary/90 hover:shadow-2xl md:text-base"
+    >
+      <span>Know More</span>
 
-            {/* Buttons */}
-            <motion.div
-              variants={fadeUp}
-              className="mt-12 flex flex-wrap gap-5"
-            >
-              <Link
-                href="/about-us"
-                className="group inline-flex items-center gap-3 overflow-hidden bg-primary px-8 py-4 text-sm font-bold uppercase tracking-[2px] text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-primary/90 hover:shadow-2xl md:text-base"
-              >
-                <span>Know More</span>
-
-                <motion.span
-                  whileHover={{
-                    x: 5,
-                  }}
-                  transition={{
-                    duration: 0.2,
-                  }}
-                >
-                  <ArrowRight size={18} />
-                </motion.span>
-              </Link>
-            </motion.div>
-          </motion.div>
+      <motion.span
+        whileHover={{ x: 5 }}
+        transition={{ duration: 0.2 }}
+      >
+        <ArrowRight size={18} />
+      </motion.span>
+    </Link>
+  </motion.div>
+</motion.div>
         </div>
       </div>
     </section>

@@ -165,4 +165,36 @@ export const services = [
       "Business-Focused Solutions",
     ],
   },
+  {
+  id: 7,
+  slug: "interior-exterior-design",
+  title: "Interior & Exterior Design",
+  shortDescription:
+    "Creating modern, functional, and visually stunning interior and exterior spaces.",
+
+  description:
+    "Our Interior & Exterior Design division delivers creative, practical, and high-quality design solutions for residential, commercial, and corporate projects. From concept development and space planning to landscape and façade design, we transform ideas into elegant, functional environments that reflect our clients' vision and lifestyle.",
+
+  image: "/interiornadexterior.jpg",
+
+  items: [
+    "Interior Design",
+    "Exterior Design",
+    "Space Planning",
+    "3D Design & Visualization",
+    "Landscape Design",
+    "Furniture & Decoration",
+    "Renovation & Remodeling",
+    "Turnkey Interior Solutions",
+  ],
+
+  whyChooseUs: [
+    "Creative & Experienced Designers",
+    "Customized Design Solutions",
+    "Premium Quality Materials",
+    "Modern & Sustainable Designs",
+    "End-to-End Project Management",
+    "On-Time Project Delivery",
+  ],
+},
 ];

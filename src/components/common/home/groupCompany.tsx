@@ -2,29 +2,20 @@ import GroupCompanyCard from "../GroupCompanyCard";
  
 import SectionHeading from "../SectionHeading";
 
-
 export default function GroupCompanies() {
- 
   return (
-    <section className="bg-[#f7f7f7] py-16 md:py-20 lg:py-24 mt-16">
-      <div className="container mx-auto px-4">
+    <section className="bg-[#f7f7f7] py-18 md:py-20 lg:py-24">
+      <div className="container px-4 mx-auto">
+        <SectionHeading
+          badge="Our Ecosystem"
+          title="Our Sister Concerns"
+          description="Explore our diverse portfolio of sister companies."
+        />
 
-        {/* Heading */}
-      <SectionHeading
-        subtitle="Our Ecosystem "
-        title="Our Sister Concerns"
-        description="Explore our diverse portfolio of sister companies."
-      />
-        {/* Grid */}
-        <div>
+        <div className="mt-14 lg:mt-16">
           <GroupCompanyCard />
-
         </div>
-
       </div>
     </section>
   );
 }
-
-
-
