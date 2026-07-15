@@ -17,16 +17,14 @@ function ContactAddress({ heading = "RootTOP Group" }: { heading?: string }) {
 
       <div className="mt-6 space-y-5 text-sm leading-7 lg:mt-8">
         <p>
-          House #263 (2nd Floor)
-          <br />
-          Road #19
-          <br />
-          Mohakhali DOHS
-          <br />
+          House #263 (2nd Floor),
+          Road #19, 
+          <br/>
+          Mohakhali DOHS, 
+        
           Dhaka Cantonment
           <br />
-          Dhaka 1206
-          <br />
+          Dhaka 1206,
           Bangladesh
         </p>
 
@@ -34,7 +32,7 @@ function ContactAddress({ heading = "RootTOP Group" }: { heading?: string }) {
           <span className="font-semibold">Contact:</span>{" "}
           <a
             href="tel:+8801746644478"
-            className="transition hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+            className="transition  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
             +88 01746-644478
           </a>
@@ -44,13 +42,13 @@ function ContactAddress({ heading = "RootTOP Group" }: { heading?: string }) {
           <p className="font-semibold">Email:</p>
           <a
             href="mailto:roottoplimited@gmail.com"
-            className="block transition hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+            className="block transition  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
             roottoplimited@gmail.com
           </a>
           <a
             href="mailto:info@roottopltd.com"
-            className="block transition hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+            className="block transition  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
             info@roottopltd.com
           </a>
@@ -67,7 +65,7 @@ function ContactAddress({ heading = "RootTOP Group" }: { heading?: string }) {
             href="https://www.roottopltd.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="transition hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+            className="transition  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
             www.roottopltd.com
           </a>
@@ -132,7 +130,7 @@ export default function ContactPageContent() {
           <div className="relative h-[600px] overflow-hidden rounded-2xl shadow-lg">
             <MapFrame className="absolute inset-0 h-full w-full border-0" />
             <div className="absolute inset-0 bg-black/30" aria-hidden="true" />
-            <div className="absolute left-8 top-8 z-20 w-[380px] bg-[#F46326]/95 p-10 text-white shadow-2xl">
+            <div className="absolute left-8 top-8 z-20 w-[380px] bg-primary  p-10 text-white shadow-2xl rounded-2xl py-2 my-3">
               <ContactAddress />
             </div>
           </div>

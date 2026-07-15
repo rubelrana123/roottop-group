@@ -6,8 +6,22 @@ const footerData = [
   {
     title: "ABOUT",
     links: [
-      { name: "About Us", href: "/about" },
-      { name: "Contact", href: "/contact" },
+      {
+        name: 'About Us',
+        href: '/about-us',
+      },
+      {
+        name: 'Mission, Vision & Values',
+        href: '/about-us#mission-vision-values',
+      },
+      {
+        name: 'Awards & Achievements',
+        href: '/about-us#awards-achievements',
+      },
+      {
+        name: 'Our Clients',
+        href: '/about-us#ourclients',
+      }
     ],
   },
   {
@@ -40,26 +54,26 @@ export default function Footer() {
 
             <div className="space-y-5 text-base leading-8 text-gray-300">
               <p>
-                House #50 (6th Floor), Road #03,
+                House #263(1th Floor), Road #19,
                 <br />
-                Gulshan Avenue,
+                Mohakhali DOHS,
                 <br />
-                Dhaka-1212, Bangladesh
+                Dhaka-1206, Bangladesh
               </p>
 
               <p>
-                <span className="font-semibold text-white">Telephone:</span>{" "}
-                +88-02-58817735-6
+                <span className="font-semibold text-white">Phone:</span>{" "}
+                +8801746-644475
               </p>
 
-              <p>
+              {/* <p>
                 <span className="font-semibold text-white">Fax:</span>{" "}
                 +88-02-58817737
-              </p>
+              </p> */}
 
               <p>
                 <span className="font-semibold text-white">Email:</span>{" "}
-                info@roottopgroup.com
+                roottopltd@gmail.com
               </p>
             </div>
           </div>
@@ -92,12 +106,12 @@ export default function Footer() {
         </div>
 
         {/* Divider */}
-        <div className="my-12 border-t border-white/10 md:my-14" />
+        <div className="my-8 border-t border-white/10 md:my-6" />
 
         {/* Bottom */}
         <div className="flex flex-col items-center justify-between gap-4 text-center text-sm text-gray-400 md:flex-row md:text-left">
           <p>
-            © {new Date().getFullYear()} All Rights Reserved by{" "}
+            © 2026 All Rights Reserved by{" "}
             <span className="font-medium text-white">RootTOP Group</span>
           </p>
 

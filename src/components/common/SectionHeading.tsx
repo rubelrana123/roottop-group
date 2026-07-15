@@ -40,7 +40,7 @@ export default function SectionHeading({
       )}
 
       {/* Badge */}
-      <span className="text-primary text-base font-bold uppercase tracking-[3px]">
+      <span  className="inline-flex items-center rounded-full bg-primary/10 px-4 py-2 text-sm font-semibold uppercase tracking-[0.2em] text-primary">
         {badge}
       </span>
 

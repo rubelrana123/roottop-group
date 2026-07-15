@@ -15,6 +15,7 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import SectionHeading from './SectionHeading';
 
 export default function LicenseAwardsSection() {
   return (
@@ -31,7 +32,9 @@ export default function LicenseAwardsSection() {
 
       <div className="container mx-auto px-4">
         {/* Heading */}
-
+           <SectionHeading badge="Recognition" title="Certification & Membership" description="            Trusted by Government and International Organizations for quality,
+            compliance and professional excellence." />
+{/* 
         <div className="mx-auto mb-14 max-w-3xl text-center">
           <span className="inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-semibold uppercase tracking-[0.2em] text-primary">
             Recognition
@@ -45,7 +48,7 @@ export default function LicenseAwardsSection() {
             Trusted by Government and International Organizations for quality,
             compliance and professional excellence.
           </p>
-        </div>
+        </div> */}
 
         {/* Slider */}
 

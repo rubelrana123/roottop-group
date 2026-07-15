@@ -1,7 +1,8 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Link from "next/link";
-import { MessageCircleMore } from "lucide-react";
+import { MessageCircleMore, X } from "lucide-react";
 
 interface FloatingWhatsAppProps {
   phone?: string;
@@ -9,10 +10,33 @@ interface FloatingWhatsAppProps {
 }
 
 export default function FloatingWhatsApp({
-  
-  phone = "8801712345678", // Replace with your WhatsApp number
+  phone = "8801712345678",
   message = "Hello! I would like to know more about your services.",
 }: FloatingWhatsAppProps) {
+  const [showHelp, setShowHelp] = useState(false);
+
+  useEffect(() => {
+    const hidden = localStorage.getItem("whatsapp-help-hidden");
+
+    if (!hidden) {
+      const timer = setTimeout(() => {
+        setShowHelp(true);
+      }, 1200);
+
+      return () => clearTimeout(timer);
+    }
+  }, []);
+
+  const closeHelp = (
+    e: React.MouseEvent<HTMLButtonElement>
+  ) => {
+    e.preventDefault();
+    e.stopPropagation();
+
+    localStorage.setItem("whatsapp-help-hidden", "true");
+    setShowHelp(false);
+  };
+
   const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(
     message
   )}`;
@@ -24,41 +48,80 @@ export default function FloatingWhatsApp({
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat on WhatsApp"
-        className="group flex items-center gap-3"
+        className="pointer-events-auto group flex items-center gap-3"
       >
-        {/* Need Help Bubble */}
-        <div
-          className="
-            hidden sm:flex
-            items-center
-            rounded-full
-            border
-            border-white/30
-            bg-white/70
-            dark:bg-zinc-900/70
-            backdrop-blur-xl
-            px-4
-            py-2
-            text-sm
-            font-medium
-            text-zinc-700
-            dark:text-zinc-100
-            shadow-lg
-            transition-all
-            duration-300
-            group-hover:-translate-x-1
-            group-hover:shadow-xl
-          "
-        >
-          Need Help?
-        </div>
+        {/* Help Bubble */}
+{showHelp && (
+  <div className="relative hidden sm:block">
+    {/* Close Button */}
+    <button
+      type="button"
+      onClick={closeHelp}
+      aria-label="Close help message"
+      className="
+        absolute
+        -right-2
+        -top-2
+        z-10
+        flex
+        h-6
+        w-6
+        items-center
+        justify-center
+        rounded-full
+        border
+        border-white/30
+        bg-white
+        text-zinc-600
+        shadow-lg
+        transition-all
+        duration-200
+        hover:scale-110
+        hover:bg-red-500
+        hover:text-white
+        dark:border-zinc-700
+        dark:bg-zinc-900
+        dark:text-zinc-300
+        dark:hover:bg-red-500
+      "
+    >
+      <X size={14} />
+    </button>
 
-        {/* Button */}
+    {/* Bubble */}
+    <div
+      className="
+        flex
+        items-center
+        rounded-full
+        border
+        border-white/30
+        bg-white/80
+        dark:bg-zinc-900/80
+        backdrop-blur-xl
+        px-5
+        py-2.5
+        text-sm
+        font-medium
+        text-zinc-700
+        dark:text-zinc-100
+        shadow-lg
+        transition-all
+        duration-300
+        group-hover:-translate-x-1
+        group-hover:shadow-xl
+      "
+    >
+      Need Help?
+    </div>
+  </div>
+)}
+        {/* WhatsApp Button */}
         <div className="relative">
           {/* Glow */}
           <div className="absolute inset-0 rounded-full bg-[#25D366]/40 blur-2xl" />
 
-          {/* Pulse Ring */}
+          {/* Pulse */}
           <span className="absolute inset-0 rounded-full border-4 border-[#25D366]/40 animate-whatsapp-pulse" />
 
           {/* Main Button */}

@@ -273,8 +273,7 @@ export default function BusinessAreas() {
                     backdrop-blur-md
                     transition-all
                     duration-300
-                    hover:bg-white
-                      hover:text-primary
+                   
                     "
                         >
                       <span>Explore More</span>
