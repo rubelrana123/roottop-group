@@ -12,7 +12,7 @@ const dots = [
 
 export default function Loading() {
   return (
-    <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black">
+    <div className="fixed inset-0 z-[40] flex items-center justify-center bg-black">
       <div className="flex flex-col items-center">
 
         {/* Logo */}

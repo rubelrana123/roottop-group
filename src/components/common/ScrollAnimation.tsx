@@ -43,7 +43,7 @@ export default function ScrollIndicator() {
   animate={{ opacity: 1 }}
   exit={{ opacity: 0 }}
   aria-label="Scroll down"
-  className="fixed bottom-9 right-4 z-50 -translate-x-1/2 cursor-pointer"
+  className="fixed bottom-38 right-8 z-40 cursor-pointer -translate-x-1/2"
 >
   <div className="relative h-14 w-8">
     {[0, 1, 2].map((i) => (
@@ -79,7 +79,7 @@ export default function ScrollIndicator() {
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.25 }}
-          className="fixed bottom-8 right-8 z-50 cursor-pointer rounded-full bg-primary p-3 text-white shadow-xl transition hover:scale-110"
+          className="fixed bottom-32 right-8 z-40 rounded-full bg-primary p-3 text-white shadow-xl transition hover:scale-110"
         >
           <ChevronUp size={24} />
         </motion.button>
