@@ -59,7 +59,7 @@ export default function ServiceCard({
         <div className="h-1 w-12 lg:w-16 bg-lime-500" />
 
         <h2 className="text-2xl font-bold uppercase lg:text-4xl">
-          {service.title} Services
+          {service.title}
         </h2>
 
         <p className="text-sm leading-6 text-gray-600 lg:text-lg lg:leading-9 line-clamp-4">

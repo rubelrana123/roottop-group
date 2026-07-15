@@ -1,15 +1,15 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import SectionHeading from "./SectionHeading";
+import Image from 'next/image';
+import SectionHeading from './SectionHeading';
 
 const values = [
-  "Integrity: We uphold the highest ethical standards in all our dealings.",
-  "Excellence: We aim for the highest quality in everything we do.",
-  "Innovation: We embrace new technologies and smarter construction methods.",
-  "Sustainability: We focus on environmentally responsible building practices.",
-  "Safety: Keeping our employees, clients, and communities safe is our top priority.",
-  "Collaboration: We work closely with clients and partners to achieve the best results.",
+  'Integrity: We uphold the highest ethical standards in all our dealings.',
+  'Excellence: We aim for the highest quality in everything we do.',
+  'Innovation: We embrace new technologies and smarter construction methods.',
+  'Sustainability: We focus on environmentally responsible building practices.',
+  'Safety: Keeping our employees, clients, and communities safe is our top priority.',
+  'Collaboration: We work closely with clients and partners to achieve the best results.',
 ];
 
 export default function MissionVisionValues() {
@@ -20,12 +20,12 @@ export default function MissionVisionValues() {
     >
       <div className="container mx-auto px-4">
         {/* Section Header */}
-<SectionHeading
-  // subtitle="Who We Are"
-  badge="Our Purpose"
-  title="Mission, Vision & Values"
-  description="Guided by a clear mission, driven by a strong vision, and built on strong values that shape every decision and action we take."
-/>
+        <SectionHeading
+          // subtitle="Who We Are"
+          badge="Our Purpose"
+          title="Mission, Vision & Values"
+          description="Guided by a clear mission, driven by a strong vision, and built on strong values that shape every decision and action we take."
+        />
 
         {/* Main Content */}
         <div className="grid items-start gap-14 lg:grid-cols-2">
@@ -39,17 +39,15 @@ export default function MissionVisionValues() {
 
               <p className="leading-8 text-gray-600">
                 Our mission is to build strong and lasting structures that
-                improve people&apos;s lives. We focus on delivering projects on time,
-                within budget, and with the highest standards of quality,
+                improve people&apos;s lives. We focus on delivering projects on
+                time, within budget, and with the highest standards of quality,
                 safety, and environmental responsibility.
               </p>
             </div>
 
             {/* Vision */}
             <div className="border-b border-gray-200 py-10">
-              <h3 className="mb-4 text-3xl font-bold text-secondary">
-                Vision
-              </h3>
+              <h3 className="mb-4 text-3xl font-bold text-secondary">Vision</h3>
 
               <p className="leading-8 text-gray-600">
                 Our vision is to become a trusted leader in construction by
@@ -98,7 +96,7 @@ export default function MissionVisionValues() {
 
             <div className="relative aspect-[4/5] overflow-hidden rounded-xl">
               <Image
-                src="/mission/technological-futuristic-holograms-logistics-means-transport.avif"
+                src="/developer.jpg"
                 alt="Innovation"
                 fill
                 className="object-cover transition-transform duration-500 hover:scale-105"

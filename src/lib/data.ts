@@ -28,36 +28,8 @@ export const services = [
       "Commitment to Safety & Quality",
     ],
   },
-
-  {
+ {
     id: 2,
-    slug: "consultancy",
-    title: "Consultancy",
-    shortDescription:
-      "Professional consultancy services for construction, IT, interior, and international trade.",
-
-    description:
-      "We provide expert consultancy services designed to help organizations achieve operational excellence and sustainable growth. Our specialists offer strategic guidance in construction, information technology, interior planning, and import-export management.",
-
-    image: "/consultancy.jpg",
-
-    items: [
-      "IT Consultancy",
-      "Construction Consultancy",
-      "Interior Design & Planning",
-      "Import & Export Consultancy",
-    ],
-
-    whyChooseUs: [
-      "Industry Experts",
-      "Strategic Business Solutions",
-      "Tailored Consultancy",
-      "Reliable Project Support",
-    ],
-  },
-
-  {
-    id: 3,
     slug: "electrical-mechanical",
     title: "Electrical & Mechanical Engineering",
     shortDescription:
@@ -84,30 +56,63 @@ export const services = [
       "Reliable Power Solutions",
     ],
   },
+    {
+  id: 3,
+  slug: "interior-exterior-design",
+  title: "Interior & Exterior Design",
+  shortDescription:
+    "Creating modern, functional, and visually stunning interior and exterior spaces.",
 
+  description:
+    "Our Interior & Exterior Design division delivers creative, practical, and high-quality design solutions for residential, commercial, and corporate projects. From concept development and space planning to landscape and façade design, we transform ideas into elegant, functional environments that reflect our clients' vision and lifestyle.",
+
+  image: "/interiornadexterior.jpg",
+
+  items: [
+    "Interior Design",
+    "Exterior Design",
+    "Space Planning",
+    "3D Design & Visualization",
+    "Landscape Design",
+    "Furniture & Decoration",
+    "Renovation & Remodeling",
+    "Turnkey Interior Solutions",
+  ],
+
+  whyChooseUs: [
+    "Creative & Experienced Designers",
+    "Customized Design Solutions",
+    "Premium Quality Materials",
+    "Modern & Sustainable Designs",
+    "End-to-End Project Management",
+    "On-Time Project Delivery",
+  ],
+},
   {
     id: 4,
-    slug: "agro",
-    title: "Agro",
+    slug: "information-technology",
+    title: "Information Technology",
     shortDescription:
-      "Sustainable agro solutions supporting livestock, fisheries, and crop development.",
+      "Supplying modern IT products and digital technology solutions.",
 
     description:
-      "Our agro division is committed to sustainable farming and food production through livestock farming, quality seed supply, and aquaculture. We promote innovative agricultural practices that enhance productivity and long-term growth.",
+      "We offer a wide range of information technology products and services for businesses, institutions, and government organizations. From desktops and laptops to networking infrastructure and IT hardware, we deliver dependable technology solutions tailored to your needs.",
 
-    image: "/agriculture.avif",
+    image: "/it.jpeg",
 
     items: [
-      "Cattle Farm",
-      "Seed Supply",
-      "Fish Farming",
+      "Desktop Computers",
+      "Laptops",
+      "IT Hardware",
+      "Networking Equipment",
+      "IT Infrastructure",
     ],
 
     whyChooseUs: [
-      "Sustainable Farming Practices",
-      "Quality Agricultural Products",
-      "Experienced Farm Management",
-      "Modern Production Methods",
+      "Latest Technology Products",
+      "Trusted IT Brands",
+      "Professional Technical Support",
+      "Business-Focused Solutions",
     ],
   },
 
@@ -140,61 +145,442 @@ export const services = [
 
   {
     id: 6,
-    slug: "information-technology",
-    title: "Information Technology",
+    slug: "consultancy",
+    title: "Consultancy",
     shortDescription:
-      "Supplying modern IT products and comprehensive technology solutions.",
+      "Professional consultancy services for construction, IT, interior, and international trade.",
 
     description:
-      "We offer a wide range of information technology products and services for businesses, institutions, and government organizations. From desktops and laptops to networking infrastructure and IT hardware, we deliver dependable technology solutions tailored to your needs.",
+      "We provide expert consultancy services designed to help organizations achieve operational excellence and sustainable growth. Our specialists offer strategic guidance in construction, information technology, interior planning, and import-export management.",
 
-    image: "/it.jpeg",
+    image: "/consultancy.jpg",
 
     items: [
-      "Desktop Computers",
-      "Laptops",
-      "IT Hardware",
-      "Networking Equipment",
-      "IT Infrastructure",
+      "IT Consultancy",
+      "Construction Consultancy",
+      "Interior Design & Planning",
+      "Import & Export Consultancy",
     ],
 
     whyChooseUs: [
-      "Latest Technology Products",
-      "Trusted IT Brands",
-      "Professional Technical Support",
-      "Business-Focused Solutions",
+      "Industry Experts",
+      "Strategic Business Solutions",
+      "Tailored Consultancy",
+      "Reliable Project Support",
     ],
   },
   {
-  id: 7,
-  slug: "interior-exterior-design",
-  title: "Interior & Exterior Design",
+  id: 8,
+  slug: "fashion",
+  title: "Fashion",
   shortDescription:
-    "Creating modern, functional, and visually stunning interior and exterior spaces.",
+    "Stylish, high-quality fashion products for men, women, and corporate clients.",
 
   description:
-    "Our Interior & Exterior Design division delivers creative, practical, and high-quality design solutions for residential, commercial, and corporate projects. From concept development and space planning to landscape and façade design, we transform ideas into elegant, functional environments that reflect our clients' vision and lifestyle.",
+    "Our Fashion division offers a diverse range of premium apparel and fashion products designed for quality, comfort, and style. We provide ready-made garments, corporate uniforms, promotional apparel, and customized clothing solutions while maintaining high standards of craftsmanship and customer satisfaction.",
 
-  image: "/interiornadexterior.jpg",
+  image: "/fashion.jpg",
 
   items: [
-    "Interior Design",
-    "Exterior Design",
-    "Space Planning",
-    "3D Design & Visualization",
-    "Landscape Design",
-    "Furniture & Decoration",
-    "Renovation & Remodeling",
-    "Turnkey Interior Solutions",
+    "Men's Fashion",
+    "Women's Fashion",
+    "Corporate Uniforms",
+    "Custom Apparel",
+    "Ready-Made Garments",
+    "Fashion Accessories",
   ],
 
   whyChooseUs: [
-    "Creative & Experienced Designers",
-    "Customized Design Solutions",
-    "Premium Quality Materials",
-    "Modern & Sustainable Designs",
-    "End-to-End Project Management",
-    "On-Time Project Delivery",
+    "Premium Quality Fabrics",
+    "Modern & Trendy Designs",
+    "Customization Available",
+    "Competitive Pricing",
+    "Reliable Supply & Delivery",
+    "Customer-Centric Service",
   ],
 },
+
+ 
+
+  {
+    id: 7,
+    slug: "agro",
+    title: "Agro",
+    shortDescription:
+      "Sustainable agro solutions supporting livestock, fisheries, and crop development.",
+
+    description:
+      "Our agro division is committed to sustainable farming and food production through livestock farming, quality seed supply, and aquaculture. We promote innovative agricultural practices that enhance productivity and long-term growth.",
+
+    image: "/agriculture.avif",
+
+    items: [
+      "Cattle Farm",
+      "Seed Supply",
+      "Fish Farming",
+    ],
+
+    whyChooseUs: [
+      "Sustainable Farming Practices",
+      "Quality Agricultural Products",
+      "Experienced Farm Management",
+      "Modern Production Methods",
+    ],
+  },
+
+
+];
+
+export const awards = [
+  {
+    id: 1,
+    category: 'Membership',
+    title: 'Dhaka Chamber of Commerce & Industry (DCCI) Membership',
+    logo: '/documents/DCCI_membership.jpg',
+  },
+    {
+    id: 12,
+    category: 'Registration',
+    title: 'Certificate of Incorporation',
+    logo: '/documents/certificate_of_incorporation.jpg',
+  },
+    {
+    id: 7,
+    category: 'Registration',
+    title: 'Export Registration Certificate (ERC)',
+    logo: '/documents/export_certificate.jpg',
+  },
+    {
+    id: 10,
+    category: 'License',
+    title: 'Civil Aviation Authority of Bangladesh (CAAB) License',
+    logo: '/documents/CAAB.jpg',
+  },
+    {
+    id: 9,
+    category: 'Registration',
+    title: 'Import Registration Certificate (IRC)',
+    logo: '/documents/import_certicate.jpg',
+  },
+  {
+    id: 2,
+    category: 'Certification',
+    title: 'Directorate General Defence Purchase (DGDP) Certificate',
+    logo: '/documents/DGDP.jpg',
+  },
+    {
+    id: 8,
+    category: 'Membership',
+    title: "Bangladesh Indenting Agents' Association (BIAA) Membership",
+    logo: '/documents/BIAA_membership.jpg',
+  },
+  {
+    id: 3,
+    category: 'License',
+    title: 'Dhaka South City Corporation Trade License',
+    logo: '/documents/DSCC_trade.jpg',
+  },
+  {
+    id: 4,
+    category: 'Supplier Registration',
+    title: 'Bangladesh Air Force (BAF) Supplier Registration',
+    logo: '/documents/BAF_supplier.jpg',
+  },
+  {
+    id: 5,
+    category: 'Certification',
+    title: 'Electrical Contractor Certificate',
+    logo: '/documents/electrical_contactor_certificate.jpg',
+  },
+  {
+    id: 6,
+    category: 'Supplier Registration',
+    title: 'Border Guard Bangladesh (BGB) Contractor Registration',
+    logo: '/documents/BGB_conductor.jpg',
+  },
+
+
+
+ 
+  {
+    id: 11,
+    category: 'Supplier Registration',
+    title: 'National Defence College (NDC) Supplier Registration',
+    logo: '/documents/NDC_supplier.jpg',
+  },
+
+  {
+    id: 13,
+    category: 'Registration',
+    title: 'Tax Registration Certificate',
+    logo: '/documents/tax_registration_certificate.jpg',
+  },
+  {
+    id: 14,
+    category: 'Supplier Registration',
+    title: 'CMTD Dhaka Cantonment Supplier Registration',
+    logo: '/documents/CMTD Dhaka Cantonment.jpg',
+  },
+  {
+    id: 15,
+    category: 'Registration',
+    title: 'Tax Identification Number (TIN) Certificate',
+    logo: '/documents/TIN_Certificate.jpg',
+  },
+  {
+    id: 16,
+    category: 'Supplier Registration',
+    title: 'Central Ordnance Depot (COD) Supplier Registration',
+    logo: '/documents/COD_Supplier.jpg',
+  },
+];
+
+
+export const clients = [
+  // ============================
+  // Military & Defense
+  // ============================
+  {
+    id: 1,
+    logo: "/clients/24engineerconstructionbrigade.png",
+    name: "24 Engineer Construction Brigade",
+  },
+  {
+    id: 2,
+    logo: "/clients/bdarmy.png",
+    name: "Bangladesh Army",
+  },
+  {
+    id: 3,
+    logo: "/clients/armymedicalcore.webp",
+    name: "Army Medical Corps",
+  },
+  {
+    id: 4,
+    logo: "/clients/armywalfaretrust.png",
+    name: "Army Welfare Trust",
+  },
+  {
+    id: 5,
+    logo: "/clients/bangladeshnavy.png",
+    name: "Bangladesh Navy",
+  },
+  {
+    id: 6,
+    logo: "/clients/bdnavy.png",
+    name: "Bangladesh Navy",
+  },
+  {
+    id: 7,
+    logo: "/clients/bdairforce.png",
+    name: "Bangladesh Air Force",
+  },
+  {
+    id: 8,
+    logo: "/clients/baf.png",
+    name: "Bangladesh Air Force",
+  },
+  {
+    id: 9,
+    logo: "/clients/borderguard.png",
+    name: "Border Guard Bangladesh",
+  },
+  {
+    id: 10,
+    logo: "/clients/bdbattalion.png",
+    name: "Bangladesh Ansar Battalion",
+  },
+  {
+    id: 11,
+    logo: "/clients/bddscasc.png",
+    name: "Defence Services Command and Staff College",
+  },
+  {
+    id: 12,
+    logo: "/clients/bdmtfl.png",
+    name: "Bangladesh Machine Tools Factory Limited",
+  },
+  {
+    id: 13,
+    logo: "/clients/bdof.png",
+    name: "Bangladesh Ordnance Factory",
+  },
+  {
+    id: 14,
+    logo: "/clients/banbatunmiss.png",
+    name: "Bangladesh Battalion UN Mission",
+  },
+  {
+    id: 15,
+    logo: "/clients/bncc.png",
+    name: "Bangladesh National Cadet Corps",
+  },
+  {
+    id: 16,
+    logo: "/clients/cmhdhaka.png",
+    name: "Combined Military Hospital Dhaka",
+  },
+  {
+    id: 17,
+    logo: "/clients/dgdp.png",
+    name: "Directorate General of Defence Purchase",
+  },
+  {
+    id: 18,
+    logo: "/clients/independentinfrantrybrigades.png",
+    name: "Independent Infantry Brigades",
+  },
+  {
+    id: 19,
+    logo: "/clients/mist.png",
+    name: "Military Institute of Science and Technology",
+  },
+  {
+    id: 20,
+    logo: "/clients/nationaldefencecollage.png",
+    name: "National Defence College",
+  },
+  {
+    id: 21,
+    logo: "/clients/pgr.png",
+    name: "President Guard Regiment",
+  },
+  {
+    id: 22,
+    logo: "/clients/staoffrsmesssylhetcantoment.png",
+    name: "Staff Officers' Mess, Sylhet Cantonment",
+  },
+  {
+    id: 23,
+    logo: "/clients/theeastbengalregiment.png",
+    name: "The East Bengal Regiment",
+  },
+
+  // ============================
+  // Universities & Educational Institutions
+  // ============================
+  {
+    id: 24,
+    logo: "/clients/BUET.png",
+    name: "Bangladesh University of Engineering and Technology",
+  },
+  {
+    id: 25,
+    logo: "/clients/BUP.png",
+    name: "Bangladesh University of Professionals",
+  },
+  {
+    id: 26,
+    logo: "/clients/bau2.png",
+    name: "Bangladesh Agricultural University",
+  },
+  {
+    id: 27,
+    logo: "/clients/biaa.png",
+    name: "Bangladesh Institute of Administration and Management",
+  },
+  {
+    id: 28,
+    logo: "/clients/biam.png",
+    name: "Bangladesh Institute of Administration and Management (BIAM)",
+  },
+  {
+    id: 29,
+    logo: "/clients/cu.png",
+    name: "Cumilla University",
+  },
+  {
+    id: 30,
+    logo: "/clients/du.png",
+    name: "University of Dhaka",
+  },
+  {
+    id: 31,
+    logo: "/clients/ju.png",
+    name: "Jahangirnagar University",
+  },
+  {
+    id: 32,
+    logo: "/clients/pstu.png",
+    name: "Patuakhali Science and Technology University",
+  },
+  {
+    id: 33,
+    logo: "/clients/ru.png",
+    name: "University of Rajshahi",
+  },
+  {
+    id: 34,
+    logo: "/clients/ruet.png",
+    name: "Rajshahi University of Engineering and Technology",
+  },
+    {
+    id: 42,
+    logo: "/clients/jolshiri.png",
+    name: "Jolshiri Abashon-Bangladesh Army",
+  },
+  {
+    id: 43,
+    logo: "/clients/ovijatrik-17.png",
+    name: "17- EBR Bangladesh Army",
+  },
+  // ============================
+  // Government Organizations
+  // ============================
+  {
+    id: 35,
+    logo: "/clients/bcc.png",
+    name: "Bangladesh Computer Council",
+  },
+  {
+    id: 36,
+    logo: "/clients/civilaviaton.png",
+    name: "Civil Aviation Authority of Bangladesh",
+  },
+  {
+    id: 37,
+    logo: "/clients/departmentofimmigrationandpassports.jpg",
+    name: "Department of Immigration and Passports",
+  },
+  {
+    id: 38,
+    logo: "/clients/ictdivision.png",
+    name: "ICT Division",
+  },
+  {
+    id: 39,
+    logo: "/clients/metro.svg",
+    name: "Dhaka Mass Transit Company Limited",
+  },
+  {
+    id: 40,
+    logo: "/clients/pwd.png",
+    name: "Public Works Department",
+  },
+
+  // ============================
+  // Private & Corporate Clients
+  // ============================
+  {
+    id: 41,
+    logo: "/clients/daraz.png",
+    name: "Daraz Bangladesh",
+  },
+
+
+  {
+    id: 44,
+    logo: "/clients/RIC.png",
+    name: "Research and Innovation Centre",
+  },
+  {
+    id: 45,
+    logo: "/clients/rfl.png",
+    name: "RFL Group",
+  },
+  {
+    id: 46,
+    logo: "/clients/uttrabank.png",
+    name: "Uttara Bank PLC",
+  },
 ];

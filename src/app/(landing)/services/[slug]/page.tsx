@@ -92,7 +92,7 @@ export default async function ServiceDetailsPage({ params }: Props) {
               width={700}
               height={500}
               sizes="(min-width: 1024px) 50vw, 100vw"
-              quality={85}
+              quality={75}
               className="aspect-[16/10] w-full object-cover"
             />
             <figcaption className="sr-only">
