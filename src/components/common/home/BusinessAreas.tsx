@@ -93,7 +93,7 @@ const businessAreas = [
     icon: Building2,
     image: '/eeeandme.avif',
     href: '/services/electrical-mechanical',
-  }
+  },
 ];
 
 export default function BusinessAreas() {
@@ -276,15 +276,15 @@ export default function BusinessAreas() {
                    
                     "
                         >
-                      <span>Explore More</span>
+                          <span>Explore More</span>
 
-                      <ArrowRight className="h-5 w-5" />
-                    </Link>
-                  </motion.div>
+                          <ArrowRight className="h-5 w-5" />
+                        </Link>
+                      </motion.div>
+                    </motion.div>
+                  </div>
                 </motion.div>
-              </div>
-            </motion.div>
-          </SwiperSlide>
+              </SwiperSlide>
             );
           })}
         </Swiper>

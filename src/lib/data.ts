@@ -378,7 +378,7 @@ export const clients = [
   {
     id: 8,
     logo: "/clients/baf.png",
-    name: "Bangladesh Air Force",
+    name: "43 SHORED- Bangladesh Air Force",
   },
   {
     id: 9,
@@ -408,7 +408,7 @@ export const clients = [
   {
     id: 14,
     logo: "/clients/banbatunmiss.png",
-    name: "Bangladesh Battalion UN Mission",
+    name: "Ban Bat 10",
   },
   {
     id: 15,
@@ -522,7 +522,7 @@ export const clients = [
   {
     id: 43,
     logo: "/clients/ovijatrik-17.png",
-    name: "17- EBR Bangladesh Army",
+    name: "17 ECB Bangladesh Army",
   },
   // ============================
   // Government Organizations
