@@ -26,17 +26,29 @@ const footerData = [
   },
   {
     title: "BUSINESSES",
-    links: [{ name: "Businesses", href: "/businesses" }],
+    links: [{ name: "Businesses", href: "/services" }],
   },
   {
-    title: "SUSTAINABILITY",
-    links: [{ name: "Sustainability", href: "/sustainability" }],
+    title: "SISTERS",
+    links: [
+      { name: "RootTOP Limited", href: "/" },
+      { name: "AR International", href: "/" },
+      {name : "Orisyn Limited" ,href:"/"},
+      {
+        name : "Khamarbari" , href : "/",
+
+        
+      },
+      {
+        name : "Cross Border Trading", href : "/"
+      }
+    ],
   },
   {
     title: "CAREER",
     links: [
-      { name: "Career", href: "/career" },
-      { name: "FAQ", href: "/faq" },
+      { name: "Career", href: "/" },
+      { name: "FAQ", href: "/" },
     ],
   },
 ];
