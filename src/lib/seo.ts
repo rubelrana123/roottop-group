@@ -4,12 +4,12 @@ import { services } from "@/lib/data";
 export const siteConfig = {
   name: "RootTOP Group",
   legalName: "RootTOP Group",
-  url: "https://www.roottopltd.com",
+  url: "https://www.roottopgroup.com",
   locale: "en_US",
   defaultImage: "/RootTOP.jpg",
   logo: "/logo.png",
   phone: "+8801746644478",
-  email: "info@roottopltd.com",
+  email: "roottop.ltd@gmail.com",
   alternateEmail: "roottoplimited@gmail.com",
   address: {
     streetAddress: "House #263 (2nd Floor), Road #19, Mohakhali DOHS",
