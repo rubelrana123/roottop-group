@@ -54,6 +54,16 @@ const companies: Company[] = [
       "Cross Border Trading specializes in import, export, product sourcing, and logistics services, enabling businesses to expand globally through efficient supply chain management and reliable international trade solutions.",
     website: "https://roottopltd.com/",
   },
+   {
+    id: 55,
+    name: "K3R Corporation",
+    logo: "/k3r.png",
+    description:
+      "K3R Corporation specializes in import, export, product sourcing, and logistics services, enabling businesses to expand globally through efficient supply chain management and reliable international trade solutions.",
+    website: "https://roottopltd.com/",
+  },
+ 
+
   {
     id: 6,
     name: "Khamarbari Corporation",
