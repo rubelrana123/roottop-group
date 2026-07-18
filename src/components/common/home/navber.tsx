@@ -45,6 +45,12 @@ const navItems = [
     href: '/sister-concerns',
   },
   {
+ 
+    name: 'Career',
+    href: '/career',
+ 
+  },
+  {
     name: 'CONTACT',
     href: '/contact',
   },

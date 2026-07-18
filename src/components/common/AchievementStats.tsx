@@ -13,7 +13,7 @@ export const stats = [
   },
   {
     id: 2,
-    number: 5,
+    number: 10,
     suffix: "+",
     title: "Years of Experience",
     subtitle: "With Pride",
@@ -27,7 +27,7 @@ export const stats = [
   },
   {
     id: 4,
-    number: 500,
+    number: 150,
     suffix: "+",
     title: "Skilled Professionals",
     subtitle: "Employed",
