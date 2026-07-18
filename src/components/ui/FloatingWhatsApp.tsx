@@ -10,7 +10,7 @@ interface FloatingWhatsAppProps {
 }
 
 export default function FloatingWhatsApp({
-  phone = "8801746644478",
+  phone = "+8801746644478",
   message = "Hello! I would like to know more about your services.",
 }: FloatingWhatsAppProps) {
   const [showHelp, setShowHelp] = useState(false);
