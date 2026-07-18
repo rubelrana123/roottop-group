@@ -629,200 +629,78 @@ export interface Career {
 }
 
 export const careerData: Career[] = [
-  {
-    id: 1,
-    slug: "assistant-engineer-techcare",
-    title: "Assistant Engineer (TechCare)",
-    featured: true,
-    image: "/career/assistant-engineer.webp",
+{
+  id: 3,
+  slug: "sub-assistant-civil-engineer",
+  title: "Sub Assistant Civil Engineer (AutoCAD & 3D Visualization Expert)",
+  featured: true,
+  image: "/career/sub-assistant-civil-engineer.webp",
 
-    summary: {
-      vacancy: 5,
-      salary: "Tk. 15,000 – 18,000 (Monthly)",
-      experience: "0–2 Years",
-      employmentStatus: "Full-Time",
-      jobLevel: "Entry Level",
-      workplace: "Work at Office",
-      location: "Kuratoli, Dhaka",
-      age: "20–26 Years",
-      deadline: "April 11, 2026",
-    },
-
-    application: {
-      applyLink:
-        "https://docs.google.com/forms/d/e/xxxxxxxxxxxxxxxxxxxxxxxx/viewform",
-      contactEmail: "career@roottopgroup.com",
-    },
-
-    jobContext:
-      "We are looking for energetic and passionate candidates with knowledge of networking, computer hardware, software support, and client management. Fresh graduates are encouraged to apply.",
-
-    responsibilities: [
-      "Install, configure and maintain computer networks.",
-      "Provide software and hardware troubleshooting.",
-      "Install and configure Windows operating systems.",
-      "Install CCTV, IP Camera and Biometric devices.",
-      "Maintain printers, scanners and networking equipment.",
-      "Provide remote and onsite IT support.",
-      "Maintain IT inventory and documentation.",
-      "Support users via phone and email.",
-      "Prepare technical reports.",
-      "Perform any other task assigned by management.",
-    ],
-
-    educationalRequirements: [
-      "Diploma/B.Sc. in Computer Technology, CSE or related discipline.",
-    ],
-
-    experienceRequirements: [
-      "0–2 years of experience.",
-      "Fresh graduates are encouraged to apply.",
-    ],
-
-    additionalRequirements: [
-      "Basic networking knowledge.",
-      "Windows installation and troubleshooting.",
-      "Knowledge of Microsoft Office.",
-      "Strong communication skills.",
-      "Positive attitude and willingness to learn.",
-      "Self-motivated and hardworking.",
-    ],
-
-    compensationBenefits: [
-      "Yearly salary review.",
-      "Performance bonus.",
-      "Two festival bonuses.",
-      "Casual, Sick and Annual Leave.",
-      "Medical facilities.",
-      "Learning & development opportunities.",
-      "Friendly working environment.",
-      "Career growth opportunities.",
-    ],
+  summary: {
+    vacancy: 3,
+    salary: "Tk. 20,000 – 35,000 (Monthly)",
+    experience: "1–3 Years",
+    employmentStatus: "Full-Time",
+    jobLevel: "Mid Level",
+    workplace: "Work at Office",
+    location: "Dhaka",
+    age: "22–35 Years",
+    deadline: "October 12, 2026",
   },
 
-  {
-    id: 2,
-    slug: "executive-business-development",
-    title: "Executive (Business Development)",
-    featured: true,
-    image: "/career/business-development.webp",
-
-    summary: {
-      vacancy: 5,
-      salary: "Tk. 20,000 – 22,000 (Monthly)",
-      experience: "0–2 Years",
-      employmentStatus: "Full-Time",
-      jobLevel: "Entry Level",
-      workplace: "Work at Office",
-      location: "Dhaka",
-      age: "22–30 Years",
-      deadline: "April 07, 2026",
-    },
-
-    application: {
-      applyLink:
-        "https://docs.google.com/forms/d/e/yyyyyyyyyyyyyyyyyyyyyyyy/viewform",
-      contactEmail: "career@roottopgroup.com",
-    },
-
-    jobContext:
-      "We are looking for a smart and energetic Business Development Executive who can build client relationships and identify new business opportunities.",
-
-    responsibilities: [
-      "Generate new business leads.",
-      "Meet prospective clients.",
-      "Prepare quotations and proposals.",
-      "Maintain CRM records.",
-      "Conduct market research.",
-      "Achieve monthly sales targets.",
-    ],
-
-    educationalRequirements: [
-      "Bachelor's degree in Business Administration, Marketing or related field.",
-    ],
-
-    experienceRequirements: [
-      "0–2 years of experience.",
-      "Fresh graduates are welcome to apply.",
-    ],
-
-    additionalRequirements: [
-      "Excellent communication skills.",
-      "Presentation and negotiation skills.",
-      "MS Office proficiency.",
-      "Ability to work independently.",
-    ],
-
-    compensationBenefits: [
-      "Yearly salary review.",
-      "Two festival bonuses.",
-      "Sales incentives.",
-      "Mobile allowance.",
-      "Career growth opportunities.",
-    ],
+  application: {
+    applyLink:
+      "https://docs.google.com/forms/d/e/zzzzzzzzzzzzzzzzzzzzzz/viewform",
+    contactEmail: "career@roottopgroup.com",
   },
 
-  {
-    id: 3,
-    slug: "assistant-devops-engineer",
-    title: "Assistant DevOps Engineer",
-    featured: true,
-    image: "/career/devops-engineer.webp",
+  jobContext:
+    "RootTOP Group is looking for a skilled Sub Assistant Civil Engineer with strong expertise in AutoCAD, 3D visualization, architectural drafting, and construction supervision. The candidate will work closely with architects, engineers, and project managers to prepare technical drawings, site plans, and realistic 3D presentations for residential, commercial, and industrial projects.",
 
-    summary: {
-      vacancy: 2,
-      salary: "Tk. 20,000 – 30,000 (Monthly)",
-      experience: "0–2 Years",
-      employmentStatus: "Full-Time",
-      jobLevel: "Entry Level",
-      workplace: "Work at Office",
-      location: "Dhaka",
-      age: "20–28 Years",
-      deadline: "October 12, 2025",
-    },
+  responsibilities: [
+    "Prepare detailed 2D drawings using AutoCAD.",
+    "Create realistic 3D models and renderings for construction projects.",
+    "Prepare architectural, structural, and working drawings.",
+    "Revise drawings based on client and engineering requirements.",
+    "Coordinate with architects, engineers, and project teams.",
+    "Assist in project planning, estimation, and BOQ preparation.",
+    "Visit project sites for measurement and supervision when required.",
+    "Ensure drawings comply with engineering standards and regulations.",
+    "Maintain proper documentation of project drawings and revisions.",
+    "Perform other engineering tasks assigned by management.",
+  ],
 
-    application: {
-      applyLink:
-        "https://docs.google.com/forms/d/e/zzzzzzzzzzzzzzzzzzzzzz/viewform",
-      contactEmail: "career@roottopgroup.com",
-    },
+  educationalRequirements: [
+    "Diploma in Civil Engineering (Preferred).",
+    "B.Sc. in Civil Engineering will be considered an advantage.",
+  ],
 
-    jobContext:
-      "We are looking for an Assistant DevOps Engineer with knowledge of Linux, Docker, CI/CD pipelines, cloud infrastructure and monitoring tools.",
+  experienceRequirements: [
+    "1–3 years of relevant experience in civil engineering or architectural visualization.",
+    "Fresh candidates with exceptional AutoCAD and 3D visualization skills are also encouraged to apply.",
+  ],
 
-    responsibilities: [
-      "Maintain Linux servers.",
-      "Deploy applications.",
-      "Configure Docker containers.",
-      "Monitor server health.",
-      "Support CI/CD pipelines.",
-      "Troubleshoot deployment issues.",
-    ],
+  additionalRequirements: [
+    "Expert knowledge of AutoCAD 2D & 3D.",
+    "Experience with SketchUp, Lumion, 3ds Max, or similar 3D visualization software.",
+    "Knowledge of Revit will be an added advantage.",
+    "Good understanding of building construction techniques.",
+    "Ability to prepare BOQ and estimate materials.",
+    "Strong problem-solving and analytical skills.",
+    "Excellent communication and teamwork abilities.",
+    "Self-motivated, responsible, and able to meet project deadlines.",
+  ],
 
-    educationalRequirements: [
-      "B.Sc. in CSE, EEE, ICT or related discipline.",
-    ],
-
-    experienceRequirements: [
-      "0–2 years of experience.",
-      "Fresh graduates are welcome to apply.",
-    ],
-
-    additionalRequirements: [
-      "Linux administration knowledge.",
-      "Docker fundamentals.",
-      "Git & GitHub.",
-      "Cloud computing basics.",
-      "Problem-solving skills.",
-    ],
-
-    compensationBenefits: [
-      "Yearly salary review.",
-      "Two festival bonuses.",
-      "Medical facilities.",
-      "Learning opportunities.",
-      "Friendly work environment.",
-    ],
-  },
+  compensationBenefits: [
+    "Competitive salary package.",
+    "Yearly salary review.",
+    "Performance bonus.",
+    "Two festival bonuses.",
+    "Casual, Sick & Annual Leave.",
+    "Medical facilities.",
+    "Professional training and career development opportunities.",
+    "Friendly and collaborative working environment.",
+  ],
+}
 ];
 // change constuc text

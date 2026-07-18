@@ -13,7 +13,7 @@ export default function LandingLayout({
       <Navbar />
       <main>{children}</main>
              <FloatingWhatsApp
-          phone="8801712345678"
+          phone="8801746644478"
           message="Assalamu Alaikum, I want to know more about Roottop Group"
         />
       <Footer />
