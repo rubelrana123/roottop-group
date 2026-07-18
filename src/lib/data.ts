@@ -342,6 +342,11 @@ export const clients = [
   // Military & Defense
   // ============================
   {
+    id : 99, 
+    logo : "/clients/ordance.jpeg",
+    name : "Central Mechanical Transport Depot (CMTD)"
+  },
+  {
     id: 1,
     logo: "/clients/24engineerconstructionbrigade.png",
     name: "24 Engineer Construction Brigade",
