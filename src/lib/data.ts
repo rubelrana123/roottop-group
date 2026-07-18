@@ -343,7 +343,7 @@ export const clients = [
   // ============================
   {
     id : 99, 
-    logo : "/clients/ordance.jpeg",
+    logo : "/clients/ordance.jpg",
     name : "Central Mechanical Transport Depot (CMTD)"
   },
   {
