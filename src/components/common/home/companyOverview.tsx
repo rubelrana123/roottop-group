@@ -119,7 +119,7 @@ export default function CompanyOverview() {
               <div className="flex items-center gap-6 border-l-4 border-primary px-7 py-6">
  
                       <CountNumber
-                        end={5}
+                        end={10}
                         suffix="+"
                         duration={2}
                         className="text-5xl font-extrabold text-primary"
@@ -190,7 +190,7 @@ export default function CompanyOverview() {
     variants={fadeUp}
     className="mt-8 text-base leading-8 text-slate-600 md:text-lg"
   >
-    Since 2021, <span className="font-semibold text-slate-800">RootTOP Group</span> has
+    Since 2015, <span className="font-semibold text-slate-800">RootTOP Group</span> has
     been delivering trusted solutions across construction, IT,
     consultancy, supply, trading, and other business sectors. Guided by
     quality, integrity, and innovation, we continue to create lasting

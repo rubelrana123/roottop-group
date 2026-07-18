@@ -46,28 +46,28 @@ function ContactAddress({ heading = "RootTOP Group" }: { heading?: string }) {
           >
             roottoplimited@gmail.com
           </a>
-          <a
+          {/* <a
             href="mailto:info@roottopltd.com"
             className="block transition  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
             info@roottopltd.com
-          </a>
+          </a> */}
         </div>
 
         <p>
-          <span className="font-semibold">Opening Hours:</span> Monday-Friday,
+          <span className="font-semibold">Opening Hours:</span> Sunday-Tuesday,
           9:00 AM-6:00 PM
         </p>
 
         <p>
           <span className="font-semibold">Website:</span>{" "}
           <a
-            href="https://www.roottopltd.com"
+            href="https://www.roottopgroup.com"
             target="_blank"
             rel="noopener noreferrer"
             className="transition  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
-            www.roottopltd.com
+            www.roottopgroup.com
           </a>
         </p>
       </div>

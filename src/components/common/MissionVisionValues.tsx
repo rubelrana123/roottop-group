@@ -50,7 +50,7 @@ export default function MissionVisionValues() {
               <h3 className="mb-4 text-3xl font-bold text-secondary">Vision</h3>
 
               <p className="leading-8 text-gray-600">
-                Our vision is to become a trusted leader in construction by
+                Our vision is to become a trusted leader in multiple Industrie by
                 creating smart, sustainable, and innovative infrastructure that
                 contributes to stronger communities and a better future.
               </p>

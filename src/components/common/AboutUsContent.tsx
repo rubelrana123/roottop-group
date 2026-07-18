@@ -39,7 +39,7 @@ export default function AboutUsContent() {
           <p className="text-justify text-base leading-8 text-gray-700">
             RootTOP Group is a diversified business conglomerate in Bangladesh,
             committed to delivering excellence across multiple industries. Since
-            its establishment in 2021, the group has grown by providing
+            its establishment in 2015, the group has grown by providing
             innovative, reliable, and customer-focused solutions in
             construction, consultancy, electrical and mechanical engineering,
             information technology, agriculture, and international trade.
