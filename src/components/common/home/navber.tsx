@@ -77,7 +77,7 @@ export default function Navbar() {
             className="focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
             <Image
-              src="/logo.png"
+              src="/roottopgroup_transparent.png"
               alt="RootTOP Group"
               width={140}
               height={70}

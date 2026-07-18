@@ -13,14 +13,13 @@ type Company = {
   description: string;
   website: string;
 };
-
 const companies: Company[] = [
   {
     id: 1,
     name: "RootTOP Limited",
     logo: "/roottop.png",
     description:
-      "RootTOP Limited (RTL) is a premier contractor specializing in construction, consultancy, interior design, IT solutions, and agriculture.",
+      "RootTOP Limited (RTL) is the flagship company of RootTOP Group, providing civil engineering, construction, electrical & mechanical engineering, interior design, IT, consultancy, and agricultural solutions with a commitment to quality, innovation, and customer satisfaction.",
     website: "https://roottopltd.com/",
   },
   {
@@ -28,7 +27,7 @@ const companies: Company[] = [
     name: "AR International",
     logo: "/arinternational.png",
     description:
-      "AR International is a premier contractor specializing in construction, consultancy, interior design, IT solutions, and agriculture.",
+      "AR International specializes in international sourcing, import & export, supply chain management, and global trading services, delivering reliable procurement and logistics solutions that connect businesses with international markets.",
     website: "https://roottopltd.com/",
   },
   {
@@ -36,7 +35,7 @@ const companies: Company[] = [
     name: "Orisyn Limited",
     logo: "/orisyn.png",
     description:
-      "Orisyn Limited is a premier contractor specializing in construction, consultancy, interior design, IT solutions, and agriculture.",
+      "Orisyn Limited delivers technology, engineering, consultancy, and innovative business solutions, helping organizations embrace digital transformation, improve operational efficiency, and achieve sustainable growth.",
     website: "https://roottopltd.com/",
   },
   {
@@ -44,27 +43,26 @@ const companies: Company[] = [
     name: "Satellite Enterprise",
     logo: "/satelite.png",
     description:
-      "Satellite Enterprise specializes in construction, consultancy, interior design, IT solutions, and agriculture.",
+      "Satellite Enterprise provides construction materials, industrial supplies, engineering support, and procurement services, ensuring quality products, dependable delivery, and professional service for clients across diverse industries.",
     website: "https://roottopltd.com/",
   },
   {
     id: 5,
-    name: "Crossborder Trading",
+    name: "Cross Border Trading",
     logo: "/crossborder.png",
     description:
-      "Crossborder Trading facilitates international trade and commerce.",
+      "Cross Border Trading specializes in import, export, product sourcing, and logistics services, enabling businesses to expand globally through efficient supply chain management and reliable international trade solutions.",
     website: "https://roottopltd.com/",
   },
   {
     id: 6,
-    name: "Khamar Bari",
+    name: "Khamarbari Corporation",
     logo: "/khamarbari.png",
     description:
-      "Khamar Bari focuses on agricultural solutions and sustainable farming initiatives.",
+      "Khamarbari Corporation focuses on modern agriculture, livestock farming, fisheries, seed production, and sustainable food production, promoting innovative farming practices that support agricultural development and food security.",
     website: "https://roottopltd.com/",
   },
 ];
-
 export default function GroupCompanyCard() {
   const [activeCompany, setActiveCompany] = useState<number | null>(null);
 

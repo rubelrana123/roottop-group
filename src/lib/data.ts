@@ -256,7 +256,8 @@ export const awards = [
     title: 'Civil Aviation Authority of Bangladesh (CAAB) License',
     logo: '/documents/CAAB.jpg',
   },
-    {
+    { 
+
     id: 9,
     category: 'Registration',
     title: 'Import Registration Certificate (IRC)',
@@ -408,7 +409,7 @@ export const clients = [
   {
     id: 14,
     logo: "/clients/banbatunmiss.png",
-    name: "Ban Bat 10",
+    name: "BAN BAT 10",
   },
   {
     id: 15,
