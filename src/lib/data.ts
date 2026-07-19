@@ -1,3 +1,89 @@
+import { 
+  Building2,
+  Package,
+  Laptop,
+  Briefcase,
+  Globe,
+  Sprout,
+  Shirt,
+  LineChart,
+  Building,
+} from 'lucide-react';
+export const businessAreas = [
+  {
+    title: '1st Class Contractor',
+    description:
+      'Delivering world-class construction and infrastructure solutions.',
+    icon: Building2,
+    image: '/contractor.png',
+    href: '/services/construction',
+  },
+  {
+    title: 'Supply',
+    description: 'Reliable sourcing and distribution for diverse industries.',
+    icon: Package,
+    image: '/exportimport.avif',
+    href: '/services/supply',
+  },
+  {
+    title: 'Information and Technology',
+    description:
+      'Innovative digital products and enterprise technology solutions.',
+    icon: Laptop,
+    image: '/it.jpeg',
+    href: '/services/information-technology',
+  },
+  {
+    title: 'Consultancy',
+    description: 'Strategic advisory services for sustainable business growth.',
+    icon: Briefcase,
+    image: '/consultancy.jpg',
+    href: '/services/consultancy',
+  },
+  {
+    title: 'Agro',
+    description: 'Modern agricultural initiatives focused on sustainability.',
+    icon: Sprout,
+    image: '/agriculture.avif',
+    href: '/services/agro',
+  },
+  {
+    title: 'Fashion',
+    description: 'Premium fashion and lifestyle solutions.',
+    icon: Shirt,
+    image: '/fashion.jpg',
+    href: '/services/fashion',
+  },
+  {
+    title: 'Investment',
+    description: 'Driving financial growth through diversified opportunities.',
+    icon: LineChart,
+    image: '/invest.jpg',
+    href: '/services/investment',
+  },
+  {
+    title: 'Developer',
+    description: 'Creating modern real estate developments.',
+    icon: Building,
+    image: '/developer.jpg',
+    href: '/services/construction',
+  },
+  {
+    title: 'Export & Import',
+    description: 'Global trade and logistics solutions.',
+    icon: Globe,
+    image: '/exportimport.avif',
+    href: '/services/import-export',
+  },
+  {
+    title: 'Electrical & Mechanical',
+    description: 'Comprehensive engineering solutions for industrial projects.',
+    icon: Building2,
+    image: '/eeeandme.avif',
+    href: '/services/electrical-mechanical',
+  },
+];
+
 export const services = [
   {
     id: 1,
@@ -495,8 +581,14 @@ export const clients = [
     logo: "/clients/cu.png",
     name: "Cumilla University",
   },
+    {
+    id : 99, 
+    logo : "/clients/ordance2.png",
+    name : "Central Ordnance Depot (COD)."
+  },
   {
     id: 30,
+
     logo: "/clients/du.png",
     name: "University of Dhaka",
   },
@@ -718,4 +810,34 @@ export const careerData: Career[] = [
     },
   },
 ];
-// change constuc text
+
+export const stats = [
+  {
+    id: 1,
+    number: 150,
+    suffix: "+",
+    title: "Major Infrastructure",
+    subtitle: "Projects Completed",
+  },
+  {
+    id: 2,
+    number: 10,
+    suffix: "+",
+    title: "Years of Experience",
+    subtitle: "With Pride",
+  },
+  {
+    id: 3,
+    number: 7,
+    suffix: "+",
+    title: "Sister Concerns",
+    subtitle: "Group Companies",
+  },
+  {
+    id: 4,
+    number: 150,
+    suffix: "+",
+    title: "Skilled Professionals",
+    subtitle: "Employed",
+  },
+];

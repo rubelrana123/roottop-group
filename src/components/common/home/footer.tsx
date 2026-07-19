@@ -76,12 +76,12 @@ export default function Footer() {
               <p>
                 <span className="font-semibold text-white">Phone:</span>{" "}
                 +8801746-644478
+                 <br />
+                +8801986-205401
               </p>
 
-              {/* <p>
-                <span className="font-semibold text-white">Fax:</span>{" "}
-                +88-02-58817737
-              </p> */}
+            
+          
 
               <p>
                 <span className="font-semibold text-white">Email:</span>{" "}

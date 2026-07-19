@@ -4,15 +4,6 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import {
   ArrowRight,
-  Building2,
-  Package,
-  Laptop,
-  Briefcase,
-  Globe,
-  Sprout,
-  Shirt,
-  LineChart,
-  Building,
 } from 'lucide-react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay } from 'swiper/modules';
@@ -20,81 +11,9 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import SectionHeading from '../SectionHeading';
 import Link from 'next/link';
+import { businessAreas } from '@/lib/data';
 
-const businessAreas = [
-  {
-    title: '1st Class Contractor',
-    description:
-      'Delivering world-class construction and infrastructure solutions.',
-    icon: Building2,
-    image: '/contractor.png',
-    href: '/services/construction',
-  },
-  {
-    title: 'Supply',
-    description: 'Reliable sourcing and distribution for diverse industries.',
-    icon: Package,
-    image: '/exportimport.avif',
-    href: '/services/supply',
-  },
-  {
-    title: 'IT',
-    description:
-      'Innovative digital products and enterprise technology solutions.',
-    icon: Laptop,
-    image: '/it.jpeg',
-    href: '/services/information-technology',
-  },
-  {
-    title: 'Consultancy',
-    description: 'Strategic advisory services for sustainable business growth.',
-    icon: Briefcase,
-    image: '/consultancy.jpg',
-    href: '/services/consultancy',
-  },
-  {
-    title: 'Agro',
-    description: 'Modern agricultural initiatives focused on sustainability.',
-    icon: Sprout,
-    image: '/agriculture.avif',
-    href: '/services/agro',
-  },
-  {
-    title: 'Fashion',
-    description: 'Premium fashion and lifestyle solutions.',
-    icon: Shirt,
-    image: '/fashion.jpg',
-    href: '/services/fashion',
-  },
-  {
-    title: 'Investment',
-    description: 'Driving financial growth through diversified opportunities.',
-    icon: LineChart,
-    image: '/invest.jpg',
-    href: '/services/investment',
-  },
-  {
-    title: 'Developer',
-    description: 'Creating modern real estate developments.',
-    icon: Building,
-    image: '/developer.jpg',
-    href: '/services/construction',
-  },
-  {
-    title: 'Export & Import',
-    description: 'Global trade and logistics solutions.',
-    icon: Globe,
-    image: '/exportimport.avif',
-    href: '/services/import-export',
-  },
-  {
-    title: 'Electrical & Mechanical',
-    description: 'Comprehensive engineering solutions for industrial projects.',
-    icon: Building2,
-    image: '/eeeandme.avif',
-    href: '/services/electrical-mechanical',
-  },
-];
+
 
 export default function BusinessAreas() {
   const cardVariants = {

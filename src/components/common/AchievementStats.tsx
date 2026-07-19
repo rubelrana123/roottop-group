@@ -2,37 +2,7 @@
 
 import { motion } from "framer-motion";
 import StatCard from "./StatCard";
-
-export const stats = [
-  {
-    id: 1,
-    number: 150,
-    suffix: "+",
-    title: "Major Infrastructure",
-    subtitle: "Projects Completed",
-  },
-  {
-    id: 2,
-    number: 10,
-    suffix: "+",
-    title: "Years of Experience",
-    subtitle: "With Pride",
-  },
-  {
-    id: 3,
-    number: 6,
-    suffix: "+",
-    title: "Sister Concerns",
-    subtitle: "Group Companies",
-  },
-  {
-    id: 4,
-    number: 150,
-    suffix: "+",
-    title: "Skilled Professionals",
-    subtitle: "Employed",
-  },
-];
+import { stats } from "@/lib/data";
 
 const container = {
   hidden: {},
