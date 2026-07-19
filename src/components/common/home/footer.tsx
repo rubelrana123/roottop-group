@@ -73,12 +73,25 @@ export default function Footer() {
                 Dhaka-1206, Bangladesh
               </p>
 
-              <p>
-                <span className="font-semibold text-white">Phone:</span>{" "}
-                +8801746-644478
-                 <br />
-                +8801986-205401
-              </p>
+<p className="flex items-start gap-2">
+  <span className="font-semibold text-white shrink-0">Phone:</span>
+
+  <span className="flex flex-col">
+    <a
+      href="tel:+8801746644478"
+      className="hover:text-primary transition"
+    >
+      +8801746-644478
+    </a>
+
+    <a
+      href="tel:+8801986205401"
+      className="hover:text-primary transition"
+    >
+      +8801986-205401
+    </a>
+  </span>
+</p>
 
             
           

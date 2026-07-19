@@ -28,17 +28,25 @@ function ContactAddress({ heading = "RootTOP Group" }: { heading?: string }) {
           Bangladesh
         </p>
 
-        <p>
-          <span className="font-semibold">Contact:</span>{" "}
-          <a
-            href="tel:+8801746644478"
-            className="transition  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
-          >
-            +88 01746-644478
-                             <br />
-                +8801986-205401
-          </a>
-        </p>
+<p className="flex items-start gap-2">
+  <span className="font-semibold shrink-0">Contact:</span>
+
+  <span className="flex flex-col">
+    <a
+      href="tel:+8801746644478"
+      className="transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+    >
+      +88 01746-644478
+    </a>
+
+    <a
+      href="tel:+8801986205401"
+      className="transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+    >
+      +8801986-205401
+    </a>
+  </span>
+</p>
 
         <div>
           <p className="font-semibold">Email:</p>
