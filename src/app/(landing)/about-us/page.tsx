@@ -7,7 +7,7 @@ import {
   webpageJsonLd,
 } from "@/lib/seo";
 import LicenseAwardsSection from "@/components/common/LicenseAward";
-import AboutUsContent from "@/components/common/AboutUsContent";
+import AboutUsContent from "@/components/common/about/AboutUsContent";
 import OurClients from "@/components/common/home/OurClients";
 
 export const metadata: Metadata = pageMetadata.about;

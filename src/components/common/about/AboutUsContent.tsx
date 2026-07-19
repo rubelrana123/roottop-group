@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import AchievementStats from "@/components/common/AchievementStats";
 import MissionVisionValues from "@/components/common/MissionVisionValues";
  
-import PageHero from "./PageHero";
+import PageHero from "../PageHero";
 
 export default function AboutUsContent() {
   return (
