@@ -11,19 +11,19 @@ import {
 } from 'lucide-react';
 export const businessAreas = [
   {
-    title: '1st Class Contractor',
+    title: 'Civil Engineering',
     description:
       'Delivering world-class construction and infrastructure solutions.',
     icon: Building2,
     image: '/contractor.png',
-    href: '/services/construction',
+    href: '/services/civil-engineering',
   },
   {
     title: 'Supply',
     description: 'Reliable sourcing and distribution for diverse industries.',
     icon: Package,
     image: '/exportimport.avif',
-    href: '/services/supply',
+    href: '/services/import-export',
   },
   {
     title: 'Information and Technology',
@@ -58,15 +58,15 @@ export const businessAreas = [
     title: 'Investment',
     description: 'Driving financial growth through diversified opportunities.',
     icon: LineChart,
-    image: '/invest.jpg',
-    href: '/services/investment',
+    image: '/investment.jpg',
+    href: '/services/investment', 
   },
   {
     title: 'Developer',
     description: 'Creating modern real estate developments.',
     icon: Building,
     image: '/developer.jpg',
-    href: '/services/construction',
+    href: '/services/civil-engineering',
   },
   {
     title: 'Export & Import',
@@ -87,7 +87,7 @@ export const businessAreas = [
 export const services = [
   {
     id: 1,
-    slug: "Civil Engineering",
+    slug: "civil-engineering",
     title: "Civil Engineering",
     shortDescription:
       "Delivering comprehensive civil Engineering solutions with quality, safety, and innovation.",
@@ -313,6 +313,39 @@ export const services = [
       "Modern Production Methods",
     ],
   },
+
+  {
+  id: 7,
+  slug: "investment",
+  title: "Investment",
+  shortDescription:
+    "Strategic investment solutions that drive business growth and long-term value creation.",
+
+  description:
+    "Our Investment division focuses on identifying, developing, and managing profitable investment opportunities across multiple industries. We support business expansion, infrastructure development, real estate, technology, agriculture, and strategic partnerships while ensuring sustainable growth, transparency, and long-term returns.",
+
+  image: "/investment.jpg",
+
+  items: [
+    "Business Investment",
+    "Project Financing",
+    "Strategic Partnerships",
+    "Infrastructure Investment",
+    "Real Estate Investment",
+    "Agricultural Investment",
+    "Technology Investment",
+    "Joint Venture Opportunities",
+  ],
+
+  whyChooseUs: [
+    "Experienced Investment Team",
+    "Sustainable Growth Strategy",
+    "Transparent Business Practices",
+    "Diversified Investment Portfolio",
+    "Long-Term Value Creation",
+    "Strong Risk Management",
+  ],
+},
 
 
 ];
