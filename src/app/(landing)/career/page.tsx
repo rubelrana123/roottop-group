@@ -8,7 +8,7 @@ export default function CareerPage() {
       <PageHero
         title="Career"
         subtitle="Join Our Team"
-        description="RootTOP Group is a diversified business conglomerate delivering innovative solutions across construction, engineering, information technology, agriculture, international trade, and consultancy."
+        description="JOIN THE RootTOP  BIGGEST FAMILY"
         image="/silderImage3.webp"
         imageAlt="RootTOP Group corporate team and business operations"
       />
