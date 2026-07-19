@@ -631,81 +631,91 @@ export interface Career {
   additionalRequirements: string[];
 
   compensationBenefits: string[];
+  officeAddress?: {
+    company: string;
+    address: string;
+    email: string;
+    phone: string;
+    website: string;
+  };
 }
-
 export const careerData: Career[] = [
-{
-  id: 3,
-  slug: "sub-assistant-civil-engineer",
-  title: "Sub Assistant Civil Engineer (AutoCAD & 3D Visualization Expert)",
-  featured: true,
-  image: "/career/sub-assistant-civil-engineer.webp",
+  {
+    id: 3,
+    slug: "3d-architectural-visualizer",
+    title: "3D Architectural Visualizer",
+    featured: true,
+    image: "/interiornadexterior.jpg",
 
-  summary: {
-    vacancy: 3,
-    salary: "Tk. 20,000 – 35,000 (Monthly)",
-    experience: "1–3 Years",
-    employmentStatus: "Full-Time",
-    jobLevel: "Mid Level",
-    workplace: "Work at Office",
-    location: "Dhaka",
-    age: "22–35 Years",
-    deadline: "October 12, 2026",
+    summary: {
+      vacancy: 1,
+      salary: "Negotiable",
+      experience: "Preferred (Based on Skills)",
+      employmentStatus: "Full-Time",
+      jobLevel: "Mid Level",
+      workplace: "Work at Office",
+      location: "Mohakhali DOHS, Dhaka",
+      age: "Not Specified",
+      deadline: "October 12, 2026",
+    },
+
+    application: {
+      applyLink: "https://forms.gle/GroZ6GZtaDqFYMxx5",
+      contactEmail: "roottopltd@gmail.com",
+    },
+
+    jobContext:
+      "RootTOP Ltd. is looking for a creative and detail-oriented 3D Architectural Visualizer to join our growing team. The ideal candidate will be responsible for creating high-quality 3D architectural models, photorealistic renderings, walkthrough animations, and assisting with architectural drafting and BOQ preparation. The candidate should possess a strong understanding of architectural drawings, construction materials, and visualization workflows while delivering projects with precision and within deadlines.",
+
+    responsibilities: [
+      "Create high-quality 3D architectural models and photorealistic renderings.",
+      "Produce architectural walkthrough animations for residential and commercial projects.",
+      "Prepare 2D architectural drawings including floor plans, elevations, sections, and detailed working drawings.",
+      "Interpret architectural drawings and convert them into accurate 3D visualizations.",
+      "Prepare Bill of Quantities (BOQ) and quantity estimations.",
+      "Collaborate with architects, designers, and project teams to ensure project requirements are met.",
+      "Revise designs and visualizations based on client feedback and project updates.",
+      "Ensure timely delivery while maintaining high standards of quality and accuracy.",
+      "Maintain organized project files and documentation throughout the project lifecycle.",
+    ],
+
+    educationalRequirements: [
+      "Diploma or Bachelor's degree in Architecture, Civil Engineering, Interior Design, or a related field.",
+      "Relevant certifications in 3D visualization software will be considered an advantage.",
+    ],
+
+    experienceRequirements: [
+      "Previous experience in 3D architectural visualization is preferred.",
+      "Fresh candidates with an outstanding portfolio and strong visualization skills are encouraged to apply.",
+    ],
+
+    additionalRequirements: [
+      "Strong proficiency in SketchUp, Lumion, 3ds Max, V-Ray, or similar visualization software.",
+      "Excellent knowledge of AutoCAD for architectural drafting.",
+      "Understanding of architectural drawings, construction methods, and materials.",
+      "Ability to prepare BOQ and quantity estimations.",
+      "Creative mindset with strong attention to detail.",
+      "Good communication and teamwork skills.",
+      "Ability to manage multiple projects and meet deadlines.",
+      "Self-motivated, responsible, and eager to learn new technologies.",
+    ],
+
+    compensationBenefits: [
+      "Salary: Negotiable based on experience and skills.",
+      "Performance-based salary review.",
+      "Career growth and professional development opportunities.",
+      "Paid leave and public holidays as per company policy.",
+      "Professional, collaborative, and growth-oriented working environment.",
+    ],
+
+    officeAddress: {
+      company: "RootTOP Ltd.",
+      address:
+        "House #263 (1st Floor), Road #19, Mohakhali DOHS, Dhaka Cantonment, Dhaka-1206",
+      email: "roottopltd@gmail.com",
+      phone: "+8801746644478",
+      website: "https://www.roottopltd.com",
+    },
   },
-
-  application: {
-    applyLink:
-      "https://docs.google.com/forms/d/e/zzzzzzzzzzzzzzzzzzzzzz/viewform",
-    contactEmail: "career@roottopgroup.com",
-  },
-
-  jobContext:
-    "RootTOP Group is looking for a skilled Sub Assistant Civil Engineer with strong expertise in AutoCAD, 3D visualization, architectural drafting, and construction supervision. The candidate will work closely with architects, engineers, and project managers to prepare technical drawings, site plans, and realistic 3D presentations for residential, commercial, and industrial projects.",
-
-  responsibilities: [
-    "Prepare detailed 2D drawings using AutoCAD.",
-    "Create realistic 3D models and renderings for construction projects.",
-    "Prepare architectural, structural, and working drawings.",
-    "Revise drawings based on client and engineering requirements.",
-    "Coordinate with architects, engineers, and project teams.",
-    "Assist in project planning, estimation, and BOQ preparation.",
-    "Visit project sites for measurement and supervision when required.",
-    "Ensure drawings comply with engineering standards and regulations.",
-    "Maintain proper documentation of project drawings and revisions.",
-    "Perform other engineering tasks assigned by management.",
-  ],
-
-  educationalRequirements: [
-    "Diploma in Civil Engineering (Preferred).",
-    "B.Sc. in Civil Engineering will be considered an advantage.",
-  ],
-
-  experienceRequirements: [
-    "1–3 years of relevant experience in civil engineering or architectural visualization.",
-    "Fresh candidates with exceptional AutoCAD and 3D visualization skills are also encouraged to apply.",
-  ],
-
-  additionalRequirements: [
-    "Expert knowledge of AutoCAD 2D & 3D.",
-    "Experience with SketchUp, Lumion, 3ds Max, or similar 3D visualization software.",
-    "Knowledge of Revit will be an added advantage.",
-    "Good understanding of building construction techniques.",
-    "Ability to prepare BOQ and estimate materials.",
-    "Strong problem-solving and analytical skills.",
-    "Excellent communication and teamwork abilities.",
-    "Self-motivated, responsible, and able to meet project deadlines.",
-  ],
-
-  compensationBenefits: [
-    "Competitive salary package.",
-    "Yearly salary review.",
-    "Performance bonus.",
-    "Two festival bonuses.",
-    "Casual, Sick & Annual Leave.",
-    "Medical facilities.",
-    "Professional training and career development opportunities.",
-    "Friendly and collaborative working environment.",
-  ],
-}
 ];
 // change constuc text

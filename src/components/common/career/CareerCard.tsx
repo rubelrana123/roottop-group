@@ -63,8 +63,7 @@ export default function CareerCard({
         <div className="flex items-center justify-center lg:justify-end disabled">
 
           <Link
-            // href={`/career/${job.slug}`}
-            href = "/career"
+            href={`/career/${job.slug}`}
             className="group inline-flex w-full items-center justify-center rounded-lg border-2 border-primary px-8 py-4 font-semibold text-primary transition-all duration-300 hover:bg-primary hover:text-white lg:w-56"
           >
             Details 

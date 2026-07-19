@@ -50,7 +50,7 @@ export default function JobDetails({ job }: Props) {
 
           <aside className="lg:sticky lg:top-28 h-fit">
             <div className="overflow-hidden rounded-2xl border bg-white shadow-lg">
-              <Image src="/career-banner.webp" alt="Career" width={600} height={240} className="h-52 w-full object-cover"/>
+              <Image src={job?.image} alt="Career" width={600} height={240} className="h-52 w-full object-cover"/>
               <div className="space-y-5 p-7">
                 <h3 className="text-2xl font-bold">Apply for this Position</h3>
                 <Summary title="Vacancy" value={String(job.summary.vacancy)}/>
