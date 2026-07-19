@@ -656,7 +656,7 @@ export const careerData: Career[] = [
       workplace: "Work at Office",
       location: "Mohakhali DOHS, Dhaka",
       age: "Not Specified",
-      deadline: "October 12, 2026",
+      deadline: "July 25, 2026",
     },
 
     application: {
