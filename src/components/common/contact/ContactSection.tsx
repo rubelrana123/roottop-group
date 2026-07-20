@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import ContactForm from "@/components/common/ContactForm";
+import ContactForm from "@/components/common/contact/ContactForm";
 import { MessageCircleMore } from "lucide-react";
 
 export default function ContactSection() {
