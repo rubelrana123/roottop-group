@@ -1,10 +1,10 @@
-"use client";
+'use client';
 
-import Link from "next/link";
+import Link from 'next/link';
 
 const footerData = [
   {
-    title: "ABOUT",
+    title: 'ABOUT',
     links: [
       {
         name: 'About Us',
@@ -21,34 +21,34 @@ const footerData = [
       {
         name: 'Our Clients',
         href: '/about-us#ourclients',
-      }
+      },
     ],
   },
   {
-    title: "BUSINESSES",
-    links: [{ name: "Businesses", href: "/services" }],
+    title: 'BUSINESSES',
+    links: [{ name: 'Businesses', href: '/services' }],
   },
   {
-    title: "SISTERS",
+    title: 'SISTERS',
     links: [
-      { name: "RootTOP Limited", href: "/" },
-      { name: "AR International", href: "/" },
-      {name : "Orisyn Limited" ,href:"/"},
+      { name: 'RootTOP Limited', href: '/' },
+      { name: 'AR International', href: '/' },
+      { name: 'Orisyn Limited', href: '/' },
       {
-        name : "Khamarbari" , href : "/",
-
-        
+        name: 'Khamarbari',
+        href: '/',
       },
       {
-        name : "Cross Border Trading", href : "/"
-      }
+        name: 'Cross Border Trading',
+        href: '/',
+      },
     ],
   },
   {
-    title: "CAREER",
+    title: 'CAREER',
     links: [
-      { name: "Career", href: "/" },
-      { name: "FAQ", href: "/" },
+      { name: 'Career', href: '/' },
+      { name: 'FAQ', href: '/' },
     ],
   },
 ];
@@ -72,33 +72,31 @@ export default function Footer() {
                 <br />
                 Dhaka-1206, Bangladesh
               </p>
-
-<p className="flex items-start gap-2">
-  <span className="font-semibold text-white shrink-0">Phone:</span>
-
-  <span className="flex flex-col">
-    <a
-      href="tel:+8801746644478"
-      className="hover:text-primary transition"
-    >
-      +8801746-644478
-    </a>
-
-    <a
-      href="tel:+8801986205401"
-      className="hover:text-primary transition"
-    >
-      +8801986-205401
-    </a>
-  </span>
-</p>
-
-            
-          
-
               <p>
-                <span className="font-semibold text-white">Email:</span>{" "}
+                <span className="font-semibold text-white">Email:</span>{' '}
                 roottopltd@gmail.com
+              </p>
+
+              <p className="flex items-start gap-2">
+                <span className="font-semibold text-white shrink-0">
+                  Phone:
+                </span>
+
+                <span className="flex flex-col">
+                  <a
+                    href="tel:+8801746644478"
+                    className="hover:text-primary transition"
+                  >
+                    +8801746-644478
+                  </a>
+
+                  <a
+                    href="tel:+8801986205401"
+                    className="hover:text-primary transition"
+                  >
+                    +8801986-205401
+                  </a>
+                </span>
               </p>
             </div>
           </div>
@@ -136,13 +134,12 @@ export default function Footer() {
         {/* Bottom */}
         <div className="flex flex-col items-center justify-between gap-4 text-center text-sm text-gray-400 md:flex-row md:text-left">
           <p>
-            © 2026 All Rights Reserved by{" "}
+            © 2026 All Rights Reserved by{' '}
             <span className="font-medium text-white">RootTOP Group</span>
           </p>
 
           <p>
-            Crafted with{" "}
-            <span className="mx-1 text-red-500">❤</span>
+            Crafted with <span className="mx-1 text-red-500">❤</span>
             by RootTOP Group
           </p>
         </div>

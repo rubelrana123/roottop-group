@@ -874,3 +874,53 @@ export const stats = [
     subtitle: "Employed",
   },
 ];
+
+export const mapSrc =
+  "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d293.25362482263!2d90.3936811593706!3d23.784329668664885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjPCsDQ3JzAzLjQiTiA5MMKwMjMnMzcuMyJF!5e1!3m2!1sen!2sbd!4v1782813664823!5m2!1sen!2sbd";
+
+export const contactInfo = {
+  company: "RootTOP Group",
+  office: "RootTOP Limited",
+
+  address: "House #263 (2nd Floor), Road #19, Mohakhali DOHS, Dhaka Cantonment, Dhaka 1206, Bangladesh",
+
+  phones: [
+    {
+      label: "Sales",
+      number: "+88 01746-644478",
+      href: "tel:+8801746644478",
+    },
+    {
+      label: "Support",
+      number: "+8801986-205401",
+      href: "tel:+8801986205401",
+    },
+  ],
+
+  emails: [
+    {
+      label: "General",
+      address: "roottoplimited@gmail.com",
+      href: "mailto:roottoplimited@gmail.com",
+    },
+    // Uncomment when needed
+    // {
+    //   label: "Office",
+    //   address: "info@roottopltd.com",
+    //   href: "mailto:info@roottopltd.com",
+    // },
+  ],
+
+  website: {
+    label: "www.roottopgroup.com",
+    href: "https://www.roottopgroup.com",
+  },
+
+  workingHours: {
+    days: "Sunday – Tuesday",
+    time: "9:00 AM – 6:00 PM",
+  },
+
+  direction:
+    "https://maps.google.com/?q=23.784329668664885,90.3936811593706",
+};
