@@ -5,11 +5,7 @@ import Link from 'next/link';
 const footerData = [
   {
     title: 'ABOUT',
-    links: [
-      {
-        name: 'About Us',
-        href: '/about-us',
-      },
+    links: [  
       {
         name: 'Mission, Vision & Values',
         href: '/about-us#mission-vision-values',
@@ -34,8 +30,12 @@ const footerData = [
       { name: 'RootTOP Limited', href: '/' },
       { name: 'AR International', href: '/' },
       { name: 'Orisyn Limited', href: '/' },
+           {
+        name: 'K3R Corporation',
+        href: '/',
+      },
       {
-        name: 'Khamarbari',
+        name: 'Khamarbari Corporation',
         href: '/',
       },
       {
