@@ -82,7 +82,7 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="bg-[#F6F6F6] py-16">
+    <div className="  ">
       <div className="container mx-auto px-4">
         <form
           onSubmit={handleSubmit(onSubmit)}

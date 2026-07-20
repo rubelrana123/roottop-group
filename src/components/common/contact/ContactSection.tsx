@@ -24,8 +24,7 @@ export default function ContactSection() {
           className="mx-auto mb-14 max-w-3xl text-center"
         >
           <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-5 py-2 text-primary">
-            <MessageCircleMore size={18} />
-
+        
             <span className="text-sm font-semibold uppercase tracking-[0.2em]">
               Contact Form
             </span>
@@ -58,20 +57,13 @@ export default function ContactSection() {
             relative
             overflow-hidden
             rounded-[32px]
-            border
-            border-border
-            bg-card
-            p-6
-            shadow-[0_25px_70px_rgba(0,0,0,.08)]
-            lg:p-10
+            border-none
+             
+               
           "
         >
-          {/* Decoration */}
-          <div className="absolute -top-20 -right-20 h-56 w-56 rounded-full bg-primary/5 blur-[80px]" />
-
-          <div className="absolute -bottom-20 -left-20 h-56 w-56 rounded-full bg-secondary/5 blur-[80px]" />
-
-          <div className="relative z-10">
+  
+          <div className="relative z-10 ">
             <ContactForm />
           </div>
         </motion.div>

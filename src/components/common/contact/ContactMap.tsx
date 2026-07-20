@@ -29,9 +29,6 @@ export default function ContactMap({
         className="absolute inset-0 h-full w-full border-0"
       />
 
-      {/* Dark Overlay */}
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/50 via-black/15 to-transparent" />
-
       {/* Top Badge */}
       <motion.div
         initial={{ opacity: 0, y: -15 }}
