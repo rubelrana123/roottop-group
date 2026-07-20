@@ -36,7 +36,7 @@ export default function SisterConcernHero() {
           {/* Description */}
           <p className="mx-auto mt-6 max-w-3xl text-sm leading-7 text-gray-200 md:text-lg md:leading-8">
             Discover the companies that form the RootTOP Group ecosystem,
-            delivering excellence across construction, supply, information
+            delivering excellence across civil engineering, supply, information
             technology, consultancy, agriculture, fashion, export & import,
             investment, and real estate development.
           </p>

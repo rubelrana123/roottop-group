@@ -192,7 +192,7 @@ export default function CompanyOverview() {
               <span className="font-semibold text-slate-800">
                 RootTOP Group
               </span>{' '}
-              has been delivering trusted solutions across construction, IT,
+              has been delivering trusted solutions across civil engineering, IT,
               consultancy, supply, trading, and other business sectors. Guided
               by quality, integrity, and innovation, we continue to create
               lasting value for our clients, partners, and communities.

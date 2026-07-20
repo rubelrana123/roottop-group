@@ -13,7 +13,7 @@ export default function AboutUsContent() {
       <PageHero
   title="About Us"
   subtitle="Who We Are"
-  description="RootTOP Group is a diversified business conglomerate delivering innovative solutions across construction, engineering, information technology, agriculture, international trade, and consultancy."
+  description="RootTOP Group is a diversified business conglomerate delivering innovative solutions across civil engineering, information technology, agriculture, international trade, and consultancy."
   image="/silderImage3.webp"
   imageAlt="RootTOP Group corporate team and business operations"
 />
@@ -41,7 +41,7 @@ export default function AboutUsContent() {
             committed to delivering excellence across multiple industries. Since
             its establishment in 2015, the group has grown by providing
             innovative, reliable, and customer-focused solutions in
-            construction, consultancy, electrical and mechanical engineering,
+            civil engineering, consultancy, electrical and mechanical engineering,
             information technology, agriculture, and international trade.
           </p>
 
