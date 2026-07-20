@@ -15,7 +15,7 @@ const footerData = [
         href: '/about-us#mission-vision-values',
       },
       {
-        name: 'Awards & Achievements',
+        name: 'Certification & Membership',
         href: '/about-us#awards-achievements',
       },
       {
