@@ -90,7 +90,7 @@ export const services = [
     slug: "civil-engineering",
     title: "Civil Engineering",
     shortDescription:
-      "Delivering comprehensive civil Engineering solutions with quality, safety, and innovation.",
+      "Delivering comprehensive civil engineering solutions with quality, safety, and innovation.",
 
     description:
       "As a trusted first-class civil engineering firm in Bangladesh, we provide complete construction services for government, commercial, and private sectors. Our expertise spans building construction, infrastructure development, steel fabrication, and material supply, ensuring every project is delivered with excellence, safety, and reliability.",
@@ -398,7 +398,7 @@ export const awards = [
     id: 3,
     category: 'License',
     title: 'Dhaka South City Corporation Trade License',
-    logo: '/documents/DSCC_trade.jpg',
+    logo: '/documents/RootTOP_E-Trade License 2026-2027_page-0001.jpg',
   },
   {
     id: 4,

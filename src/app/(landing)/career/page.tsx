@@ -9,7 +9,7 @@ export default function CareerPage() {
         title="Career"
         subtitle="Join Our Team"
         description="We're always looking for creative, talented self-starters to join the RootTOP Group family "
-        image="/contact.jpg"
+        image="/hiring.avif"
         imageAlt="RootTOP Group corporate team and business operations"
       />
 

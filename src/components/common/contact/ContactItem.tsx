@@ -24,7 +24,7 @@ export default function ContactItem({
       className="group flex items-start gap-4 rounded-2xl border border-white/10 bg-white/10 p-4 backdrop-blur-sm transition-all duration-300 hover:border-white/20 hover:bg-white/15"
     >
       {/* Icon */}
-      <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-white/15 text-white transition-transform duration-300 group-hover:scale-110 group-hover:bg-white">
+      <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-white/15 text-white transition-transform duration-300 group-hover:scale-110  not-[]:">
         <Icon
           size={22}
           className="text-white group-hover:text-secondary transition-colors duration-300"

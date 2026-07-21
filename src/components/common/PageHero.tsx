@@ -18,7 +18,7 @@ export default function PageHero({
   description,
   image,
   imageAlt,
-  height = "h-[320px] md:h-[500px]",
+  height = "h-[360px] md:h-[500px]",
 }: PageHeroProps) {
   return (
     <section
@@ -31,26 +31,25 @@ export default function PageHero({
         alt={imageAlt}
         fill
         priority
-        fetchPriority="high"
-        sizes="100vw"
         className="object-cover"
+        sizes="100vw"
       />
 
       {/* Overlay */}
       <div
-        className="absolute inset-0 bg-gradient-to-r from-[#173C5A]/85 via-[#173C5A]/65 to-[#173C5A]/55"
+        className="absolute inset-0 bg-gradient-to-r from-[#173C5A]/90 via-[#173C5A]/75 to-[#173C5A]/60"
         aria-hidden="true"
       />
 
       {/* Content */}
-      <div className="absolute inset-0 flex items-center justify-center px-4">
+      <div className="absolute inset-0 flex items-center justify-center px-5">
         <div className="mx-auto max-w-4xl text-center">
           {/* Subtitle */}
           <motion.span
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.45 }}
-            className="inline-flex rounded-full border border-primary/30 bg-primary/15 px-5 py-2 text-xs font-semibold uppercase tracking-[0.35em] text-primary md:text-sm"
+            className="inline-flex rounded-full border border-primary/30 bg-primary/15 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-primary md:px-5 md:text-sm"
           >
             {subtitle}
           </motion.span>
@@ -58,20 +57,20 @@ export default function PageHero({
           {/* Title */}
           <motion.h1
             id="page-hero-title"
-            initial={{ opacity: 0, y: 35 }}
+            initial={{ opacity: 0, y: 25 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="mt-6 text-4xl font-extrabold uppercase tracking-wide text-white md:text-6xl lg:text-7xl"
+            className="mt-5 text-4xl font-semibold leading-[1.1] tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl"
           >
             {title}
           </motion.h1>
 
           {/* Description */}
           <motion.p
-            initial={{ opacity: 0, y: 35 }}
+            initial={{ opacity: 0, y: 25 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.25 }}
-            className="mx-auto mt-6 max-w-3xl text-sm leading-7 text-gray-200 md:text-lg md:leading-8"
+            className="mx-auto mt-5 max-w-3xl text-sm leading-7 text-slate-200 sm:text-base md:mt-6 md:text-lg md:leading-8"
           >
             {description}
           </motion.p>
@@ -81,7 +80,7 @@ export default function PageHero({
             initial={{ opacity: 0, scaleX: 0 }}
             animate={{ opacity: 1, scaleX: 1 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="mx-auto mt-8 h-1 w-24 rounded-full bg-primary"
+            className="mx-auto mt-7 h-1 w-20 rounded-full bg-primary"
           />
         </div>
       </div>

@@ -131,8 +131,8 @@ function ClientCard({
           <Image
             src={client.logo}
             alt={client.name}
-            width={110}
-            height={110}
+            width={200}
+            height={200}
             className="max-h-20 w-auto object-contain transition-transform duration-300 group-hover:scale-110"
           />
         </div>

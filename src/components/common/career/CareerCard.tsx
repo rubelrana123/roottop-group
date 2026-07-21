@@ -15,15 +15,13 @@ export default function CareerCard({
     <div className="relative overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
 
       {job.featured && (
-        <div className="absolute right-0 top-0">
-          <div className="relative">
-            <div className="h-20 w-20 translate-x-10 -translate-y-10 rotate-45 bg-red-600" />
-
-            <span className="absolute right-1 top-4 rotate-45 text-[10px] font-semibold uppercase tracking-wide text-white">
-              Featured
-            </span>
-          </div>
-        </div>
+<div className="absolute top-0 right-0 overflow-hidden w-24 h-24">
+  <div className="absolute right-[-28px] top-[16px] w-32 rotate-45 bg-red-600 py-1 text-center shadow-lg">
+    <span className="text-[11px] font-bold uppercase tracking-widest text-white">
+      OnGoing
+    </span>
+  </div>
+</div>
       )}
 
       <div className="grid gap-8 p-8 lg:grid-cols-[2fr_1fr]">

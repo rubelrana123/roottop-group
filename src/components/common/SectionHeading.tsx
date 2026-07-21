@@ -22,30 +22,27 @@ export default function SectionHeading({
   return (
     <div
       className={clsx(
-        "mb-16",
-        isCenter ? "text-center" : "text-left",
+        "mb-14 max-w-3xl",
+        isCenter ? "mx-auto text-center" : "text-left",
         className
       )}
     >
       {/* Subtitle */}
       {subtitle && (
-        <p
-          className={clsx(
-            "mb-2 text-sm font-medium uppercase tracking-[6px] text-gray-500",
-            isCenter && "text-center"
-          )}
-        >
+        <p className="mb-3 text-xs font-semibold uppercase tracking-[0.25em] text-slate-500 md:text-sm">
           {subtitle}
         </p>
       )}
 
       {/* Badge */}
-      <span  className="inline-flex items-center rounded-full bg-primary/10 px-4 py-2 text-sm font-semibold uppercase tracking-[0.2em] text-primary">
-        {badge}
-      </span>
+      {badge && (
+        <span className="inline-flex items-center rounded-full bg-primary/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-primary md:text-sm">
+          {badge}
+        </span>
+      )}
 
       {/* Title */}
-      <h2 className="mt-3 text-3xl font-bold text-slate-900 md:text-5xl">
+      <h2 className="mt-4 text-3xl font-semibold leading-tight tracking-tight text-slate-900 sm:text-4xl md:text-5xl">
         {title}
       </h2>
 
@@ -53,18 +50,18 @@ export default function SectionHeading({
       {description && (
         <p
           className={clsx(
-            "mt-4 text-lg leading-8 text-gray-700",
-            isCenter ? "mx-auto max-w-3xl" : "max-w-3xl"
+            "mt-5 text-base leading-7 text-slate-600 md:text-lg md:leading-8",
+            isCenter ? "mx-auto" : ""
           )}
         >
           {description}
         </p>
       )}
 
-      {/* Underline */}
+      {/* Accent Line */}
       <div
         className={clsx(
-          "bg-primary mt-6 h-1 w-24 rounded-full",
+          "mt-7 h-1 w-20 rounded-full bg-primary",
           isCenter && "mx-auto"
         )}
       />

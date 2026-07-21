@@ -9,6 +9,7 @@ import {
 import LicenseAwardsSection from "@/components/common/LicenseAward";
 import AboutUsContent from "@/components/common/about/AboutUsContent";
 import OurClients from "@/components/common/home/OurClients";
+import MissionVisionValues from "@/components/common/MissionVisionValues";
 
 export const metadata: Metadata = pageMetadata.about;
 
@@ -28,6 +29,7 @@ export default function AboutUs() {
         ]}
       />
       <AboutUsContent />
+      <MissionVisionValues/>
       <LicenseAwardsSection/>
       <OurClients />
     </>

@@ -47,7 +47,11 @@ export default function HeroSec() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section className="relative w-full" aria-labelledby="home-hero-title">
+    <section
+      className="relative w-full"
+      aria-labelledby="home-hero-title"
+    >
+      {/* Swiper */}
       <Swiper
         modules={[Pagination, Autoplay, EffectFade]}
         effect="fade"
@@ -60,12 +64,15 @@ export default function HeroSec() {
         pagination={{
           clickable: true,
         }}
-        onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
-        className="heroSwiper"
+        onSlideChange={(swiper) => {
+          setActiveIndex(swiper.realIndex);
+        }}
+        className="heroSwiper relative z-10"
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={slide.id}>
-            <div className="relative h-[60vh] md:h-[80vh] lg:h-[calc(100vh-5rem)] overflow-hidden">
+            <div className="relative h-[60vh] overflow-hidden md:h-[80vh] lg:h-[calc(100vh-5rem)]">
+              {/* Background Image */}
               <Image
                 src={slide.image}
                 alt={slide.alt}
@@ -76,14 +83,18 @@ export default function HeroSec() {
                 className="object-cover"
               />
 
-              <div className="absolute inset-0 bg-black/35" aria-hidden="true" />
+              {/* Dark Overlay */}
+              <div
+                className="absolute inset-0 bg-black/35"
+                aria-hidden="true"
+              />
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
 
       {/* Animated Content */}
-      <div className="absolute inset-0 z-20 flex items-center justify-center px-4 pointer-events-none">
+      <div className="pointer-events-none absolute inset-0 z-20 flex items-center justify-center px-4">
         <div className="max-w-6xl text-center">
           <AnimatePresence mode="wait">
             <motion.div
@@ -101,16 +112,18 @@ export default function HeroSec() {
                 duration: 0.35,
               }}
             >
+              {/* Hero Title */}
               <motion.h1
                 id="home-hero-title"
                 className="
                   mx-auto
                   max-w-5xl
-                  text-white
+                  text-3xl
                   font-extrabold
                   uppercase
+                  leading-[1.1]
                   tracking-tight
-                  leading-[1.1]                  text-3xl
+                  text-white
                   sm:text-4xl
                   md:text-6xl
                   lg:text-7xl
@@ -146,11 +159,12 @@ export default function HeroSec() {
                       },
                     }}
                   >
-                    {line}
+                    {line.trim()}
                   </motion.span>
                 ))}
               </motion.h1>
 
+              {/* Button */}
               <motion.div
                 initial={{
                   opacity: 0,
@@ -172,36 +186,28 @@ export default function HeroSec() {
                   href="/services"
                   aria-label="Explore RootTOP Group services"
                   className="
-                  mt-6
-                  md:mt-8
-
-                  pointer-events-auto
-                  cursor-pointer
-
-                  bg-primary/80
-                  hover:bg-primary
-
-                  text-white
-                  font-bold
-                  uppercase
-                  tracking-[2px]
-
-                  px-6
-                  py-3
-
-                  md:px-8
-                  md:py-4
-
-                  lg:px-10
-                  lg:py-4
-
-                  text-sm
-                  md:text-base
-
-                  transition-colors
-                  duration-300
-                  inline-flex
-                "
+                    pointer-events-auto
+                    mt-6
+                    inline-flex
+                    cursor-pointer
+                    bg-primary/80
+                    px-6
+                    py-3
+                    text-sm
+                    font-bold
+                    uppercase
+                    tracking-[2px]
+                    text-white
+                    transition-colors
+                    duration-300
+                    hover:bg-primary
+                    md:mt-8
+                    md:px-8
+                    md:py-4
+                    md:text-base
+                    lg:px-10
+                    lg:py-4
+                  "
                 >
                   {slides[activeIndex].buttonText}
                 </Link>
