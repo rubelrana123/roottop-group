@@ -4,7 +4,7 @@ import SectionHeading from "../SectionHeading";
 
 export default function GroupCompanies() {
   return (
-    <section className="bg-[#f7f7f7] py-18 md:py-20 lg:py-24">
+    <section className="relative z-30 overflow-visible bg-[#f7f7f7] py-18 md:py-20 lg:py-24">
       <div className="container px-4 mx-auto">
         <SectionHeading
           badge="Our Ecosystem"

@@ -319,9 +319,10 @@
 }
 
 .certificateSwiper .swiper-slide-active .group {
+  border-color: rgba(104, 213, 58, 0.55);
   box-shadow:
-    0 35px 80px rgba(0,0,0,.28),
-    0 0 80px rgba(59,130,246,.18);
+    0 18px 44px rgba(15, 23, 42, 0.12),
+    0 0 0 1px rgba(104, 213, 58, 0.16);
 }
 
 

@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
+import { motion, type Variants } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -15,12 +15,51 @@ import 'swiper/css/pagination';
 import SectionHeading from '../SectionHeading';
 import { businessAreas } from '@/lib/data';
 
-export default function BusinessAreas() {
-  const cardVariants = {
-    initial: {},
-    hover: {},
-  };
+const cardVariants: Variants = {
+  hidden: {
+    opacity: 0,
+    y: 36,
+    scale: 0.96,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+  },
+  hover: {
+    y: -8,
+  },
+};
 
+const contentVariants: Variants = {
+  initial: {
+    y: 0,
+  },
+  hover: {
+    y: -4,
+    transition: {
+      duration: 0.45,
+      ease: 'easeOut',
+    },
+  },
+};
+
+const buttonWrapVariants: Variants = {
+  initial: {
+    opacity: 1,
+    y: 0,
+  },
+  hover: {
+    opacity: 1,
+    y: -2,
+    transition: {
+      duration: 0.35,
+      ease: 'easeOut',
+    },
+  },
+};
+
+export default function BusinessAreas() {
   return (
     <section className="bg-[#f7f7f7] py-24">
       <div className="container mx-auto px-4 lg:px-8">
@@ -67,10 +106,16 @@ export default function BusinessAreas() {
               <SwiperSlide key={i}>
                 <motion.div
                   variants={cardVariants}
-                  initial="initial"
+                  initial="hidden"
+                  whileInView="visible"
                   whileHover="hover"
-                  transition={{ duration: 0.35 }}
-                  className="group relative h-[430px] overflow-hidden rounded-3xl shadow-lg"
+                  viewport={{ once: true, amount: 0.25 }}
+                  transition={{
+                    duration: 0.55,
+                    delay: (i % 4) * 0.08,
+                    ease: [0.22, 1, 0.36, 1],
+                  }}
+                  className="group relative h-[430px] overflow-hidden rounded-3xl border border-white/10 shadow-lg transition-colors duration-300 hover:border-primary/70 focus-within:border-primary/70"
                 >
                   {/* Background Image */}
                   <Image
@@ -93,47 +138,22 @@ export default function BusinessAreas() {
 
                   {/* Content */}
                   <div className="absolute inset-x-0 bottom-0 p-7">
-                    <motion.div
-                      variants={{
-                        initial: {
-                          y: 35,
-                        },
-                        hover: {
-                          y: 0,
-                          transition: {
-                            duration: 0.45,
-                            ease: 'easeOut',
-                          },
-                        },
-                      }}
-                    >
+                    <motion.div variants={contentVariants} initial="initial">
                       <h3 className="text-2xl font-bold text-white">
                         {item.title}
                       </h3>
 
                       <motion.div
-                        variants={{
-                          initial: {
-                            opacity: 0,
-                            y: 20,
-                          },
-                          hover: {
-                            opacity: 1,
-                            y: 0,
-                            transition: {
-                              delay: 0.15,
-                              duration: 0.35,
-                            },
-                          },
-                        }}
+                        variants={buttonWrapVariants}
+                        initial="initial"
                         className="mt-6"
                       >
                         <Link
                           href={item.href}
-                          className="inline-flex items-center gap-3 rounded-sm border border-white/30 bg-white/10 px-6 py-3 text-sm font-semibold text-white backdrop-blur-md transition-all duration-300"
+                          className="inline-flex items-center gap-3 rounded-sm border border-white/45 bg-white/10 px-6 py-3 text-sm font-semibold text-white backdrop-blur-md transition-all duration-300 hover:border-white hover:bg-white hover:text-slate-950 focus-visible:border-white focus-visible:bg-white focus-visible:text-slate-950 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                         >
                           <span>Explore More</span>
-                          <ArrowRight className="h-5 w-5" />
+                          <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
                         </Link>
                       </motion.div>
                     </motion.div>

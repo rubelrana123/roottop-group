@@ -31,7 +31,7 @@ export default function SisterConcern() {
         imageAlt="RootTOP Group sister companies and corporate ecosystem"
       />
 
-      <section className="py-20">
+      <section className="relative z-30 overflow-visible py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <GroupCompanyCard />
         </div>
