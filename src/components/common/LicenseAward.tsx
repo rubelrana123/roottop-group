@@ -1,18 +1,18 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import { useRef } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import type { Swiper as SwiperType } from "swiper";
+import Image from 'next/image';
+import { useRef } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import type { Swiper as SwiperType } from 'swiper';
 
-import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
+import { EffectCoverflow, Pagination, Autoplay } from 'swiper/modules';
 
-import "swiper/css";
-import "swiper/css/effect-coverflow";
-import "swiper/css/pagination";
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
 
-import { awards } from "@/lib/data";
-import SectionHeading from "./SectionHeading";
+import { awards } from '@/lib/data';
+import SectionHeading from './SectionHeading';
 
 export default function LicenseAwardsSection() {
   const swiperRef = useRef<SwiperType | null>(null);
