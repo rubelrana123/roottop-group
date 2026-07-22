@@ -47,6 +47,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta name="google-site-verification" content="A7tRAt27KqSlVpZqVI2Fo1wi-NDQg_mPYZjF0ynLNMY" />
+      </head>
       <body className={`${poppins.variable} antialiased`}>
         <Providers>
           <JsonLd data={[organizationJsonLd(), websiteJsonLd()]} />
