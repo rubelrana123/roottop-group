@@ -1,7 +1,6 @@
 import { careerData, Career } from "@/lib/data";
 import CareerCard from "./CareerCard";
-import PageHero from "../PageHero";
-import { SubTitle } from "@/components/reuseable/sub-title";
+
 import SectionHeading from "../SectionHeading";
 
 export default function CareerOpening() {
