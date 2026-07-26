@@ -86,7 +86,7 @@ export default function Navbar() {
             className="shrink-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
             <Image
-              src="/logo.png"
+              src="/rootopgroup.png"
               alt="RootTOP Group"
               width={140}
               height={70}
