@@ -18,7 +18,7 @@ const companies: Company[] = [
   {
     id: 1,
     name: 'RootTOP Limited',
-    logo: '/roottop.png',
+    logo: '/roottoplimited.png',
     description:
       'RootTOP Limited provides engineering, construction, IT, consultancy, interior design, and agricultural solutions with a focus on quality and innovation.',
     website: 'https://roottopltd.com/',
@@ -66,7 +66,7 @@ const companies: Company[] = [
   {
     id: 55,
     name: 'K3R Corporation',
-    logo: '/k3rf.png',
+    logo: '/k3r.png',
     description:
       'K3R Corporation specializes in import-export, sourcing, and logistics services with reliable global trade solutions.',
     website: 'https://roottopltd.com/',

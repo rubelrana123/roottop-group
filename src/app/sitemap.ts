@@ -10,14 +10,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified,
       changeFrequency: "weekly",
       priority: 1,
-      images: [absoluteUrl("/RootTOP.jpg")],
+      images: [absoluteUrl("/logo.png")],
     },
     {
       url: absoluteUrl("/about-us"),
       lastModified,
       changeFrequency: "monthly",
       priority: 0.8,
-      images: [absoluteUrl("/silderImage3.webp")],
+      images: [absoluteUrl("/contact.jpg")],
     },
     {
       url: absoluteUrl("/services"),
@@ -31,14 +31,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified,
       changeFrequency: "monthly",
       priority: 0.7,
-      images: [absoluteUrl("/groupCompany.png")],
+      images: [absoluteUrl("/banner_sister.png")],
     },
     {
       url: absoluteUrl("/contact"),
       lastModified,
       changeFrequency: "monthly",
       priority: 0.8,
-      images: [absoluteUrl("/silderImage3.webp")],
+      images: [absoluteUrl("/contact.jpg")],
     },
   ];
 
