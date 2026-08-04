@@ -22,7 +22,7 @@ const footerData = [
   },
   {
     title: 'BUSINESSES',
-    links: [{ name: 'Businesses', href: '/services' }],
+    links: [{ name: 'Businesses', href: '/business' }],
   },
   {
     title: 'SISTERS',

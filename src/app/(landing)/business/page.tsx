@@ -16,7 +16,7 @@ export default function ServicesPage() {
           title: "RootTOP Group Business Areas - Professional Services in Civil Engineering, EEE And Mechanical Engineering, Agriculture, and IT",
           description:
             "Civil Engineering, consultancy, electrical and mechanical engineering, agriculture, import-export, and IT services by RootTOP Group.",
-          path: "/services",
+          path: "/business",
         })}
       />
       <PageHero
@@ -29,7 +29,7 @@ export default function ServicesPage() {
       <Breadcrumbs
         items={[
           { name: "Home", href: "/" },
-          { name: "Business", href: "/services" },
+          { name: "Business", href: "/business" },
         ]}
       />
       <ServicesSection />

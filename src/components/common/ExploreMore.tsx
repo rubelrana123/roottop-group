@@ -9,7 +9,7 @@ const exploreItems = [
     title: "Explore Services",
     description:
       "Discover our comprehensive services across construction, consultancy, IT solutions, interior design, and agriculture.",
-    href: "/services",
+    href: "/business",
   },
   {
     title: "Explore Sister Concerns",

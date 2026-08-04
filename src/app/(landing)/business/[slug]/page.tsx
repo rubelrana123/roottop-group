@@ -43,7 +43,7 @@ export default async function ServiceDetailsPage({ params }: Props) {
           webpageJsonLd({
             title: `${service.title} Services`,
             description: service.shortDescription,
-            path: `/services/${service.slug}`,
+            path: `/business/${service.slug}`,
           }),
           serviceJsonLd(service.slug)!,
         ]}
@@ -78,8 +78,8 @@ export default async function ServiceDetailsPage({ params }: Props) {
       <Breadcrumbs
         items={[
           { name: "Home", href: "/" },
-          { name: "Business Areas", href: "/services" },
-          { name: service.title, href: `/services/${service.slug}` },
+          { name: "Business Areas", href: "/business" },
+          { name: service.title, href: `/business/${service.slug}` },
         ]}
       />
 

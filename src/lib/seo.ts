@@ -157,7 +157,7 @@ export const pageMetadata = {
     title: "Business Services | Construction, IT, Agriculture and Trade",
     description:
       "Explore RootTOP Group services across construction, consultancy, electrical and mechanical engineering, agriculture, information technology, and import-export operations.",
-    path: "/services",
+    path: "/business",
     keywords: ["business services Bangladesh", "construction services", "engineering services"],
     image: "/exportimport.jpg",
     category: "Services",
@@ -193,14 +193,14 @@ export function createServiceMetadata(slug: string): Metadata {
     return createMetadata({
       title: "Service Not Found | RootTOP Group",
       description: "The requested RootTOP Group service could not be found.",
-      path: `/services/${slug}`,
+      path: `/business/${slug}`,
     });
   }
 
   return createMetadata({
     title: `${service.title} Services | RootTOP Group Bangladesh`,
     description: service.shortDescription,
-    path: `/services/${service.slug}`,
+    path: `/business/${service.slug}`,
     image: service.image,
     category: "Service",
     keywords: [
@@ -307,7 +307,7 @@ export function serviceJsonLd(slug: string) {
   return {
     "@context": "https://schema.org",
     "@type": "Service",
-    "@id": `${absoluteUrl(`/services/${service.slug}`)}#service`,
+    "@id": `${absoluteUrl(`/business/${service.slug}`)}#service`,
     name: `${service.title} Services`,
     description: service.description,
     serviceType: service.title,

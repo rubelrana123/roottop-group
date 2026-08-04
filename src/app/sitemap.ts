@@ -20,7 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       images: [absoluteUrl("/contact.jpg")],
     },
     {
-      url: absoluteUrl("/services"),
+      url: absoluteUrl("/business"),
       lastModified,
       changeFrequency: "monthly",
       priority: 0.9,
@@ -43,7 +43,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   const serviceRoutes: MetadataRoute.Sitemap = services.map((service) => ({
-    url: absoluteUrl(`/services/${service.slug}`),
+    url: absoluteUrl(`/business/${service.slug}`),
     lastModified,
     changeFrequency: "monthly",
     priority: 0.75,

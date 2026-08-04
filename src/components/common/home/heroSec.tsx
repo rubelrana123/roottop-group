@@ -183,7 +183,7 @@ export default function HeroSec() {
                 }}
               >
                 <Link
-                  href="/services"
+                  href="/business"
                   aria-label="Explore RootTOP Group services"
                   className="
                     pointer-events-auto

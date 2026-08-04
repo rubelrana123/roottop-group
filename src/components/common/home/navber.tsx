@@ -42,7 +42,7 @@ const navItems = [
   },
   {
     name: "Business",
-    href: "/services",
+    href: "/business",
   },
   {
     name: "SISTERS CONCERN",

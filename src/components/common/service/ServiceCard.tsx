@@ -67,7 +67,7 @@ export default function ServiceCard({
         </p>
 
         <Link
-          href={`/services/${service.slug}`}
+          href={`/business/${service.slug}`}
           aria-label={`View details about RootTOP Group ${service.title} services`}
           className="inline-flex items-center gap-2 border px-4 py-2 text-xs font-semibold uppercase transition hover:border-lime-500 hover:bg-lime-500 hover:text-white lg:px-6 lg:py-3 lg:text-sm"
         >
