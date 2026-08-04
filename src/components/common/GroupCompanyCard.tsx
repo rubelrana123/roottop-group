@@ -37,7 +37,7 @@ const companies: Company[] = [
     logo: '/crossborder.png',
     description:
       'Cross Border Trading provides import-export, sourcing, and logistics solutions for global business expansion.',
-    website: 'https://roottopltd.com/',
+    website: 'https://crossbordertrading.com.bd/',
   },
     {
     id: 4,
