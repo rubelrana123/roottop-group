@@ -23,7 +23,7 @@ const companies: Company[] = [
       'RootTOP Limited provides engineering, construction, IT, consultancy, interior design, and agricultural solutions with a focus on quality and innovation.',
     website: 'https://roottopltd.com/',
   },
-    {
+  {
     id: 2,
     name: 'Orisyn Limited',
     logo: '/orisyn.png',
@@ -31,7 +31,7 @@ const companies: Company[] = [
       'Orisyn Limited delivers technology, engineering, consultancy, and digital solutions for business growth and efficiency.',
     website: 'https://orisynltd.com/',
   },
-    {
+  {
     id: 3,
     name: 'Cross Border Trading',
     logo: '/crossborder.png',
@@ -39,7 +39,7 @@ const companies: Company[] = [
       'Cross Border Trading provides import-export, sourcing, and logistics solutions for global business expansion.',
     website: 'https://crossbordertrading.com.bd/',
   },
-    {
+  {
     id: 4,
     name: 'Satellite Enterprise',
     logo: '/satelite.png',
@@ -64,7 +64,6 @@ const companies: Company[] = [
     website: 'https://roottopltd.com/',
   },
 
-
   {
     id: 7,
     name: 'Alter Tech',
@@ -83,7 +82,7 @@ const companies: Company[] = [
     website: 'https://www.khamarbaricorp.com/',
   },
 ];
-
+// heello group of company
 const gridVariants: Variants = {
   hidden: {},
   visible: {
@@ -155,9 +154,7 @@ export default function GroupCompanyCard() {
             onMouseLeave={() => setActiveCompany(null)}
             onFocus={() => setActiveCompany(company.id)}
             onBlur={() => setActiveCompany(null)}
-            className={`relative h-full min-w-0 ${
-              isActive ? 'z-[80]' : 'z-0'
-            }`}
+            className={`relative h-full min-w-0 ${isActive ? 'z-[80]' : 'z-0'}`}
           >
             <Link
               href={websiteHref}
