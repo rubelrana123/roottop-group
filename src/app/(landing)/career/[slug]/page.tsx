@@ -13,28 +13,16 @@ type Props = {
 };
 
 export function generateStaticParams() {
-  console.log("========== generateStaticParams ==========");
-
-  const paths = careerData.map((job) => ({
+  return careerData.map((job) => ({
     slug: job.slug,
   }));
-
-  console.log(paths);
-
-  return paths;
 }
 
 export async function generateMetadata({
   params,
 }: Props): Promise<Metadata> {
   const { slug } = await params;
-
-  console.log("========== generateMetadata ==========");
-  console.log("Slug:", slug);
-
   const job = careerData.find((item) => item.slug === slug);
-
-  console.log("Found Job:", job);
 
   if (!job) {
     return {
@@ -53,25 +41,9 @@ export default async function CareerDetailsPage({
   params,
 }: Props) {
   const { slug } = await params;
-
-  console.log("========== CareerDetailsPage ==========");
-  console.log("Requested Slug:", slug);
-
-  console.log("Available Slugs:");
-  console.table(
-    careerData.map((item) => ({
-      id: item.id,
-      slug: item.slug,
-      title: item.title,
-    }))
-  );
-
   const job = careerData.find((item) => item.slug === slug);
 
-  console.log("Matched Job:", job);
-
   if (!job) {
-    console.error(`❌ No job found for slug: ${slug}`);
     notFound();
   }
 

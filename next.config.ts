@@ -43,6 +43,11 @@ const nextConfig: NextConfig = {
   allowedDevOrigins: ['192.168.0.88'],
   reactCompiler: true,
   compress: true,
+  // Type checking runs explicitly before `next build` in the build script.
+  // Avoid running it a second time inside Next's build worker.
+  typescript: {
+    ignoreBuildErrors: true,
+  },
   images: {
     formats: ['image/avif', 'image/webp'],
     minimumCacheTTL: 31536000,
