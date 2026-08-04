@@ -10,11 +10,11 @@ const securityHeaders = [
       "img-src 'self' data: blob: https:",
       "font-src 'self' data: https://fonts.gstatic.com",
       "connect-src 'self' https://api.emailjs.com https://*.emailjs.com",
-      "frame-src https://www.google.com",
+      'frame-src https://www.google.com',
       "base-uri 'self'",
       "form-action 'self'",
       "frame-ancestors 'self'",
-      "upgrade-insecure-requests",
+      'upgrade-insecure-requests',
     ].join('; '),
   },
   {
@@ -49,6 +49,25 @@ const nextConfig: NextConfig = {
     contentDispositionType: 'inline',
     dangerouslyAllowSVG: false,
   },
+  async redirects() {
+    return [
+      {
+        source: '/about',
+        destination: '/about-us',
+        permanent: true,
+      },
+      {
+        source: '/about-2',
+        destination: '/about-us',
+        permanent: true,
+      },
+      {
+        source: '/contact-us',
+        destination: '/contact',
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     return [
       {
@@ -65,7 +84,7 @@ const nextConfig: NextConfig = {
         ],
       },
     ];
-  }
+  },
 };
 
 export default nextConfig;
