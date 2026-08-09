@@ -53,7 +53,7 @@ const companies: Company[] = [
     logo: '/arinternational2.png',
     description:
       'AR International offers global sourcing, import-export, supply chain, and trading solutions connecting businesses worldwide.',
-    website: 'https://roottopltd.com/',
+    website: 'https://arintlbd.com/',
   },
   {
     id: 6,
@@ -61,7 +61,7 @@ const companies: Company[] = [
     logo: '/k3r.png',
     description:
       'K3R Corporation specializes in import-export, sourcing, and logistics services with reliable global trade solutions.',
-    website: 'https://roottopltd.com/',
+    website: 'https://k3rcorporation.com/',
   },
 
   {
