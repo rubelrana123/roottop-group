@@ -1,8 +1,12 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
-import ContactForm from "@/components/common/contact/ContactForm";
-import { MessageCircleMore } from "lucide-react";
+import { motion } from 'framer-motion';
+import dynamic from 'next/dynamic';
+import { MessageCircleMore } from 'lucide-react';
+
+const ContactForm = dynamic(
+  () => import('@/components/common/contact/ContactForm')
+);
 
 export default function ContactSection() {
   return (
@@ -24,7 +28,6 @@ export default function ContactSection() {
           className="mx-auto mb-14 max-w-3xl text-center"
         >
           <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-5 py-2 text-primary">
-        
             <span className="text-sm font-semibold uppercase tracking-[0.2em]">
               Contact Form
             </span>
@@ -38,9 +41,9 @@ export default function ContactSection() {
           </h2>
 
           <p className="mt-6 text-lg leading-8 text-muted-foreground">
-            Have a question, project inquiry, or partnership proposal?
-            Complete the form below and our team will get back to you as
-            soon as possible.
+            Have a question, project inquiry, or partnership proposal? Complete
+            the form below and our team will get back to you as soon as
+            possible.
           </p>
         </motion.div>
 
@@ -62,7 +65,6 @@ export default function ContactSection() {
                
           "
         >
-  
           <div className="relative z-10 ">
             <ContactForm />
           </div>

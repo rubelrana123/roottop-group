@@ -92,20 +92,20 @@ export default function LicenseAwardsSection() {
                     />
                   </div>
 
-                  <div className="absolute right-4 top-4 z-20 sm:right-5 sm:top-5">
-                    <span className="rounded-full border border-primary/20 bg-primary/10 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-wider text-primary shadow-sm sm:px-4 sm:py-2 sm:text-xs">
+                  <div className="pointer-events-none absolute left-4 right-4 top-4 z-20 flex justify-end sm:left-5 sm:right-5 sm:top-5">
+                    <span className="inline-flex max-w-full items-center justify-center rounded-full border border-primary/20 bg-primary/10 px-3 py-1.5 text-center text-[10px] font-semibold uppercase leading-tight tracking-wider text-primary shadow-sm [overflow-wrap:anywhere] sm:px-4 sm:py-2 sm:text-xs">
                       {item.category}
                     </span>
                   </div>
 
-                  <div className="absolute bottom-0 left-0 z-20 w-full border-t border-white/80 bg-white/95 p-5 shadow-[0_-14px_34px_rgba(255,255,255,0.92),0_16px_32px_rgba(15,23,42,0.12)] backdrop-blur sm:p-6 lg:p-7">
-                    <h3 className="line-clamp-2 text-base font-bold uppercase leading-snug tracking-wide text-slate-900 sm:text-lg lg:text-xl">
+                  <div className="absolute bottom-0 left-0 z-20 flex min-h-[132px] w-full flex-col justify-between overflow-hidden border-t border-white/80 bg-white/95 p-5 shadow-[0_-14px_34px_rgba(255,255,255,0.92),0_16px_32px_rgba(15,23,42,0.12)] backdrop-blur sm:min-h-[148px] sm:p-6 lg:min-h-[160px] lg:p-7">
+                    <h3 className="line-clamp-2 min-w-0 break-words text-base font-bold uppercase leading-snug tracking-wide text-slate-900 [overflow-wrap:anywhere] sm:text-lg lg:text-xl">
                       {item.title}
                     </h3>
 
-                    <div className="mt-3 flex items-center gap-2">
+                    <div className="mt-3 flex min-w-0 items-center gap-2">
                       <div className="h-2 w-2 shrink-0 rounded-full bg-primary" />
-                      <p className="text-xs font-medium text-slate-500 sm:text-sm">
+                      <p className="min-w-0 truncate text-xs font-medium text-slate-500 sm:text-sm">
                         RootTOP Group
                       </p>
                     </div>

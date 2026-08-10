@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 'use client';
-import { cn } from '@/lib';
+import { cn } from '@/lib/utils';
 import { ChevronLeft } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 

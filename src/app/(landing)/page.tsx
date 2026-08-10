@@ -3,7 +3,7 @@ import BusinessAreas from '@/components/common/home/BusinessAreas';
 import CompanyOverview from '@/components/common/home/companyOverview';
 import GroupCompanies from '@/components/common/home/groupCompany';
 import HeroSec from '@/components/common/home/heroSec';
-import Newsletter from '@/components/common/home/newsletter';
+import LazyNewsletter from '@/components/common/home/LazyNewsletter';
 import OurClients from '@/components/common/home/OurClients';
 import JsonLd from '@/components/common/JsonLd';
 import MissionVisionValues from '@/components/common/MissionVisionValues';
@@ -19,20 +19,19 @@ export default function RootHome() {
         data={webpageJsonLd({
           title: 'RootTOP Group',
           description:
-             "RootTOP Group is a leading Bangladesh-based business conglomerate providing construction, engineering, IT solutions, agriculture, consultancy, logistics, and global trade services.",
+            'RootTOP Group is a leading Bangladesh-based business conglomerate providing construction, engineering, IT solutions, agriculture, consultancy, logistics, and global trade services.',
           path: '/',
         })}
       />
       <HeroSec />
-      
       <ScrollIndicator />
-      <CompanyOverview/>
+      <CompanyOverview />
       <GroupCompanies />
       <AchievementSection />
-      <BusinessAreas/>
+      <BusinessAreas />
       <MissionVisionValues />
       <OurClients />
-      <Newsletter/>
+      <LazyNewsletter />
     </>
   );
 }

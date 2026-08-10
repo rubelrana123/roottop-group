@@ -1,5 +1,3 @@
-"use client";
-
 import AchievementContent from "../AchievementContent";
 import AchievementHero from "../AchievementHero.tsx";
 import AchievementStats from "../AchievementStats";

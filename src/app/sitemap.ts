@@ -24,14 +24,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified,
       changeFrequency: "monthly",
       priority: 0.9,
-      images: [absoluteUrl("/exportimport.jpg")],
+      images: [absoluteUrl("/exportimport.avif")],
     },
     {
       url: absoluteUrl("/sister-concerns"),
       lastModified,
       changeFrequency: "monthly",
       priority: 0.7,
-      images: [absoluteUrl("/banner_sister.png")],
+      images: [absoluteUrl("/banner_sister.webp")],
     },
     {
       url: absoluteUrl("/contact"),

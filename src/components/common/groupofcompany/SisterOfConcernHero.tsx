@@ -5,7 +5,7 @@ export default function SisterConcernHero() {
     <section className="relative h-[300px] md:h-[420px] overflow-hidden">
       {/* Background Image */}
       <Image
-        src="/construction.jpg" // Replace with your banner image
+        src="/buildconstruction.avif"
         alt="RootTOP Group sister concerns and business ecosystem"
         fill
         priority

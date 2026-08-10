@@ -27,7 +27,7 @@ export default function SisterConcern() {
         title="Our Sister Concerns"
         subtitle="Our Business Ecosystem"
         description="Discover the companies that strengthen the RootTOP Group ecosystem through expertise in civil engineering, IT, agriculture, international trade, investment, consultancy, and real estate."
-        image="/banner_sister.png"
+        image="/banner_sister.webp"
         imageAlt="RootTOP Group sister companies and corporate ecosystem"
       />
 

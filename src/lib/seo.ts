@@ -6,7 +6,7 @@ export const siteConfig = {
   legalName: "RootTOP Group",
   url: "https://www.roottopgroup.com",
   locale: "en_US",
-  defaultImage: "/RootTOP.jpg",
+  defaultImage: "/banner_sister.webp",
   logo: "/logo.png",
   phone: "+8801746644478",
   email: "roottop.ltd@gmail.com",
@@ -159,7 +159,7 @@ export const pageMetadata = {
       "Explore RootTOP Group services across construction, consultancy, electrical and mechanical engineering, agriculture, information technology, and import-export operations.",
     path: "/business",
     keywords: ["business services Bangladesh", "construction services", "engineering services"],
-    image: "/exportimport.jpg",
+    image: "/exportimport.avif",
     category: "Services",
   }),
   sisterConcerns: createMetadata({
@@ -168,7 +168,7 @@ export const pageMetadata = {
       "Discover the sister concerns and portfolio companies within RootTOP Group, serving construction, agriculture, trading, technology, and enterprise sectors in Bangladesh.",
     path: "/sister-concerns",
     keywords: ["RootTOP sister concerns", "group companies Bangladesh"],
-    image: "/groupCompany.png",
+    image: "/banner_sister.webp",
     category: "Corporate Group",
   }),
   contact: createMetadata({
