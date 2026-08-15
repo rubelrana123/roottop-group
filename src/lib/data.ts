@@ -720,6 +720,7 @@ export interface Career {
   id: number;
   slug: string;
   title: string;
+  company?: string;
   featured: boolean;
 
   // Hero Image
@@ -765,6 +766,83 @@ export interface Career {
   };
 }
 export const careerData: Career[] = [
+  {
+    id: 4,
+    slug: "site-engineer",
+    title: "Site Engineer",
+    company: "RootTOP Group",
+    featured: true,
+    image: "/site-engineer-job.png",
+
+    summary: {
+      vacancy: 5,
+      salary: "Negotiable, based on experience",
+      experience: "Minimum 1 year or 1 completed project",
+      employmentStatus: "Full-Time",
+      jobLevel: "Entry to Mid Level",
+      workplace: "On Site",
+      location: "Office and Project Sites in Bangladesh",
+      age: "Not Specified",
+      deadline: "August 28, 2026",
+    },
+
+    application: {
+      applyLink: "https://forms.gle/9SiHzcJHu7obP4937",
+      contactEmail: "roottopltd@gmail.com",
+    },
+
+    jobContext:
+      "RootTOP Group is seeking responsible, detail-oriented, and technically skilled Site Engineers to supervise construction activities and ensure projects are completed according to approved drawings, specifications, quality standards, budgets, and schedules. The ideal candidate should have practical knowledge of construction methods, materials, site measurements, quantity estimation, and project documentation. The candidate must also be willing to work at project sites and coordinate effectively with project managers, consultants, subcontractors, suppliers, and site workers.",
+
+    responsibilities: [
+      "Prepare quantity estimates, material requisitions, measurements, and bills of quantities (BOQ).",
+      "Supervise day-to-day construction activities and ensure work follows approved drawings, specifications, and project schedules.",
+      "Monitor workmanship, materials, and project progress to maintain quality standards.",
+      "Coordinate with project managers, consultants, subcontractors, suppliers, and site workers.",
+      "Ensure compliance with site safety procedures and promote safe working practices.",
+      "Maintain daily progress reports, site records, measurements, and other project documentation.",
+      "Identify technical or site-related issues and support timely, practical solutions.",
+      "Verify completed work and assist with inspections, testing, and handover activities.",
+      "Monitor material usage, minimize waste, and support efficient project execution.",
+      "Assist in ensuring projects are completed within the approved timeline and specifications.",
+    ],
+
+    educationalRequirements: [
+      "Diploma in Engineering or BSc in Engineering in Civil Engineering or a relevant discipline.",
+    ],
+
+    experienceRequirements: [
+      "Minimum 1 year of relevant site engineering experience.",
+      "Alternatively, successful completion of at least 1 construction project.",
+    ],
+
+    additionalRequirements: [
+      "Sound knowledge of construction methods, materials, architectural and structural drawings, quantity estimation, and site measurements.",
+      "Basic proficiency in AutoCAD and Microsoft Office is preferred.",
+      "Knowledge of BOQ preparation and project documentation.",
+      "Strong communication, coordination, problem-solving, and time-management skills.",
+      "Willingness to work at project sites and travel or relocate when required.",
+      "Responsible, safety-conscious, and able to work effectively with a project team.",
+      "Ability to work under pressure and meet project deadlines.",
+    ],
+
+    compensationBenefits: [
+      "Salary is negotiable and will depend on the candidate's experience and qualifications.",
+      "Performance-based salary review.",
+      "Career growth and professional development opportunities.",
+      "Paid leave and public holidays as per company policy.",
+      "Professional, collaborative, and growth-oriented working environment.",
+    ],
+
+    officeAddress: {
+      company: "RootTOP Group",
+      address:
+        "House #263 (1st Floor), Road #19, Mohakhali DOHS, Dhaka Cantonment, Dhaka-1206",
+      email: "roottopltd@gmail.com",
+      phone: "+8801746644478",
+      website: "https://www.roottopltd.com",
+    },
+  },
   {
     id: 3,
     slug: "3d-architectural-visualizer",

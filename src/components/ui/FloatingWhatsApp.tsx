@@ -125,27 +125,7 @@ export default function FloatingWhatsApp({
           <span className="absolute inset-0 rounded-full border-4 border-[#25D366]/40 animate-whatsapp-pulse" />
 
           {/* Main Button */}
-          <div
-            className="
-              relative
-              flex
-              h-16
-              w-16
-              animate-floating
-              items-center
-              justify-center
-              rounded-full
-              bg-[#25D366]
-              text-white
-              shadow-2xl
-              transition-all
-              duration-300
-              group-hover:-translate-y-1
-              group-hover:scale-110
-              group-hover:rotate-6
-              active:scale-95
-            "
-          >
+          <div className="relative flex h-16 w-16 animate-floating items-center justify-center rounded-full bg-[#25D366] text-white shadow-2xl transition-all duration-300 group-hover:-translate-y-1 group-hover:scale-110 group-hover:rotate-6 active:scale-95">
             <MessageCircleMore
               size={30}
               className="transition-transform duration-300 group-hover:scale-110"

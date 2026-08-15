@@ -66,7 +66,7 @@ function ClientRow({
       whileInView="visible"
       viewport={{ once: true, amount: 0.25 }}
       transition={delay === undefined ? undefined : { delay }}
-      className="overflow-visible"
+      className="overflow-visible "
     >
       <Swiper
         modules={[Autoplay, FreeMode]}

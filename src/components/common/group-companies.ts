@@ -64,7 +64,7 @@ export const companies: Company[] = [
     website: 'alterteq.com',
   },
   {
-    id: 6,
+    id: 8,
     name: 'Khamarbari Corporation',
     logo: '/khamarbari.png',
     description:

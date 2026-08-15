@@ -4,7 +4,7 @@ import Link from "next/link";
 import type { Career } from "@/lib/data";
 import {
   Briefcase, Wallet, Calendar, MapPin, UserRound,
-  Building2, CircleCheck, ExternalLink
+  Building2, CircleCheck, ExternalLink, Mail, Phone, Globe
 } from "lucide-react";
 
 type Props = { job: Career };
@@ -26,6 +26,9 @@ export default function JobDetails({ job }: Props) {
               </div>
 
               <div className="mt-8 grid gap-5 md:grid-cols-2">
+                {job.company && (
+                  <Info icon={<Building2 size={20}/>} label="Company" value={job.company}/>
+                )}
                 <Info icon={<Briefcase size={20}/>} label="Employment Status" value={job.summary.employmentStatus}/>
                 <Info icon={<Wallet size={20}/>} label="Salary" value={job.summary.salary}/>
                 <Info icon={<Calendar size={20}/>} label="Deadline" value={job.summary.deadline}/>
@@ -35,7 +38,7 @@ export default function JobDetails({ job }: Props) {
               </div>
             </div>
 
-            <Section title="Job Context">
+            <Section title="Job Overview">
               <p className="leading-8 text-gray-600">{job.jobContext}</p>
             </Section>
 
@@ -44,6 +47,26 @@ export default function JobDetails({ job }: Props) {
             <ListSection title="Experience Requirements" items={job.experienceRequirements}/>
             <ListSection title="Additional Requirements" items={job.additionalRequirements}/>
             <ListSection title="Compensation & Benefits" items={job.compensationBenefits}/>
+
+            {job.officeAddress && (
+              <Section title="How to Apply & Contact Information">
+                <p className="mb-6 leading-8 text-gray-600">
+                  For any recruitment-related queries, candidates may contact us using the details below.
+                </p>
+                <div className="grid gap-4 md:grid-cols-2">
+                  <Info icon={<Building2 size={20}/>} label="Company" value={job.officeAddress.company}/>
+                  <Info icon={<Mail size={20}/>} label="Email" value={job.officeAddress.email}/>
+                  <Info icon={<Phone size={20}/>} label="Phone" value={job.officeAddress.phone}/>
+                  <Info icon={<Globe size={20}/>} label="Website" value={job.officeAddress.website}/>
+                  <div className="md:col-span-2">
+                    <Info icon={<MapPin size={20}/>} label="Address" value={job.officeAddress.address}/>
+                  </div>
+                  <div className="md:col-span-2">
+                    <Info icon={<Calendar size={20}/>} label="Application Deadline" value={job.summary.deadline}/>
+                  </div>
+                </div>
+              </Section>
+            )}
           </div>
 
           <aside className="lg:sticky lg:top-28 h-fit">
