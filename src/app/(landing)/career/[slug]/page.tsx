@@ -5,6 +5,7 @@ import PageHero from "@/components/common/PageHero";
 import JobDetails from "@/components/common/career/JobDetails";
 
 import { careerData } from "@/lib/data";
+import { createMetadata } from "@/lib/seo";
 
 type Props = {
   params: Promise<{
@@ -25,16 +26,20 @@ export async function generateMetadata({
   const job = careerData.find((item) => item.slug === slug);
 
   if (!job) {
-    return {
+    return createMetadata({
       title: "Career Not Found",
       description: "The requested career opportunity could not be found.",
-    };
+      path: `/career/${slug}`,
+    });
   }
 
-  return {
-    title: `${job.title} | Career | RootTOP Group`,
+  return createMetadata({
+    title: `${job.title} | Career at RootTOP Group`,
     description: job.jobContext,
-  };
+    path: `/career/${job.slug}`,
+    category: "Career",
+    keywords: [job.title, "RootTOP Group careers", "jobs in Bangladesh"],
+  });
 }
 
 export default async function CareerDetailsPage({

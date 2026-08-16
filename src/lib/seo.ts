@@ -6,7 +6,7 @@ export const siteConfig = {
   legalName: "RootTOP Group",
   url: "https://www.roottopgroup.com",
   locale: "en_US",
-  defaultImage: "/banner_sister.webp",
+  defaultImage: "/roottop-social-share.png",
   logo: "/logo.png",
   phone: "+8801746644478",
   email: "roottop.ltd@gmail.com",
