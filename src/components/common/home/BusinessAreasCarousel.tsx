@@ -40,6 +40,7 @@ export default function BusinessAreasCarousel() {
   return (
     <>
       <Swiper
+        className="businessAreasSwiper"
         modules={[Navigation, Autoplay, Pagination]}
         navigation
         pagination={{ clickable: true }}
@@ -113,40 +114,6 @@ export default function BusinessAreasCarousel() {
           );
         })}
       </Swiper>
-      <style jsx global>{`
-        @media (max-width: 767px) {
-          .swiper-button-prev,
-          .swiper-button-next {
-            display: none !important;
-          }
-
-          .swiper-pagination {
-            display: block;
-            position: relative;
-            margin-top: 24px;
-          }
-        }
-
-        @media (min-width: 768px) {
-          .swiper-pagination {
-            display: none !important;
-          }
-        }
-
-        .swiper-pagination-bullet {
-          width: 10px;
-          height: 10px;
-          background: #d1d5db;
-          opacity: 1;
-          transition: all 0.3s ease;
-        }
-
-        .swiper-pagination-bullet-active {
-          width: 26px;
-          border-radius: 9999px;
-          background: #4fa73f;
-        }
-      `}</style>
     </>
   );
 }

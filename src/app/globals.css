@@ -325,6 +325,39 @@
     0 0 0 1px rgba(104, 213, 58, 0.16);
 }
 
+@media (max-width: 767px) {
+  .businessAreasSwiper .swiper-button-prev,
+  .businessAreasSwiper .swiper-button-next {
+    display: none !important;
+  }
+
+  .businessAreasSwiper .swiper-pagination {
+    display: block;
+    position: relative;
+    margin-top: 24px;
+  }
+}
+
+@media (min-width: 768px) {
+  .businessAreasSwiper .swiper-pagination {
+    display: none !important;
+  }
+}
+
+.businessAreasSwiper .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #d1d5db;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.businessAreasSwiper .swiper-pagination-bullet-active {
+  width: 26px;
+  border-radius: 9999px;
+  background: #4fa73f;
+}
+
 
 /* Floating Animation */
 @keyframes floating {

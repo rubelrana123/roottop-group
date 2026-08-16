@@ -11,8 +11,8 @@ export default function NavbarLogo() {
       <Image
         src="/rootopgrouptm.png"
         alt="RootTOP Group"
-        width={140}
-        height={70}
+        width={1855}
+        height={848}
         priority
         fetchPriority="high"
         className="h-auto w-[110px] sm:w-[125px] lg:w-[140px]"

@@ -41,7 +41,10 @@ const securityHeaders = [
 
 const nextConfig: NextConfig = {
   allowedDevOrigins: ['192.168.0.88'],
-  reactCompiler: true,
+  // The React Compiler currently normalizes multiline className strings on
+  // the server but not on the client in some Framer Motion/Link trees. That
+  // produces hydration warnings even though the CSS classes are identical.
+  reactCompiler: false,
   compress: true,
   images: {
     formats: ['image/avif', 'image/webp'],

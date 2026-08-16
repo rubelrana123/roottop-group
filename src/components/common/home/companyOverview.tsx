@@ -133,8 +133,8 @@ export default function CompanyOverview() {
                 <Image
                   src="/rootopgrouptm.png"
                   alt="RootTOP Group Logo"
-                  width={550}
-                  height={420}
+                  width={1855}
+                  height={848}
                   priority
                   className="h-auto w-full max-w-md object-contain transition-all duration-500 lg:max-w-lg"
                 />

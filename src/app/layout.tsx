@@ -50,7 +50,10 @@ export default function RootLayout({
       <head>
         <meta name="google-site-verification" content="A7tRAt27KqSlVpZqVI2Fo1wi-NDQg_mPYZjF0ynLNMY" />
       </head>
-      <body className={`${poppins.variable} antialiased`}>
+      <body
+        className={`${poppins.variable} antialiased`}
+        suppressHydrationWarning
+      >
         <Providers>
           <JsonLd data={[organizationJsonLd(), websiteJsonLd()]} />
           {children}
