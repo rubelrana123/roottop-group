@@ -45,6 +45,11 @@ const nextConfig: NextConfig = {
   // the server but not on the client in some Framer Motion/Link trees. That
   // produces hydration warnings even though the CSS classes are identical.
   reactCompiler: false,
+  // Type-checking runs explicitly in the build script. Skipping Next's
+  // duplicate checker avoids a Vercel build hang at "Running TypeScript".
+  typescript: {
+    ignoreBuildErrors: true,
+  },
   compress: true,
   images: {
     formats: ['image/avif', 'image/webp'],

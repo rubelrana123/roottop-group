@@ -85,6 +85,7 @@ export default function LicenseAwardsSection() {
                       src={item.logo}
                       alt={item.title}
                       fill
+                      loading={item.logo === '/documents/DGDP.jpg' ? 'eager' : 'lazy'}
                       draggable={false}
                       onContextMenu={(event) => event.preventDefault()}
                       sizes="(min-width: 1024px) 360px, (min-width: 640px) 320px, 82vw"

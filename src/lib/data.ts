@@ -769,7 +769,7 @@ export const careerData: Career[] = [
   {
     id: 4,
     slug: "site-engineer",
-    title: "Site Engineer",
+    title: "Site Engineer (Civil)",
     company: "RootTOP Group",
     featured: true,
     image: "/site-engineer-job.png",
@@ -777,11 +777,11 @@ export const careerData: Career[] = [
     summary: {
       vacancy: 5,
       salary: "Negotiable, based on experience",
-      experience: "Minimum 1 year or 1 completed project",
+      experience: "Minimum 3 years or 5 successfully completed projects",
       employmentStatus: "Full-Time",
-      jobLevel: "Entry to Mid Level",
+      jobLevel: "Mid Level",
       workplace: "On Site",
-      location: "Office and Project Sites in Bangladesh",
+      location: "Anywhere in Bangladesh",
       age: "Not Specified",
       deadline: "August 28, 2026",
     },
@@ -795,34 +795,34 @@ export const careerData: Career[] = [
       "RootTOP Group is seeking responsible, detail-oriented, and technically skilled Site Engineers to supervise construction activities and ensure projects are completed according to approved drawings, specifications, quality standards, budgets, and schedules. The ideal candidate should have practical knowledge of construction methods, materials, site measurements, quantity estimation, and project documentation. The candidate must also be willing to work at project sites and coordinate effectively with project managers, consultants, subcontractors, suppliers, and site workers.",
 
     responsibilities: [
-      "Prepare quantity estimates, material requisitions, measurements, and bills of quantities (BOQ).",
+      "Possess a strong understanding of quantity estimates, material requisitions, measurements, and Bills of Quantities (BOQ).",
       "Supervise day-to-day construction activities and ensure work follows approved drawings, specifications, and project schedules.",
-      "Monitor workmanship, materials, and project progress to maintain quality standards.",
-      "Coordinate with project managers, consultants, subcontractors, suppliers, and site workers.",
+      "Monitor workmanship, materials, and project progress to maintain required quality standards.",
+      "Coordinate with authorities, employees, consultants, subcontractors, suppliers, and site workers.",
       "Ensure compliance with site safety procedures and promote safe working practices.",
       "Maintain daily progress reports, site records, measurements, and other project documentation.",
-      "Identify technical or site-related issues and support timely, practical solutions.",
+      "Identify technical and site-related issues and support timely and practical solutions.",
       "Verify completed work and assist with inspections, testing, and handover activities.",
       "Monitor material usage, minimize waste, and support efficient project execution.",
       "Assist in ensuring projects are completed within the approved timeline and specifications.",
     ],
 
     educationalRequirements: [
-      "Diploma in Engineering or BSc in Engineering in Civil Engineering or a relevant discipline.",
+      "Diploma in Civil Engineering or a relevant discipline.",
     ],
 
     experienceRequirements: [
-      "Minimum 1 year of relevant site engineering experience.",
-      "Alternatively, successful completion of at least 1 construction project.",
+      "Minimum 3 years of relevant site engineering experience.",
+      "Alternatively, successful completion of at least 5 construction projects.",
     ],
 
     additionalRequirements: [
-      "Sound knowledge of construction methods, materials, architectural and structural drawings, quantity estimation, and site measurements.",
+      "Good knowledge of construction methods, materials, architectural and structural drawings, quantity estimation, and site measurements.",
       "Basic proficiency in AutoCAD and Microsoft Office is preferred.",
       "Knowledge of BOQ preparation and project documentation.",
       "Strong communication, coordination, problem-solving, and time-management skills.",
       "Willingness to work at project sites and travel or relocate when required.",
-      "Responsible, safety-conscious, and able to work effectively with a project team.",
+      "Responsible, safety-conscious, and capable of working effectively as part of a project team.",
       "Ability to work under pressure and meet project deadlines.",
     ],
 
@@ -839,8 +839,8 @@ export const careerData: Career[] = [
       address:
         "House #263 (1st Floor), Road #19, Mohakhali DOHS, Dhaka Cantonment, Dhaka-1206",
       email: "roottopltd@gmail.com",
-      phone: "+8801746644478",
-      website: "https://www.roottopltd.com",
+      phone: "+8801705-918931",
+      website: "https://www.roottopgroup.com",
     },
   },
   {
