@@ -52,7 +52,6 @@ export default async function CareerDetailsPage({
       <PageHero
         title={job.title}
         subtitle="Career Opportunity"
-        description={job.jobContext}
         image={job.image || "/career-banner.webp"}
         imageAlt={job.title}
       />

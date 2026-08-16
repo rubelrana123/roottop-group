@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 interface PageHeroProps {
   title: string;
   subtitle: string;
-  description: string;
+  description?: string;
   image: string;
   imageAlt: string;
   height?: string;
