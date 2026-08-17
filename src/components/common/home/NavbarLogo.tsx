@@ -9,10 +9,10 @@ export default function NavbarLogo() {
       className="shrink-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
     >
       <Image
-        src="/rootopgrouptm.png"
+        src="/rootopgrouptm-transparent.png"
         alt="RootTOP Group"
-        width={1855}
-        height={848}
+        width={1962}
+        height={802}
         priority
         fetchPriority="high"
         className="h-auto w-[110px] sm:w-[125px] lg:w-[140px]"
