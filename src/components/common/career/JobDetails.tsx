@@ -35,11 +35,11 @@ export default function JobDetails({ job }: Props) {
             <div className="lg:hidden"><ApplicationCard job={job} /></div>
 
             <Section title="Job overview"><p className="text-sm leading-7 text-slate-600 sm:text-base sm:leading-8">{job.jobContext}</p></Section>
-            <ListSection title="Job responsibilities" items={job.responsibilities} />
-            <ListSection title="Educational requirements" items={job.educationalRequirements} />
-            <ListSection title="Experience requirements" items={job.experienceRequirements} />
-            <ListSection title="Additional requirements" items={job.additionalRequirements} />
-            <ListSection title="Compensation & benefits" items={job.compensationBenefits} />
+            <ListSection title={job.sectionLabels?.responsibilities || "Job responsibilities"} items={job.responsibilities} />
+            <ListSection title={job.sectionLabels?.education || "Educational requirements"} items={job.educationalRequirements} />
+            <ListSection title={job.sectionLabels?.experience || "Experience requirements"} items={job.experienceRequirements} />
+            <ListSection title={job.sectionLabels?.additional || "Additional requirements"} items={job.additionalRequirements} />
+            <ListSection title={job.sectionLabels?.compensation || "Compensation & benefits"} items={job.compensationBenefits} />
 
             {job.officeAddress && (
               <Section title="Contact information">

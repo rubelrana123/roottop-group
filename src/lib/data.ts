@@ -1,4 +1,4 @@
-import { 
+import {
   Building2,
   Package,
   Laptop,
@@ -59,7 +59,7 @@ export const businessAreas = [
     description: 'Driving financial growth through diversified opportunities.',
     icon: LineChart,
     image: '/investment.jpg',
-    href: '/business/investment', 
+    href: '/business/investment',
   },
   {
     title: 'Developer',
@@ -114,7 +114,7 @@ export const services = [
       "Commitment to Safety & Quality",
     ],
   },
- {
+  {
     id: 2,
     slug: "electrical-mechanical",
     title: "Electrical & Mechanical Engineering",
@@ -142,38 +142,38 @@ export const services = [
       "Reliable Power Solutions",
     ],
   },
-    {
-  id: 3,
-  slug: "interior-exterior-design",
-  title: "Interior & Exterior Design",
-  shortDescription:
-    "Creating modern, functional, and visually stunning interior and exterior spaces.",
+  {
+    id: 3,
+    slug: "interior-exterior-design",
+    title: "Interior & Exterior Design",
+    shortDescription:
+      "Creating modern, functional, and visually stunning interior and exterior spaces.",
 
-  description:
-    "Our Interior & Exterior Design division delivers creative, practical, and high-quality design solutions for residential, commercial, and corporate projects. From concept development and space planning to landscape and façade design, we transform ideas into elegant, functional environments that reflect our clients' vision and lifestyle.",
+    description:
+      "Our Interior & Exterior Design division delivers creative, practical, and high-quality design solutions for residential, commercial, and corporate projects. From concept development and space planning to landscape and façade design, we transform ideas into elegant, functional environments that reflect our clients' vision and lifestyle.",
 
-  image: "/interiornadexterior.jpg",
+    image: "/interiornadexterior.jpg",
 
-  items: [
-    "Interior Design",
-    "Exterior Design",
-    "Space Planning",
-    "3D Design & Visualization",
-    "Landscape Design",
-    "Furniture & Decoration",
-    "Renovation & Remodeling",
-    "Turnkey Interior Solutions",
-  ],
+    items: [
+      "Interior Design",
+      "Exterior Design",
+      "Space Planning",
+      "3D Design & Visualization",
+      "Landscape Design",
+      "Furniture & Decoration",
+      "Renovation & Remodeling",
+      "Turnkey Interior Solutions",
+    ],
 
-  whyChooseUs: [
-    "Creative & Experienced Designers",
-    "Customized Design Solutions",
-    "Premium Quality Materials",
-    "Modern & Sustainable Designs",
-    "End-to-End Project Management",
-    "On-Time Project Delivery",
-  ],
-},
+    whyChooseUs: [
+      "Creative & Experienced Designers",
+      "Customized Design Solutions",
+      "Premium Quality Materials",
+      "Modern & Sustainable Designs",
+      "End-to-End Project Management",
+      "On-Time Project Delivery",
+    ],
+  },
   {
     id: 4,
     slug: "information-technology",
@@ -256,37 +256,37 @@ export const services = [
     ],
   },
   {
-  id: 8,
-  slug: "fashion",
-  title: "Fashion",
-  shortDescription:
-    "Stylish, high-quality fashion products for men, women, and corporate clients.",
+    id: 8,
+    slug: "fashion",
+    title: "Fashion",
+    shortDescription:
+      "Stylish, high-quality fashion products for men, women, and corporate clients.",
 
-  description:
-    "Our Fashion division offers a diverse range of premium apparel and fashion products designed for quality, comfort, and style. We provide ready-made garments, corporate uniforms, promotional apparel, and customized clothing solutions while maintaining high standards of craftsmanship and customer satisfaction.",
+    description:
+      "Our Fashion division offers a diverse range of premium apparel and fashion products designed for quality, comfort, and style. We provide ready-made garments, corporate uniforms, promotional apparel, and customized clothing solutions while maintaining high standards of craftsmanship and customer satisfaction.",
 
-  image: "/fashion.jpg",
+    image: "/fashion.jpg",
 
-  items: [
-    "Men's Fashion",
-    "Women's Fashion",
-    "Corporate Uniforms",
-    "Custom Apparel",
-    "Ready-Made Garments",
-    "Fashion Accessories",
-  ],
+    items: [
+      "Men's Fashion",
+      "Women's Fashion",
+      "Corporate Uniforms",
+      "Custom Apparel",
+      "Ready-Made Garments",
+      "Fashion Accessories",
+    ],
 
-  whyChooseUs: [
-    "Premium Quality Fabrics",
-    "Modern & Trendy Designs",
-    "Customization Available",
-    "Competitive Pricing",
-    "Reliable Supply & Delivery",
-    "Customer-Centric Service",
-  ],
-},
+    whyChooseUs: [
+      "Premium Quality Fabrics",
+      "Modern & Trendy Designs",
+      "Customization Available",
+      "Competitive Pricing",
+      "Reliable Supply & Delivery",
+      "Customer-Centric Service",
+    ],
+  },
 
- 
+
 
   {
     id: 7,
@@ -315,37 +315,37 @@ export const services = [
   },
 
   {
-  id: 7,
-  slug: "investment",
-  title: "Investment",
-  shortDescription:
-    "Strategic investment solutions that drive business growth and long-term value creation.",
+    id: 7,
+    slug: "investment",
+    title: "Investment",
+    shortDescription:
+      "Strategic investment solutions that drive business growth and long-term value creation.",
 
-  description:
-    "Our Investment division focuses on identifying, developing, and managing profitable investment opportunities across multiple industries. We support business expansion, infrastructure development, real estate, technology, agriculture, and strategic partnerships while ensuring sustainable growth, transparency, and long-term returns.",
+    description:
+      "Our Investment division focuses on identifying, developing, and managing profitable investment opportunities across multiple industries. We support business expansion, infrastructure development, real estate, technology, agriculture, and strategic partnerships while ensuring sustainable growth, transparency, and long-term returns.",
 
-  image: "/investment.jpg",
+    image: "/investment.jpg",
 
-  items: [
-    "Business Investment",
-    "Project Financing",
-    "Strategic Partnerships",
-    "Infrastructure Investment",
-    "Real Estate Investment",
-    "Agricultural Investment",
-    "Technology Investment",
-    "Joint Venture Opportunities",
-  ],
+    items: [
+      "Business Investment",
+      "Project Financing",
+      "Strategic Partnerships",
+      "Infrastructure Investment",
+      "Real Estate Investment",
+      "Agricultural Investment",
+      "Technology Investment",
+      "Joint Venture Opportunities",
+    ],
 
-  whyChooseUs: [
-    "Experienced Investment Team",
-    "Sustainable Growth Strategy",
-    "Transparent Business Practices",
-    "Diversified Investment Portfolio",
-    "Long-Term Value Creation",
-    "Strong Risk Management",
-  ],
-},
+    whyChooseUs: [
+      "Experienced Investment Team",
+      "Sustainable Growth Strategy",
+      "Transparent Business Practices",
+      "Diversified Investment Portfolio",
+      "Long-Term Value Creation",
+      "Strong Risk Management",
+    ],
+  },
 
 
 ];
@@ -357,25 +357,25 @@ export const awards = [
     title: 'Dhaka Chamber of Commerce & Industry (DCCI) Membership',
     logo: '/documents/DCCI_membership.jpg',
   },
-    {
+  {
     id: 12,
     category: 'Registration',
     title: 'Certificate of Incorporation',
     logo: '/documents/certificate_of_incorporation.jpg',
   },
-    {
+  {
     id: 7,
     category: 'Registration',
     title: 'Export Registration Certificate (ERC)',
     logo: '/documents/export_certificate.jpg',
   },
-    {
+  {
     id: 10,
     category: 'License',
     title: 'Civil Aviation Authority of Bangladesh (CAAB) License',
     logo: '/documents/CAAB.jpg',
   },
-    { 
+  {
 
     id: 9,
     category: 'Registration',
@@ -388,7 +388,7 @@ export const awards = [
     title: 'Directorate General Defence Purchase (DGDP) Certificate',
     logo: '/documents/DGDP.jpg',
   },
-    {
+  {
     id: 8,
     category: 'Membership',
     title: "Bangladesh Indenting Agents' Association (BIAA) Membership",
@@ -421,7 +421,7 @@ export const awards = [
 
 
 
- 
+
   {
     id: 11,
     category: 'Supplier Registration',
@@ -461,9 +461,9 @@ export const clients = [
   // Military & Defense
   // ============================
   {
-    id : 99, 
-    logo : "/clients/ordance2.png",
-    name : "Central Mechanical Transport Depot (CMTD)"
+    id: 99,
+    logo: "/clients/ordance2.png",
+    name: "Central Mechanical Transport Depot (CMTD)"
   },
   {
     id: 1,
@@ -614,10 +614,10 @@ export const clients = [
     logo: "/clients/cu.png",
     name: "Cumilla University",
   },
-    {
-    id : 99, 
-    logo : "/clients/ordance2.png",
-    name : "Central Ordnance Depot (COD)."
+  {
+    id: 99,
+    logo: "/clients/ordance2.png",
+    name: "Central Ordnance Depot (COD)."
   },
   {
     id: 30,
@@ -645,7 +645,7 @@ export const clients = [
     logo: "/clients/ruet.png",
     name: "Rajshahi University of Engineering and Technology",
   },
-    {
+  {
     id: 42,
     logo: "/clients/jolshiri.png",
     name: "Jolshiri Abashon-Bangladesh Army",
@@ -728,7 +728,7 @@ export interface Career {
 
   // Job Summary
   summary: {
-    vacancy: number;
+    vacancy: string | number;
     salary: string;
     experience: string;
     employmentStatus: string;
@@ -757,6 +757,13 @@ export interface Career {
   additionalRequirements: string[];
 
   compensationBenefits: string[];
+  sectionLabels?: {
+    responsibilities?: string;
+    education?: string;
+    experience?: string;
+    additional?: string;
+    compensation?: string;
+  };
   officeAddress?: {
     company: string;
     address: string;
@@ -766,6 +773,7 @@ export interface Career {
   };
 }
 export const careerData: Career[] = [
+
   {
     id: 4,
     slug: "site-engineer",
@@ -840,6 +848,102 @@ export const careerData: Career[] = [
         "House #263 (1st Floor), Road #19, Mohakhali DOHS, Dhaka Cantonment, Dhaka-1206",
       email: "roottopltd@gmail.com",
       phone: "+8801705-918931",
+      website: "https://www.roottopgroup.com",
+    },
+  },
+    {
+    id: 5,
+    slug: "freelance-brand-designer",
+    title: "Brand Designer — Project-Based / Freelance",
+    company: "RootTOP Group",
+    featured: true,
+    image: "/brand-designer-job.png",
+
+    summary: {
+      vacancy: "Individual or Team",
+      salary: "Negotiable, based on experience, portfolio, and project scope",
+      experience: "Proven corporate branding and identity design experience",
+      employmentStatus: "One-Time Project / Freelance",
+      jobLevel: "Experienced Professional or Team",
+      workplace: "Remote or Hybrid",
+      location: "Bangladesh",
+      age: "Not Specified",
+      deadline: "Open Until Filled",
+    },
+
+    application: {
+      applyLink: "https://forms.gle/fs1SJPB6HW9Aeab36",
+      contactEmail: "roottopltd@gmail.com",
+    },
+
+
+
+    jobContext:
+      "RootTOP Group is a diversified business group operating across multiple industries in Bangladesh. We are looking for a highly creative and experienced individual Brand Designer or design team to develop, refine, and standardize the corporate identity of RootTOP Group and its sister concerns. This is a one-time, project-based engagement. The selected designer or team will create a premium, professional, and consistent branding system that reflects our vision, values, and corporate identity across every company and application.",
+
+    responsibilities: [
+      "RootTOP Group (Corporate): logo development or refinement and a complete corporate identity system.",
+      "Corporate stationery: company brochure, letterhead, small and large envelopes, business or visiting card, employee ID card, and ID card ribbon or lanyard.",
+      "Financial documents: money receipt, convenience bill, bill voucher, credit voucher, and debit voucher.",
+      "Corporate templates: congratulations template, appreciation certificate template, and greeting or wishes template.",
+      "RootTOP Limited: logo refinement, letterhead, and envelope design.",
+      "AR International: new logo design and letterhead.",
+      "Khamarbari: new logo design and letterhead.",
+      "Orisyn: new logo design and letterhead.",
+      "Altertech: logo refinement and letterhead.",
+      "K3R: new logo design and letterhead.",
+      "Satellite: logo design or refinement and letterhead.",
+      "Cross Border: new logo design and letterhead.",
+      "Maintain a cohesive visual identity across the group while giving every sister concern an appropriate and distinctive brand presence.",
+    ],
+
+    educationalRequirements: [
+      "No specific academic qualification is mandatory; selection will be based primarily on portfolio quality, relevant experience, and ability to deliver the complete project scope.",
+      "Professional training or education in graphic design, visual communication, branding, or a related discipline is an advantage.",
+    ],
+
+    experienceRequirements: [
+      "Strong professional experience in corporate branding and brand identity design.",
+      "Demonstrated print-design expertise, including production-ready stationery and corporate documents.",
+      "Experience developing consistent branding systems for multiple companies or sub-brands.",
+      "A portfolio containing corporate branding projects, logo samples, and brand identity case studies.",
+    ],
+
+    additionalRequirements: [
+      "Modern, clean, and premium design aesthetics with excellent typography and layout skills.",
+      "Advanced proficiency in Adobe Illustrator, Photoshop, and InDesign, or equivalent professional software.",
+      "Ability to prepare accurate print-ready artwork and well-organized editable source files.",
+      "Strong communication, project planning, revision management, and deadline-management skills.",
+      "Applicants may be an experienced individual freelancer or a capable design team.",
+      "Applications must include a portfolio or Behance/Dribbble link, CV or professional profile, estimated total project cost, estimated timeline, and contact information.",
+      "Only shortlisted applicants will be contacted.",
+    ],
+
+    compensationBenefits: [
+      "Negotiable project fee based on experience, portfolio quality, proposed approach, and final project scope.",
+      "Editable source files in AI and EPS formats, plus editable or print-ready PDF files.",
+      "High-resolution PNG and scalable SVG files for approved brand assets.",
+      "Print-ready PDF files for all applicable stationery, financial documents, and templates.",
+      "Full-color, black, white, and monochrome variations of approved logos and brand assets.",
+      "Basic logo usage guidelines, font recommendations, and an approved color palette.",
+      "A complete, clearly organized final brand-assets package for RootTOP Group and all listed sister concerns.",
+      "Any other production files reasonably required for consistent digital and print use within the agreed scope.",
+    ],
+
+    sectionLabels: {
+      responsibilities: "Project scope",
+      education: "Selection basis",
+      experience: "Portfolio requirements",
+      additional: "Designer requirements & submission information",
+      compensation: "Required deliverables",
+    },
+
+    officeAddress: {
+      company: "RootTOP Group",
+      address:
+        "House #263 (1st Floor), Road #19, Mohakhali DOHS, Dhaka Cantonment, Dhaka-1206, Bangladesh",
+      email: "roottop.it@gmail.com",
+      phone: "+880 1705-918931",
       website: "https://www.roottopgroup.com",
     },
   },
