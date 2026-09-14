@@ -23,14 +23,7 @@ export const companies: Company[] = [
       'Orisyn Limited delivers technology, engineering, consultancy, and digital solutions for business growth and efficiency.',
     website: 'https://orisynltd.com/',
   },
-  {
-    id: 3,
-    name: 'Cross Border Trading',
-    logo: '/crossborder.png',
-    description:
-      'Cross Border Trading provides import-export, sourcing, and logistics solutions for global business expansion.',
-    website: 'https://crossbordertrading.com.bd/',
-  },
+
   {
     id: 4,
     name: 'Satellite Enterprise',
