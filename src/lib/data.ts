@@ -779,7 +779,7 @@ export const careerData: Career[] = [
     slug: "site-engineer",
     title: "Site Engineer (Civil)",
     company: "RootTOP Group",
-    featured: true,
+    featured: false,
     image: "/site-engineer-job.png",
 
     summary: {
@@ -856,7 +856,7 @@ export const careerData: Career[] = [
     slug: "freelance-brand-designer",
     title: "Brand Designer — Project-Based / Freelance",
     company: "RootTOP Group",
-    featured: true,
+    featured: false,
     image: "/brand-designer-job.png",
 
     summary: {
@@ -951,7 +951,7 @@ export const careerData: Career[] = [
     id: 3,
     slug: "3d-architectural-visualizer",
     title: "3D Architectural Visualizer",
-    featured: true,
+    featured: false,
     image: "/interiornadexterior.jpg",
 
     summary: {
