@@ -38,7 +38,7 @@ export const companies: Company[] = [
     logo: '/arinternational2.png',
     description:
       'AR International offers global sourcing, import-export, supply chain, and trading solutions connecting businesses worldwide.',
-    website: 'https://arintbd.com/',
+    website: 'https://arintlbd.com/',
   },
   {
     id: 6,
