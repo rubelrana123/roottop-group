@@ -39,7 +39,7 @@ export default function AchievementContent() {
         }}
         className="mt-4 text-3xl font-bold leading-tight sm:text-4xl lg:text-5xl"
       >
-        Numbers That
+        Numbers That{" "}
         <br className="hidden sm:block" />
         Tell Our Story
       </motion.h2>

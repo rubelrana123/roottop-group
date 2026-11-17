@@ -1,27 +1,20 @@
-import type { MetadataRoute } from "next";
+import type { MetadataRoute } from 'next';
+import { siteConfig } from '@/lib/site';
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "RootTOP Group",
-    short_name: "RootTOP",
-    description:
-      "RootTOP Group is a diversified business conglomerate in Bangladesh serving construction, engineering, IT, agriculture, consultancy, and international trade.",
-    start_url: "/",
-    scope: "/",
-    display: "standalone",
-    background_color: "#fbfbfb",
-    theme_color: "#68D53A",
+    name: siteConfig.name,
+    short_name: 'RootTOP',
+    description: siteConfig.description,
+    start_url: '/',
+    scope: '/',
+    display: 'standalone',
+    background_color: '#fbfbfb',
+    theme_color: '#68D53A',
     icons: [
-      {
-        src: "/icon",
-        sizes: "32x32",
-        type: "image/png",
-      },
-      {
-        src: "/apple-icon",
-        sizes: "180x180",
-        type: "image/png",
-      },
+      { src: '/icons/icon-192.png', sizes: '192x192', type: 'image/png' },
+      { src: '/icons/icon-512.png', sizes: '512x512', type: 'image/png' },
+      { src: '/icons/icon-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' },
     ],
   };
 }

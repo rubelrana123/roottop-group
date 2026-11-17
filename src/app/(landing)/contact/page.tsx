@@ -2,8 +2,8 @@ import type { Metadata } from "next";
  
 import JsonLd from "@/components/common/JsonLd";
 import {
+  breadcrumbJsonLd,
   localBusinessJsonLd,
-  organizationJsonLd,
   pageMetadata,
   webpageJsonLd,
 } from "@/lib/seo";
@@ -16,7 +16,6 @@ export default function ContactPage() {
     <>
       <JsonLd
         data={[
-          organizationJsonLd(),
           localBusinessJsonLd(),
           webpageJsonLd({
             title: "Contact RootTOP Group",
@@ -25,6 +24,10 @@ export default function ContactPage() {
             path: "/contact",
             type: "ContactPage",
           }),
+          breadcrumbJsonLd([
+            { name: "Home", href: "/" },
+            { name: "Contact", href: "/contact" },
+          ]),
         ]}
       />
       <ContactPageContent />

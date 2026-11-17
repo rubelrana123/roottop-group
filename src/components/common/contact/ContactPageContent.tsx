@@ -1,20 +1,12 @@
-'use client';
-
-import { motion } from 'framer-motion';
-
 import ContactSection from './ContactSection';
 import OfficeLocation from './OfficeLocation';
 import PageHero from '../PageHero';
 
+// Server component. The layout already renders <main>, so this is a plain div
+// (a nested <main> is invalid), and it no longer starts at opacity 0.
 export default function ContactPageContent() {
   return (
-    <motion.main
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.4 }}
-      className="bg-background"
-    >
-      {/* Hero Section */}
+    <div className="bg-background">
       <PageHero
         title="Contact Us"
         subtitle="Let's Connect"
@@ -23,11 +15,9 @@ export default function ContactPageContent() {
         imageAlt="Contact RootTOP Group"
       />
 
-      {/* Contact Form */}
       <ContactSection />
 
-      {/* Office Location */}
       <OfficeLocation />
-    </motion.main>
+    </div>
   );
 }

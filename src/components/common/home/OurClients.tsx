@@ -195,9 +195,9 @@ function ClientCard({
           />
         </div>
 
-        <h3 className="mt-4 line-clamp-2 min-h-10 text-center text-xs font-semibold leading-5 text-slate-700 transition-colors duration-300 group-hover:text-[#4FA73F] sm:text-sm">
+        <p className="mt-4 line-clamp-2 min-h-10 text-center text-xs font-semibold leading-5 text-slate-700 transition-colors duration-300 group-hover:text-[#4FA73F] sm:text-sm">
           {client.name}
-        </h3>
+        </p>
       </div>
     </motion.article>
   );

@@ -1,57 +1,52 @@
-'use client';
-
 import Link from 'next/link';
+import { groupCompanies, services } from '@/lib/data';
+import { siteConfig } from '@/lib/site';
 
-const footerData = [
+// Server component: no interactivity, so no client JavaScript is shipped.
+// Contact details come from siteConfig so they match the schema and contact page.
+
+type FooterLink = { name: string; href: string; external?: boolean };
+
+const footerData: { title: string; links: FooterLink[] }[] = [
   {
-    title: 'ABOUT',
-    links: [  
-      {
-        name: 'Mission, Vision & Values',
-        href: '/about-us#mission-vision-values',
-      },
-      {
-        name: 'Certification & Membership',
-        href: '/about-us#awards-achievements',
-      },
-      {
-        name: 'Our Clients',
-        href: '/about-us#ourclients',
-      },
+    title: 'About',
+    links: [
+      { name: 'About Us', href: '/about-us' },
+      { name: 'Mission, Vision & Values', href: '/about-us#mission-vision-values' },
+      { name: 'Certification & Membership', href: '/about-us#awards-achievements' },
+      { name: 'Our Clients', href: '/about-us#ourclients' },
     ],
   },
   {
-    title: 'BUSINESSES',
-    links: [{ name: 'Businesses', href: '/services' }],
-  },
-  {
-    title: 'SISTERS',
+    title: 'Businesses',
     links: [
-      { name: 'RootTOP Limited', href: '/' },
-      { name: 'AR International', href: '/' },
-      { name: 'Orisyn Limited', href: '/' },
-           {
-        name: 'K3R Corporation',
-        href: '/',
-      },
-      {
-        name: 'Khamarbari Corporation',
-        href: '/',
-      },
-      {
-        name: 'Cross Border Trading',
-        href: '/',
-      },
+      { name: 'All Business Areas', href: '/services' },
+      ...services.slice(0, 5).map((service) => ({
+        name: service.title,
+        href: `/services/${service.slug}`,
+      })),
     ],
   },
   {
-    title: 'CAREER',
+    title: 'Sister Concerns',
+    links: groupCompanies.map((company) => ({
+      name: company.name,
+      href: company.website,
+      external: true,
+    })),
+  },
+  {
+    title: 'Company',
     links: [
-      { name: 'Career', href: '/' },
-      { name: 'FAQ', href: '/' },
+      { name: 'Career', href: '/career' },
+      { name: 'Sister Concerns', href: '/sister-concerns' },
+      { name: 'Contact', href: '/contact' },
     ],
   },
 ];
+
+const linkClass =
+  'text-[15px] text-gray-300 transition-all duration-300 hover:translate-x-1 hover:text-[#69BE28]';
 
 export default function Footer() {
   return (
@@ -64,45 +59,41 @@ export default function Footer() {
               Contact Us
             </h2>
 
-            <div className="space-y-5 text-base leading-8 text-gray-300">
+            <address className="space-y-5 text-base not-italic leading-8 text-gray-300">
               <p>
-                House #263(1th Floor), Road #19,
+                {siteConfig.address.streetAddress},
                 <br />
-                Mohakhali DOHS,
+                {siteConfig.address.addressLocality}, Dhaka-{siteConfig.address.postalCode},
                 <br />
-                Dhaka-1206, Bangladesh
+                Bangladesh
               </p>
               <p>
                 <span className="font-semibold text-white">Email:</span>{' '}
-                roottopltd@gmail.com
+                <a href={`mailto:${siteConfig.email}`} className="transition hover:text-primary">
+                  {siteConfig.email}
+                </a>
               </p>
 
               <p className="flex items-start gap-2">
-                <span className="font-semibold text-white shrink-0">
-                  Phone:
-                </span>
+                <span className="shrink-0 font-semibold text-white">Phone:</span>
 
                 <span className="flex flex-col">
-                  <a
-                    href="tel:+8801746644478"
-                    className="hover:text-primary transition"
-                  >
-                    +8801746-644478
-                  </a>
-
-                  <a
-                    href="tel:+8801986205401"
-                    className="hover:text-primary transition"
-                  >
-                    +8801986-205401
-                  </a>
+                  {siteConfig.phones.map((phone) => (
+                    <a
+                      key={phone.tel}
+                      href={`tel:${phone.tel}`}
+                      className="transition hover:text-primary"
+                    >
+                      {phone.display}
+                    </a>
+                  ))}
                 </span>
               </p>
-            </div>
+            </address>
           </div>
 
           {/* Menu Columns */}
-          <div className="col-span-12 lg:col-span-8">
+          <nav className="col-span-12 lg:col-span-8" aria-label="Footer navigation">
             <div className="grid grid-cols-2 gap-10 sm:grid-cols-2 md:grid-cols-4 md:gap-8 lg:gap-12">
               {footerData.map((section) => (
                 <div key={section.title}>
@@ -112,20 +103,28 @@ export default function Footer() {
 
                   <ul className="space-y-4">
                     {section.links.map((link) => (
-                      <li key={link.name}>
-                        <Link
-                          href={link.href}
-                          className="text-[15px] text-gray-300 transition-all duration-300 hover:translate-x-1 hover:text-[#69BE28]"
-                        >
-                          {link.name}
-                        </Link>
+                      <li key={link.href}>
+                        {link.external ? (
+                          <a
+                            href={link.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={linkClass}
+                          >
+                            {link.name}
+                          </a>
+                        ) : (
+                          <Link href={link.href} className={linkClass}>
+                            {link.name}
+                          </Link>
+                        )}
                       </li>
                     ))}
                   </ul>
                 </div>
               ))}
             </div>
-          </div>
+          </nav>
         </div>
 
         {/* Divider */}
@@ -134,13 +133,13 @@ export default function Footer() {
         {/* Bottom */}
         <div className="flex flex-col items-center justify-between gap-4 text-center text-sm text-gray-400 md:flex-row md:text-left">
           <p>
-            © 2026 All Rights Reserved by{' '}
-            <span className="font-medium text-white">RootTOP Group</span>
+            © {new Date().getFullYear()} All Rights Reserved by{' '}
+            <span className="font-medium text-white">{siteConfig.name}</span>
           </p>
 
           <p>
             Crafted with <span className="mx-1 text-red-500">❤</span>
-            by RootTOP Group
+            by {siteConfig.name}
           </p>
         </div>
       </div>

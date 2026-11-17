@@ -1,10 +1,5 @@
-"use client";
-
-import { motion } from "framer-motion";
- 
 import AchievementStats from "@/components/common/AchievementStats";
-import MissionVisionValues from "@/components/common/MissionVisionValues";
- 
+import FadeIn from "@/components/common/FadeIn";
 import PageHero from "../PageHero";
 
 export default function AboutUsContent() {
@@ -22,13 +17,7 @@ export default function AboutUsContent() {
         aria-labelledby="corporate-profile-heading"
         className="mx-auto max-w-6xl px-5 py-16 sm:px-6 md:px-10 md:py-20"
       >
-        <motion.div
-          initial={{ opacity: 0, y: 25 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
-          viewport={{ once: true }}
-          className="space-y-7 md:space-y-8"
-        >
+        <FadeIn className="space-y-7 md:space-y-8">
           <h2
             id="corporate-profile-heading"
             className="sr-only"
@@ -55,7 +44,7 @@ export default function AboutUsContent() {
             dedicated to creating value for customers and contributing to
             national development.
           </p>
-        </motion.div>
+        </FadeIn>
       </section>
 
       <section

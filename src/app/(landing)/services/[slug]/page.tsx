@@ -17,6 +17,9 @@ type Props = {
   params: Promise<{ slug: string }>;
 };
 
+// Only the services in data.ts exist; any other slug is a real 404.
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return services.map((service) => ({
     slug: service.slug,
@@ -54,7 +57,7 @@ export default async function ServiceDetailsPage({ params }: Props) {
           src={service.image}
           alt={`${service.title} service by RootTOP Group`}
           fill
-          priority
+          loading="eager"
           fetchPriority="high"
           sizes="100vw"
           className="object-cover"
@@ -106,7 +109,7 @@ export default async function ServiceDetailsPage({ params }: Props) {
             </span>
 
             <h2 id="service-overview-heading" className="mt-3 text-3xl font-bold md:text-5xl">
-              {service.title} Solutions
+              {service.title} Solutions in Bangladesh
             </h2>
 
             <p className="mt-6 leading-8 text-gray-600">
@@ -171,6 +174,28 @@ export default async function ServiceDetailsPage({ params }: Props) {
           </ul>
         </div>
       </section>
+
+      <nav className="border-t py-16" aria-labelledby="related-services-heading">
+        <div className="container mx-auto max-w-7xl px-5">
+          <h2 id="related-services-heading" className="mb-8 text-center text-2xl font-bold md:text-3xl">
+            Other Business Areas of RootTOP Group
+          </h2>
+          <ul className="flex flex-wrap justify-center gap-3">
+            {services
+              .filter((other) => other.slug !== service.slug)
+              .map((other) => (
+                <li key={other.slug}>
+                  <Link
+                    href={`/services/${other.slug}`}
+                    className="inline-flex rounded-full border border-slate-300 px-5 py-2 text-sm font-medium text-slate-700 transition hover:border-lime-600 hover:text-lime-700"
+                  >
+                    {other.title}
+                  </Link>
+                </li>
+              ))}
+          </ul>
+        </div>
+      </nav>
 
       <section className="bg-slate-900 py-20" aria-labelledby="service-contact-heading">
         <div className="container mx-auto max-w-4xl px-5 text-center">

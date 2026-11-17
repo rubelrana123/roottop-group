@@ -2,7 +2,7 @@ import type { Metadata } from "next";
  
 import JsonLd from "@/components/common/JsonLd";
 import {
-  organizationJsonLd,
+  breadcrumbJsonLd,
   pageMetadata,
   webpageJsonLd,
 } from "@/lib/seo";
@@ -18,7 +18,6 @@ export default function AboutUs() {
     <>
       <JsonLd
         data={[
-          organizationJsonLd(),
           webpageJsonLd({
             title: "About RootTOP Group",
             description:
@@ -26,6 +25,10 @@ export default function AboutUs() {
             path: "/about-us",
             type: "AboutPage",
           }),
+          breadcrumbJsonLd([
+            { name: "Home", href: "/" },
+            { name: "About Us", href: "/about-us" },
+          ]),
         ]}
       />
       <AboutUsContent />

@@ -45,6 +45,9 @@ const slides = [
 
 export default function HeroSec() {
   const [activeIndex, setActiveIndex] = useState(0);
+  // The first slide renders fully visible in the server HTML (fast LCP, crawlable);
+  // only later slides animate in.
+  const [hasRotated, setHasRotated] = useState(false);
 
   return (
     <section
@@ -66,6 +69,7 @@ export default function HeroSec() {
         }}
         onSlideChange={(swiper) => {
           setActiveIndex(swiper.realIndex);
+          if (swiper.realIndex !== 0) setHasRotated(true);
         }}
         className="heroSwiper relative z-10"
       >
@@ -77,7 +81,7 @@ export default function HeroSec() {
                 src={slide.image}
                 alt={slide.alt}
                 fill
-                priority={index === 0}
+                loading={index === 0 ? 'eager' : 'lazy'}
                 fetchPriority={index === 0 ? 'high' : 'auto'}
                 sizes="100vw"
                 className="object-cover"
@@ -96,12 +100,18 @@ export default function HeroSec() {
       {/* Animated Content */}
       <div className="pointer-events-none absolute inset-0 z-20 flex items-center justify-center px-4">
         <div className="max-w-6xl text-center">
-          <AnimatePresence mode="wait">
+          {/* One stable, descriptive H1 for the page; slide titles are taglines. */}
+          <h1
+            id="home-hero-title"
+            className="mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-white/90 sm:text-sm md:mb-6 md:text-base"
+          >
+            RootTOP Group — Diversified Conglomerate in Bangladesh
+          </h1>
+
+          <AnimatePresence mode="wait" initial={false}>
             <motion.div
               key={slides[activeIndex].id}
-              initial={{
-                opacity: 0,
-              }}
+              initial={hasRotated ? { opacity: 0 } : false}
               animate={{
                 opacity: 1,
               }}
@@ -113,8 +123,7 @@ export default function HeroSec() {
               }}
             >
               {/* Hero Title */}
-              <motion.h1
-                id="home-hero-title"
+              <motion.p
                 className="
                   mx-auto
                   max-w-5xl
@@ -129,7 +138,7 @@ export default function HeroSec() {
                   lg:text-7xl
                   xl:text-[90px]
                 "
-                initial="hidden"
+                initial={hasRotated ? 'hidden' : false}
                 animate="visible"
                 variants={{
                   hidden: {},
@@ -162,15 +171,13 @@ export default function HeroSec() {
                     {line.trim()}
                   </motion.span>
                 ))}
-              </motion.h1>
+              </motion.p>
 
               {/* Button */}
               <motion.div
-                initial={{
-                  opacity: 0,
-                  y: 35,
-                  scale: 0.96,
-                }}
+                initial={
+                  hasRotated ? { opacity: 0, y: 35, scale: 0.96 } : false
+                }
                 animate={{
                   opacity: 1,
                   y: 0,

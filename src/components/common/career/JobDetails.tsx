@@ -1,8 +1,4 @@
- 
-"use client";
-
 import Image from "next/image";
-import Link from "next/link";
 import type { Career } from "@/lib/data";
 import {
   Briefcase, Wallet, Calendar, MapPin, UserRound,
@@ -19,7 +15,7 @@ export default function JobDetails({ job }: Props) {
           <div className="space-y-8">
             <div className="rounded-2xl border bg-white p-8 shadow-sm">
               <div className="flex items-center gap-3 flex-wrap">
-                <h1 className="text-4xl font-bold">{job.title}</h1>
+                <h2 className="text-3xl font-bold md:text-4xl">{job.title}</h2>
                 {job.featured && (
                   <span className="rounded-full bg-red-100 px-3 py-1 text-sm font-semibold text-red-600">
                     Featured
@@ -50,16 +46,16 @@ export default function JobDetails({ job }: Props) {
 
           <aside className="lg:sticky lg:top-28 h-fit">
             <div className="overflow-hidden rounded-2xl border bg-white shadow-lg">
-              <Image src={job?.image} alt="Career" width={600} height={240} className="h-52 w-full object-cover"/>
+              <Image src={job.image} alt={`${job.title} at RootTOP Group`} width={600} height={240} sizes="(min-width: 1024px) 380px, 100vw" className="h-52 w-full object-cover"/>
               <div className="space-y-5 p-7">
                 <h3 className="text-2xl font-bold">Apply for this Position</h3>
                 <Summary title="Vacancy" value={String(job.summary.vacancy)}/>
                 <Summary title="Job Level" value={job.summary.jobLevel}/>
                 <Summary title="Age" value={job.summary.age}/>
                 <Summary title="Deadline" value={job.summary.deadline}/>
-                <Link href={job.application.applyLink} target="_blank" className="flex items-center justify-center gap-2 rounded-lg bg-green-600 px-6 py-4 text-white font-semibold">
-                  Apply Now <ExternalLink size={18}/>
-                </Link>
+                <a href={job.application.applyLink} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 rounded-lg bg-green-600 px-6 py-4 text-white font-semibold">
+                  Apply Now <ExternalLink size={18} aria-hidden="true"/>
+                </a>
               </div>
             </div>
           </aside>

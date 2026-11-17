@@ -5,11 +5,11 @@ const securityHeaders = [
     key: 'Content-Security-Policy',
     value: [
       "default-src 'self'",
-      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.google.com https://www.gstatic.com https://cdn.jsdelivr.net",
+      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google.com https://www.gstatic.com https://cdn.jsdelivr.net",
       "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
       "img-src 'self' data: blob: https:",
       "font-src 'self' data: https://fonts.gstatic.com",
-      "connect-src 'self' https://api.emailjs.com https://*.emailjs.com",
+      "connect-src 'self' https://api.emailjs.com https://*.emailjs.com https://www.googletagmanager.com https://*.google-analytics.com https://*.analytics.google.com",
       "frame-src https://www.google.com",
       "base-uri 'self'",
       "form-action 'self'",
@@ -48,6 +48,20 @@ const nextConfig: NextConfig = {
     minimumCacheTTL: 31536000,
     contentDispositionType: 'inline',
     dangerouslyAllowSVG: false,
+  },
+  async redirects() {
+    return [
+      // One canonical host: send roottopgroup.com to www.roottopgroup.com.
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'roottopgroup.com' }],
+        destination: 'https://www.roottopgroup.com/:path*',
+        permanent: true,
+      },
+      // The previously deployed site used /business; keep those URLs working.
+      { source: '/business', destination: '/services', permanent: true },
+      { source: '/business/:slug', destination: '/services/:slug', permanent: true },
+    ];
   },
   async headers() {
     return [

@@ -36,7 +36,7 @@ export default function CareerCard({
 
             <Item
               label="Vacancy"
-              value={job.summary.vacancy}
+              value={job.summary.vacancy ?? "Not specified"}
             />
 
             <Item

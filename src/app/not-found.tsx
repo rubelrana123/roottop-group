@@ -1,33 +1,43 @@
-'use client';
+import type { Metadata } from 'next';
+import Link from 'next/link';
 
-import { Button } from '@/components/ui/button';
-import { useRouter } from 'next/navigation';
+export const metadata: Metadata = {
+  title: 'Page Not Found',
+  robots: { index: false, follow: true },
+};
 
 export default function NotFoundPage() {
-  const router = useRouter();
   return (
-    <div className="h-screen w-screen flex items-center justify-center">
-      <div>
-        <p className="text-base font-semibold text-primary text-center">404</p>
+    <main className="flex min-h-screen w-full items-center justify-center px-5">
+      <div className="text-center">
+        <p className="text-base font-semibold text-primary">404</p>
 
-        <h1 className="mt-4 text-5xl font-semibold text-center tracking-tight text-balance text-primary">
+        <h1 className="mt-4 text-5xl font-semibold tracking-tight text-balance text-primary">
           Page not found
         </h1>
 
-        <p className="mt-6 text-center text-lg font-medium text-pretty text-gray-400 sm:text-xl/8">
-          Sorry, we couldn&apos;t find the page you&apos;re looking for
+        <p className="mt-6 text-lg font-medium text-pretty text-gray-400 sm:text-xl/8">
+          Sorry, we couldn&apos;t find the page you&apos;re looking for.
         </p>
-        <div className="mt-10 flex items-center  justify-center gap-x-6">
-          <Button
-            className="rounded-full"
-            onClick={() => router.back()}
-            type="submit"
+
+        <nav
+          aria-label="Helpful links"
+          className="mt-10 flex flex-wrap items-center justify-center gap-x-6 gap-y-3"
+        >
+          <Link
+            href="/"
+            className="rounded-full bg-primary px-6 py-2.5 text-sm font-semibold text-white transition hover:opacity-90"
           >
-            {' '}
             Go back home
-          </Button>
-        </div>
+          </Link>
+          <Link href="/services" className="text-sm font-semibold text-slate-700 hover:text-primary">
+            Our businesses
+          </Link>
+          <Link href="/contact" className="text-sm font-semibold text-slate-700 hover:text-primary">
+            Contact us
+          </Link>
+        </nav>
       </div>
-    </div>
+    </main>
   );
 }

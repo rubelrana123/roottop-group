@@ -12,6 +12,15 @@ import {
   FaLinkedin,
   FaXTwitter,
 } from "react-icons/fa6";
+import type { IconType } from "react-icons";
+import { socialLinks, type SocialNetwork } from "@/lib/site";
+
+const socialMeta: Record<SocialNetwork, { label: string; Icon: IconType; size: number }> = {
+  x: { label: "X (Twitter)", Icon: FaXTwitter, size: 17 },
+  youtube: { label: "YouTube", Icon: CiYoutube, size: 19 },
+  facebook: { label: "Facebook", Icon: FaFacebook, size: 17 },
+  linkedin: { label: "LinkedIn", Icon: FaLinkedin, size: 17 },
+};
 
 const navItems = [
   {
@@ -90,8 +99,7 @@ export default function Navbar() {
               alt="RootTOP Group"
               width={140}
               height={70}
-              priority
-              fetchPriority="high"
+              loading="eager"
               className="h-auto w-[110px] sm:w-[125px] lg:w-[140px]"
             />
           </Link>
@@ -227,111 +235,27 @@ export default function Navbar() {
           </nav>
 
           {/* ================= Social Icons ================= */}
-          <div className="hidden items-center gap-2 xl:flex">
-            {/* X / Twitter */}
-            <a
-              href="https://x.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Visit our X (Twitter) page"
-              title="X (Twitter)"
-              className="
-                rounded
-                border
-                border-gray-200
-                p-2
-                text-slate-700
-                transition-all
-                duration-300
-                hover:border-primary
-                hover:bg-primary
-                hover:text-white
-              "
-            >
-              <FaXTwitter
-                size={17}
-                aria-hidden="true"
-              />
-            </a>
-
-            {/* YouTube */}
-            <a
-              href="https://youtube.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Visit our YouTube channel"
-              title="YouTube"
-              className="
-                rounded
-                border
-                border-gray-200
-                p-2
-                text-slate-700
-                transition-all
-                duration-300
-                hover:border-primary
-                hover:bg-primary
-                hover:text-white
-              "
-            >
-              <CiYoutube
-                size={19}
-                aria-hidden="true"
-              />
-            </a>
-
-            {/* Facebook */}
-            <a
-              href="https://facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Visit our Facebook page"
-              title="Facebook"
-              className="
-                rounded
-                border
-                border-gray-200
-                p-2
-                text-slate-700
-                transition-all
-                duration-300
-                hover:border-primary
-                hover:bg-primary
-                hover:text-white
-              "
-            >
-              <FaFacebook
-                size={17}
-                aria-hidden="true"
-              />
-            </a>
-
-            {/* LinkedIn */}
-            <a
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Visit our LinkedIn page"
-              title="LinkedIn"
-              className="
-                rounded
-                border
-                border-gray-200
-                p-2
-                text-slate-700
-                transition-all
-                duration-300
-                hover:border-primary
-                hover:bg-primary
-                hover:text-white
-              "
-            >
-              <FaLinkedin
-                size={17}
-                aria-hidden="true"
-              />
-            </a>
-          </div>
+          {/* Profiles come from siteConfig.socials; empty ones are hidden. */}
+          {socialLinks.length > 0 && (
+            <div className="hidden items-center gap-2 xl:flex">
+              {socialLinks.map(([network, url]) => {
+                const { label, Icon, size } = socialMeta[network];
+                return (
+                  <a
+                    key={network}
+                    href={url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`Visit our ${label} page`}
+                    title={label}
+                    className="rounded border border-gray-200 p-2 text-slate-700 transition-all duration-300 hover:border-primary hover:bg-primary hover:text-white"
+                  >
+                    <Icon size={size} aria-hidden="true" />
+                  </a>
+                );
+              })}
+            </div>
+          )}
 
           {/* ================= Mobile Menu Button ================= */}
           <button

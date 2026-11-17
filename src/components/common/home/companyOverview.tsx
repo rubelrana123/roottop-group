@@ -135,7 +135,6 @@ export default function CompanyOverview() {
                   alt="RootTOP Group Logo"
                   width={550}
                   height={420}
-                  priority
                   className="h-auto w-full max-w-md object-contain transition-all duration-500 lg:max-w-lg"
                 />
               </motion.div>

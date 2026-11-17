@@ -9,6 +9,7 @@ import {
   LineChart,
   Building,
 } from 'lucide-react';
+import { siteConfig } from '@/lib/site';
 
 export const businessAreas = [
   {
@@ -708,6 +709,8 @@ export interface Career {
   slug: string;
   title: string;
   featured: boolean;
+  /** ISO date (YYYY-MM-DD) the job was published. Required by Google for Jobs. */
+  datePosted: string;
   company?: string;
   // Hero Image
   image: string;
@@ -760,7 +763,8 @@ export const careerData: Career[] = [
     title: 'Site Engineer (Civil)',
     company: 'RootTOP Group',
     featured: false,
-    image: '/site-engineer-job.png',
+    datePosted: '2026-11-17',
+    image: '/buildconstruction.avif',
 
     summary: {
       vacancy: 5,
@@ -837,7 +841,8 @@ export const careerData: Career[] = [
     title: 'Brand Designer — Project-Based / Freelance',
     company: 'RootTOP Group',
     featured: false,
-    image: '/brand-designer-job.png',
+    datePosted: '2026-11-17',
+    image: '/cooperation-team-concept.jpg',
 
     summary: {
       vacancy: 'Individual or Team',
@@ -930,6 +935,7 @@ export const careerData: Career[] = [
     slug: '3d-architectural-visualizer',
     title: '3D Architectural Visualizer',
     featured: false,
+    datePosted: '2026-07-19',
     image: '/interiornadexterior.jpg',
 
     summary: {
@@ -1038,42 +1044,28 @@ export const mapSrc =
   'https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d293.25362482263!2d90.3936811593706!3d23.784329668664885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjPCsDQ3JzAzLjQiTiA5MMKwMjMnMzcuMyJF!5e1!3m2!1sen!2sbd!4v1782813664823!5m2!1sen!2sbd';
 
 export const contactInfo = {
-  company: 'RootTOP Group',
+  company: siteConfig.name,
   office: 'RootTOP Limited',
 
-  address:
-    'House #263 (2nd Floor), Road #19, Mohakhali DOHS, Dhaka Cantonment, Dhaka 1206, Bangladesh',
+  address: siteConfig.addressText,
 
-  phones: [
-    {
-      label: 'Sales',
-      number: '+88 01746-644478',
-      href: 'tel:+8801746644478',
-    },
-    {
-      label: 'Support',
-      number: '+8801986-205401',
-      href: 'tel:+8801986205401',
-    },
-  ],
+  phones: siteConfig.phones.map((phone) => ({
+    label: phone.label,
+    number: phone.display,
+    href: `tel:${phone.tel}`,
+  })),
 
   emails: [
     {
       label: 'General',
-      address: 'roottoplimited@gmail.com',
-      href: 'mailto:roottoplimited@gmail.com',
+      address: siteConfig.email,
+      href: `mailto:${siteConfig.email}`,
     },
-    // Uncomment when needed
-    // {
-    //   label: "Office",
-    //   address: "info@roottopltd.com",
-    //   href: "mailto:info@roottopltd.com",
-    // },
   ],
 
   website: {
-    label: 'www.roottopgroup.com',
-    href: 'https://www.roottopgroup.com',
+    label: siteConfig.url.replace(/^https?:\/\//, ''),
+    href: siteConfig.url,
   },
 
   workingHours: {
@@ -1081,5 +1073,73 @@ export const contactInfo = {
     time: '9:00 AM – 6:00 PM',
   },
 
-  direction: 'https://maps.google.com/?q=23.784329668664885,90.3936811593706',
+  direction: siteConfig.mapUrl,
 };
+
+/** Sister concerns of RootTOP Group (used by the sister-concerns page, footer and Organization schema). */
+export type GroupCompany = {
+  id: number;
+  name: string;
+  logo: string;
+  description: string;
+  website: string;
+};
+
+export const groupCompanies: GroupCompany[] = [
+  {
+    id: 1,
+    name: 'RootTOP Limited',
+    logo: '/roottop.png',
+    description:
+      'RootTOP Limited provides engineering, construction, IT, consultancy, interior design, and agricultural solutions with a focus on quality and innovation.',
+    website: 'https://roottopltd.com/',
+  },
+  {
+    id: 2,
+    name: 'AR International',
+    logo: '/arinternational2.png',
+    description:
+      'AR International offers global sourcing, import-export, supply chain, and trading solutions connecting businesses worldwide.',
+    website: 'https://arintlbd.com/',
+  },
+  {
+    id: 3,
+    name: 'Orisyn Limited',
+    logo: '/orisyn.png',
+    description:
+      'Orisyn Limited delivers technology, engineering, consultancy, and digital solutions for business growth and efficiency.',
+    website: 'https://orisynltd.com/',
+  },
+  {
+    id: 4,
+    name: 'Satellite Enterprise',
+    logo: '/satelite.png',
+    description:
+      'Satellite Enterprise supplies construction materials, industrial products, engineering support, and procurement services.',
+    website: 'https://www.satelliteenterprise.com/',
+  },
+  {
+    id: 5,
+    name: 'Alter Tech',
+    logo: '/altertech.jpeg',
+    description:
+      'Alter Tech specializes in system development and seamless technology integration. Powered by future-focused, frontier innovations, they tackle critical business challenges and deliver high-impact solutions engineered for tomorrow.',
+    website: 'https://alterteq.com/',
+  },
+  {
+    id: 6,
+    name: 'K3R Corporation',
+    logo: '/k3rf.png',
+    description:
+      'K3R Corporation specializes in import-export, sourcing, and logistics services with reliable global trade solutions.',
+    website: 'https://www.k3rcorporation.com/',
+  },
+  {
+    id: 7,
+    name: 'Khamarbari Corporation',
+    logo: '/khamarbari.png',
+    description:
+      'Khamarbari Corporation focuses on agriculture, livestock, fisheries, and sustainable food production solutions.',
+    website: 'https://khamarbaricorp.com/',
+  },
+];

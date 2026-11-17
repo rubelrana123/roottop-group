@@ -13,10 +13,11 @@ export default function ServicesPage() {
     <>
       <JsonLd
         data={webpageJsonLd({
-          title: "RootTOP Group Business Areas - Professional Services in Civil Engineering, EEE And Mechanical Engineering, Agriculture, and IT",
+          title: "RootTOP Group Business Areas",
           description:
             "Civil Engineering, consultancy, electrical and mechanical engineering, agriculture, import-export, and IT services by RootTOP Group.",
           path: "/services",
+          type: "CollectionPage",
         })}
       />
       <PageHero
