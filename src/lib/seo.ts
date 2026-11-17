@@ -6,6 +6,9 @@ export { siteConfig };
 
 const defaultKeywords = [
   'RootTOP Group',
+  'roottop group',
+  'Roottop Group Bangladesh',
+  'Root Top Group',
   'Bangladesh corporate group',
   'construction company Bangladesh',
   'engineering services Bangladesh',
@@ -135,7 +138,7 @@ export const pageMetadata = {
     description:
       'RootTOP Group delivers civil engineering, electrical & mechanical, IT, agriculture, consultancy, logistics, and import-export solutions for government, corporate, and private clients in Bangladesh.',
     path: '/',
-    keywords: ['diversified conglomerate', 'RootTOP Limited', 'business group Dhaka'],
+    keywords: ['roottop group bangladesh', 'roottop group dhaka', 'diversified conglomerate', 'RootTOP Limited', 'business group Dhaka'],
   }),
   about: createMetadata({
     title: 'About Us – Corporate Profile & Values',
