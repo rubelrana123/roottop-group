@@ -1,4 +1,4 @@
-import { 
+import {
   Building2,
   Package,
   Laptop,
@@ -9,6 +9,7 @@ import {
   LineChart,
   Building,
 } from 'lucide-react';
+
 export const businessAreas = [
   {
     title: 'Civil Engineering',
@@ -59,7 +60,7 @@ export const businessAreas = [
     description: 'Driving financial growth through diversified opportunities.',
     icon: LineChart,
     image: '/investment.jpg',
-    href: '/services/investment', 
+    href: '/services/investment',
   },
   {
     title: 'Developer',
@@ -87,267 +88,259 @@ export const businessAreas = [
 export const services = [
   {
     id: 1,
-    slug: "civil-engineering",
-    title: "Civil Engineering",
+    slug: 'civil-engineering',
+    title: 'Civil Engineering',
     shortDescription:
-      "Delivering comprehensive civil engineering solutions with quality, safety, and innovation.",
+      'Delivering comprehensive civil engineering solutions with quality, safety, and innovation.',
 
     description:
-      "As a trusted first-class civil engineering firm in Bangladesh, we provide complete construction services for government, commercial, and private sectors. Our expertise spans building construction, infrastructure development, steel fabrication, and material supply, ensuring every project is delivered with excellence, safety, and reliability.",
+      'As a trusted first-class civil engineering firm in Bangladesh, we provide complete construction services for government, commercial, and private sectors. Our expertise spans building construction, infrastructure development, steel fabrication, and material supply, ensuring every project is delivered with excellence, safety, and reliability.',
 
-    image: "/buildconstruction.avif",
+    image: '/buildconstruction.avif',
 
     items: [
-      "Building Construction",
-      "Road & Barrier",
-      "Bridge Construction",
-      "Stone Supply",
-      "Sand Filling",
-      "Steel Structure",
+      'Building Construction',
+      'Road & Barrier',
+      'Bridge Construction',
+      'Stone Supply',
+      'Sand Filling',
+      'Steel Structure',
     ],
 
     whyChooseUs: [
-      "First-Class Contractor",
-      "Experienced Engineering Team",
-      "Modern Equipment & Technology",
-      "On-Time Project Delivery",
-      "Commitment to Safety & Quality",
+      'First-Class Contractor',
+      'Experienced Engineering Team',
+      'Modern Equipment & Technology',
+      'On-Time Project Delivery',
+      'Commitment to Safety & Quality',
     ],
   },
- {
+  {
     id: 2,
-    slug: "electrical-mechanical",
-    title: "Electrical & Mechanical Engineering",
+    slug: 'electrical-mechanical',
+    title: 'Electrical & Mechanical Engineering',
     shortDescription:
-      "Reliable electrical and mechanical engineering solutions for industrial and commercial projects.",
+      'Reliable electrical and mechanical engineering solutions for industrial and commercial projects.',
 
     description:
-      "Our Electrical & Mechanical division delivers complete power and engineering solutions, from equipment supply and installation to maintenance, overhauling, and system optimization. We ensure safe, efficient, and uninterrupted operations for every client.",
+      'Our Electrical & Mechanical division delivers complete power and engineering solutions, from equipment supply and installation to maintenance, overhauling, and system optimization. We ensure safe, efficient, and uninterrupted operations for every client.',
 
-    image: "/eeeandme.avif",
+    image: '/eeeandme.avif',
 
     items: [
-      "Generator, ATS & Canopy",
-      "Panel Installation",
-      "Servicing & Maintenance",
-      "Top & Major Overhauling",
-      "Substation & Transformer",
-      "PFI, MCB & VCB Solutions",
+      'Generator, ATS & Canopy',
+      'Panel Installation',
+      'Servicing & Maintenance',
+      'Top & Major Overhauling',
+      'Substation & Transformer',
+      'PFI, MCB & VCB Solutions',
     ],
 
     whyChooseUs: [
-      "Certified Technical Team",
-      "24/7 Maintenance Support",
-      "High-Quality Equipment",
-      "Reliable Power Solutions",
+      'Certified Technical Team',
+      '24/7 Maintenance Support',
+      'High-Quality Equipment',
+      'Reliable Power Solutions',
     ],
   },
-    {
-  id: 3,
-  slug: "interior-exterior-design",
-  title: "Interior & Exterior Design",
-  shortDescription:
-    "Creating modern, functional, and visually stunning interior and exterior spaces.",
+  {
+    id: 3,
+    slug: 'interior-exterior-design',
+    title: 'Interior & Exterior Design',
+    shortDescription:
+      'Creating modern, functional, and visually stunning interior and exterior spaces.',
 
-  description:
-    "Our Interior & Exterior Design division delivers creative, practical, and high-quality design solutions for residential, commercial, and corporate projects. From concept development and space planning to landscape and façade design, we transform ideas into elegant, functional environments that reflect our clients' vision and lifestyle.",
+    description:
+      "Our Interior & Exterior Design division delivers creative, practical, and high-quality design solutions for residential, commercial, and corporate projects. From concept development and space planning to landscape and façade design, we transform ideas into elegant, functional environments that reflect our clients' vision and lifestyle.",
 
-  image: "/interiornadexterior.jpg",
+    image: '/interiornadexterior.jpg',
 
-  items: [
-    "Interior Design",
-    "Exterior Design",
-    "Space Planning",
-    "3D Design & Visualization",
-    "Landscape Design",
-    "Furniture & Decoration",
-    "Renovation & Remodeling",
-    "Turnkey Interior Solutions",
-  ],
+    items: [
+      'Interior Design',
+      'Exterior Design',
+      'Space Planning',
+      '3D Design & Visualization',
+      'Landscape Design',
+      'Furniture & Decoration',
+      'Renovation & Remodeling',
+      'Turnkey Interior Solutions',
+    ],
 
-  whyChooseUs: [
-    "Creative & Experienced Designers",
-    "Customized Design Solutions",
-    "Premium Quality Materials",
-    "Modern & Sustainable Designs",
-    "End-to-End Project Management",
-    "On-Time Project Delivery",
-  ],
-},
+    whyChooseUs: [
+      'Creative & Experienced Designers',
+      'Customized Design Solutions',
+      'Premium Quality Materials',
+      'Modern & Sustainable Designs',
+      'End-to-End Project Management',
+      'On-Time Project Delivery',
+    ],
+  },
   {
     id: 4,
-    slug: "information-technology",
-    title: "Information Technology",
+    slug: 'information-technology',
+    title: 'Information Technology',
     shortDescription:
-      "Supplying modern IT products and digital technology solutions.",
+      'Supplying modern IT products and digital technology solutions.',
 
     description:
-      "We offer a wide range of information technology products and services for businesses, institutions, and government organizations. From desktops and laptops to networking infrastructure and IT hardware, we deliver dependable technology solutions tailored to your needs.",
+      'We offer a wide range of information technology products and services for businesses, institutions, and government organizations. From desktops and laptops to networking infrastructure and IT hardware, we deliver dependable technology solutions tailored to your needs.',
 
-    image: "/it.jpeg",
+    image: '/it.jpeg',
 
     items: [
-      "Desktop Computers",
-      "Laptops",
-      "IT Hardware",
-      "Networking Equipment",
-      "IT Infrastructure",
+      'Desktop Computers',
+      'Laptops',
+      'IT Hardware',
+      'Networking Equipment',
+      'IT Infrastructure',
     ],
 
     whyChooseUs: [
-      "Latest Technology Products",
-      "Trusted IT Brands",
-      "Professional Technical Support",
-      "Business-Focused Solutions",
+      'Latest Technology Products',
+      'Trusted IT Brands',
+      'Professional Technical Support',
+      'Business-Focused Solutions',
     ],
   },
 
   {
     id: 5,
-    slug: "import-export",
-    title: "Import & Export",
+    slug: 'import-export',
+    title: 'Import & Export',
     shortDescription:
-      "Providing reliable global sourcing and international trade solutions.",
+      'Providing reliable global sourcing and international trade solutions.',
 
     description:
-      "We facilitate efficient import and export operations by sourcing high-quality products from permitted international markets. Our team ensures regulatory compliance, timely delivery, and seamless logistics for every transaction.",
+      'We facilitate efficient import and export operations by sourcing high-quality products from permitted international markets. Our team ensures regulatory compliance, timely delivery, and seamless logistics for every transaction.',
 
-    image: "/exportimport.avif",
+    image: '/exportimport.avif',
 
     items: [
-      "Global Product Sourcing",
-      "International Procurement",
-      "Import Services",
-      "Export Services",
+      'Global Product Sourcing',
+      'International Procurement',
+      'Import Services',
+      'Export Services',
     ],
 
     whyChooseUs: [
-      "Worldwide Supplier Network",
-      "Efficient Logistics",
-      "Regulatory Compliance",
-      "Reliable Delivery",
+      'Worldwide Supplier Network',
+      'Efficient Logistics',
+      'Regulatory Compliance',
+      'Reliable Delivery',
     ],
   },
 
   {
     id: 6,
-    slug: "consultancy",
-    title: "Consultancy",
+    slug: 'consultancy',
+    title: 'Consultancy',
     shortDescription:
-      "Professional consultancy services for construction, IT, interior, and international trade.",
+      'Professional consultancy services for construction, IT, interior, and international trade.',
 
     description:
-      "We provide expert consultancy services designed to help organizations achieve operational excellence and sustainable growth. Our specialists offer strategic guidance in construction, information technology, interior planning, and import-export management.",
+      'We provide expert consultancy services designed to help organizations achieve operational excellence and sustainable growth. Our specialists offer strategic guidance in construction, information technology, interior planning, and import-export management.',
 
-    image: "/consultancy.jpg",
+    image: '/consultancy.jpg',
 
     items: [
-      "IT Consultancy",
-      "Construction Consultancy",
-      "Interior Design & Planning",
-      "Import & Export Consultancy",
+      'IT Consultancy',
+      'Construction Consultancy',
+      'Interior Design & Planning',
+      'Import & Export Consultancy',
     ],
 
     whyChooseUs: [
-      "Industry Experts",
-      "Strategic Business Solutions",
-      "Tailored Consultancy",
-      "Reliable Project Support",
+      'Industry Experts',
+      'Strategic Business Solutions',
+      'Tailored Consultancy',
+      'Reliable Project Support',
     ],
   },
   {
-  id: 8,
-  slug: "fashion",
-  title: "Fashion",
-  shortDescription:
-    "Stylish, high-quality fashion products for men, women, and corporate clients.",
+    id: 8,
+    slug: 'fashion',
+    title: 'Fashion',
+    shortDescription:
+      'Stylish, high-quality fashion products for men, women, and corporate clients.',
 
-  description:
-    "Our Fashion division offers a diverse range of premium apparel and fashion products designed for quality, comfort, and style. We provide ready-made garments, corporate uniforms, promotional apparel, and customized clothing solutions while maintaining high standards of craftsmanship and customer satisfaction.",
+    description:
+      'Our Fashion division offers a diverse range of premium apparel and fashion products designed for quality, comfort, and style. We provide ready-made garments, corporate uniforms, promotional apparel, and customized clothing solutions while maintaining high standards of craftsmanship and customer satisfaction.',
 
-  image: "/fashion.jpg",
+    image: '/fashion.jpg',
 
-  items: [
-    "Men's Fashion",
-    "Women's Fashion",
-    "Corporate Uniforms",
-    "Custom Apparel",
-    "Ready-Made Garments",
-    "Fashion Accessories",
-  ],
+    items: [
+      "Men's Fashion",
+      "Women's Fashion",
+      'Corporate Uniforms',
+      'Custom Apparel',
+      'Ready-Made Garments',
+      'Fashion Accessories',
+    ],
 
-  whyChooseUs: [
-    "Premium Quality Fabrics",
-    "Modern & Trendy Designs",
-    "Customization Available",
-    "Competitive Pricing",
-    "Reliable Supply & Delivery",
-    "Customer-Centric Service",
-  ],
-},
-
- 
+    whyChooseUs: [
+      'Premium Quality Fabrics',
+      'Modern & Trendy Designs',
+      'Customization Available',
+      'Competitive Pricing',
+      'Reliable Supply & Delivery',
+      'Customer-Centric Service',
+    ],
+  },
 
   {
     id: 7,
-    slug: "agro",
-    title: "Agro",
+    slug: 'agro',
+    title: 'Agro',
     shortDescription:
-      "Sustainable agro solutions supporting livestock, fisheries, and crop development.",
+      'Sustainable agro solutions supporting livestock, fisheries, and crop development.',
 
     description:
-      "Our agro division is committed to sustainable farming and food production through livestock farming, quality seed supply, and aquaculture. We promote innovative agricultural practices that enhance productivity and long-term growth.",
+      'Our agro division is committed to sustainable farming and food production through livestock farming, quality seed supply, and aquaculture. We promote innovative agricultural practices that enhance productivity and long-term growth.',
 
-    image: "/agriculture.avif",
+    image: '/agriculture.avif',
 
-    items: [
-      "Cattle Farm",
-      "Seed Supply",
-      "Fish Farming",
-    ],
+    items: ['Cattle Farm', 'Seed Supply', 'Fish Farming'],
 
     whyChooseUs: [
-      "Sustainable Farming Practices",
-      "Quality Agricultural Products",
-      "Experienced Farm Management",
-      "Modern Production Methods",
+      'Sustainable Farming Practices',
+      'Quality Agricultural Products',
+      'Experienced Farm Management',
+      'Modern Production Methods',
     ],
   },
 
   {
-  id: 7,
-  slug: "investment",
-  title: "Investment",
-  shortDescription:
-    "Strategic investment solutions that drive business growth and long-term value creation.",
+    id: 7,
+    slug: 'investment',
+    title: 'Investment',
+    shortDescription:
+      'Strategic investment solutions that drive business growth and long-term value creation.',
 
-  description:
-    "Our Investment division focuses on identifying, developing, and managing profitable investment opportunities across multiple industries. We support business expansion, infrastructure development, real estate, technology, agriculture, and strategic partnerships while ensuring sustainable growth, transparency, and long-term returns.",
+    description:
+      'Our Investment division focuses on identifying, developing, and managing profitable investment opportunities across multiple industries. We support business expansion, infrastructure development, real estate, technology, agriculture, and strategic partnerships while ensuring sustainable growth, transparency, and long-term returns.',
 
-  image: "/investment.jpg",
+    image: '/investment.jpg',
 
-  items: [
-    "Business Investment",
-    "Project Financing",
-    "Strategic Partnerships",
-    "Infrastructure Investment",
-    "Real Estate Investment",
-    "Agricultural Investment",
-    "Technology Investment",
-    "Joint Venture Opportunities",
-  ],
+    items: [
+      'Business Investment',
+      'Project Financing',
+      'Strategic Partnerships',
+      'Infrastructure Investment',
+      'Real Estate Investment',
+      'Agricultural Investment',
+      'Technology Investment',
+      'Joint Venture Opportunities',
+    ],
 
-  whyChooseUs: [
-    "Experienced Investment Team",
-    "Sustainable Growth Strategy",
-    "Transparent Business Practices",
-    "Diversified Investment Portfolio",
-    "Long-Term Value Creation",
-    "Strong Risk Management",
-  ],
-},
-
-
+    whyChooseUs: [
+      'Experienced Investment Team',
+      'Sustainable Growth Strategy',
+      'Transparent Business Practices',
+      'Diversified Investment Portfolio',
+      'Long-Term Value Creation',
+      'Strong Risk Management',
+    ],
+  },
 ];
 
 export const awards = [
@@ -357,26 +350,25 @@ export const awards = [
     title: 'Dhaka Chamber of Commerce & Industry (DCCI) Membership',
     logo: '/documents/DCCI_membership.jpg',
   },
-    {
+  {
     id: 12,
     category: 'Registration',
     title: 'Certificate of Incorporation',
     logo: '/documents/certificate_of_incorporation.jpg',
   },
-    {
+  {
     id: 7,
     category: 'Registration',
     title: 'Export Registration Certificate (ERC)',
     logo: '/documents/export_certificate.jpg',
   },
-    {
+  {
     id: 10,
     category: 'License',
     title: 'Civil Aviation Authority of Bangladesh (CAAB) License',
     logo: '/documents/CAAB.jpg',
   },
-    { 
-
+  {
     id: 9,
     category: 'Registration',
     title: 'Import Registration Certificate (IRC)',
@@ -388,7 +380,7 @@ export const awards = [
     title: 'Directorate General Defence Purchase (DGDP) Certificate',
     logo: '/documents/DGDP.jpg',
   },
-    {
+  {
     id: 8,
     category: 'Membership',
     title: "Bangladesh Indenting Agents' Association (BIAA) Membership",
@@ -419,9 +411,6 @@ export const awards = [
     logo: '/documents/BGB_conductor.jpg',
   },
 
-
-
- 
   {
     id: 11,
     category: 'Supplier Registration',
@@ -455,130 +444,129 @@ export const awards = [
   },
 ];
 
-
 export const clients = [
   // ============================
   // Military & Defense
   // ============================
   {
-    id : 99, 
-    logo : "/clients/ordance2.png",
-    name : "Central Mechanical Transport Depot (CMTD)"
+    id: 99,
+    logo: '/clients/ordance2.png',
+    name: 'Central Mechanical Transport Depot (CMTD)',
   },
   {
     id: 1,
-    logo: "/clients/24engineerconstructionbrigade.png",
-    name: "24 Engineer Construction Brigade",
+    logo: '/clients/24engineerconstructionbrigade.png',
+    name: '24 Engineer Construction Brigade',
   },
   {
     id: 2,
-    logo: "/clients/bdarmy.png",
-    name: "Bangladesh Army",
+    logo: '/clients/bdarmy.png',
+    name: 'Bangladesh Army',
   },
   {
     id: 3,
-    logo: "/clients/armymedicalcore.webp",
-    name: "Army Medical Corps",
+    logo: '/clients/armymedicalcore.webp',
+    name: 'Army Medical Corps',
   },
   {
     id: 4,
-    logo: "/clients/armywalfaretrust.png",
-    name: "Army Welfare Trust",
+    logo: '/clients/armywalfaretrust.png',
+    name: 'Army Welfare Trust',
   },
   {
     id: 5,
-    logo: "/clients/bangladeshnavy.png",
-    name: "Bangladesh Navy",
+    logo: '/clients/bangladeshnavy.png',
+    name: 'Bangladesh Navy',
   },
   {
     id: 6,
-    logo: "/clients/bdnavy.png",
-    name: "Bangladesh Navy",
+    logo: '/clients/bdnavy.png',
+    name: 'Bangladesh Navy',
   },
   {
     id: 7,
-    logo: "/clients/bdairforce.png",
-    name: "Bangladesh Air Force",
+    logo: '/clients/bdairforce.png',
+    name: 'Bangladesh Air Force',
   },
   {
     id: 8,
-    logo: "/clients/baf.png",
-    name: "43 SHORED- Bangladesh Air Force",
+    logo: '/clients/baf.png',
+    name: '43 SHORED- Bangladesh Air Force',
   },
   {
     id: 9,
-    logo: "/clients/borderguard.png",
-    name: "Border Guard Bangladesh",
+    logo: '/clients/borderguard.png',
+    name: 'Border Guard Bangladesh',
   },
   {
     id: 10,
-    logo: "/clients/bdbattalion.png",
-    name: "Bangladesh Ansar Battalion",
+    logo: '/clients/bdbattalion.png',
+    name: 'Bangladesh Ansar Battalion',
   },
   {
     id: 11,
-    logo: "/clients/bddscasc.png",
-    name: "Defence Services Command and Staff College",
+    logo: '/clients/bddscasc.png',
+    name: 'Defence Services Command and Staff College',
   },
   {
     id: 12,
-    logo: "/clients/bdmtfl.png",
-    name: "Bangladesh Machine Tools Factory Limited",
+    logo: '/clients/bdmtfl.png',
+    name: 'Bangladesh Machine Tools Factory Limited',
   },
   {
     id: 13,
-    logo: "/clients/bdof.png",
-    name: "Bangladesh Ordnance Factory",
+    logo: '/clients/bdof.png',
+    name: 'Bangladesh Ordnance Factory',
   },
   {
     id: 14,
-    logo: "/clients/banbatunmiss.png",
-    name: "BAN BAT 10",
+    logo: '/clients/banbatunmiss.png',
+    name: 'BAN BAT 10',
   },
   {
     id: 15,
-    logo: "/clients/bncc.png",
-    name: "Bangladesh National Cadet Corps",
+    logo: '/clients/bncc.png',
+    name: 'Bangladesh National Cadet Corps',
   },
   {
     id: 16,
-    logo: "/clients/cmhdhaka.png",
-    name: "Combined Military Hospital Dhaka",
+    logo: '/clients/cmhdhaka.png',
+    name: 'Combined Military Hospital Dhaka',
   },
   {
     id: 17,
-    logo: "/clients/dgdp.png",
-    name: "Directorate General of Defence Purchase",
+    logo: '/clients/dgdp.png',
+    name: 'Directorate General of Defence Purchase',
   },
   {
     id: 18,
-    logo: "/clients/independentinfrantrybrigades.png",
-    name: "Independent Infantry Brigades",
+    logo: '/clients/independentinfrantrybrigades.png',
+    name: 'Independent Infantry Brigades',
   },
   {
     id: 19,
-    logo: "/clients/mist.png",
-    name: "Military Institute of Science and Technology",
+    logo: '/clients/mist.png',
+    name: 'Military Institute of Science and Technology',
   },
   {
     id: 20,
-    logo: "/clients/nationaldefencecollage.png",
-    name: "National Defence College",
+    logo: '/clients/nationaldefencecollage.png',
+    name: 'National Defence College',
   },
   {
     id: 21,
-    logo: "/clients/pgr.png",
-    name: "President Guard Regiment",
+    logo: '/clients/pgr.png',
+    name: 'President Guard Regiment',
   },
   {
     id: 22,
-    logo: "/clients/staoffrsmesssylhetcantoment.png",
+    logo: '/clients/staoffrsmesssylhetcantoment.png',
     name: "Staff Officers' Mess, Sylhet Cantonment",
   },
   {
     id: 23,
-    logo: "/clients/theeastbengalregiment.png",
-    name: "The East Bengal Regiment",
+    logo: '/clients/theeastbengalregiment.png',
+    name: 'The East Bengal Regiment',
   },
 
   // ============================
@@ -586,107 +574,107 @@ export const clients = [
   // ============================
   {
     id: 24,
-    logo: "/clients/BUET.png",
-    name: "Bangladesh University of Engineering and Technology",
+    logo: '/clients/BUET.png',
+    name: 'Bangladesh University of Engineering and Technology',
   },
   {
     id: 25,
-    logo: "/clients/BUP.png",
-    name: "Bangladesh University of Professionals",
+    logo: '/clients/BUP.png',
+    name: 'Bangladesh University of Professionals',
   },
   {
     id: 26,
-    logo: "/clients/bau2.png",
-    name: "Bangladesh Agricultural University",
+    logo: '/clients/bau2.png',
+    name: 'Bangladesh Agricultural University',
   },
   {
     id: 27,
-    logo: "/clients/biaa.png",
-    name: "Bangladesh Institute of Administration and Management",
+    logo: '/clients/biaa.png',
+    name: 'Bangladesh Institute of Administration and Management',
   },
   {
     id: 28,
-    logo: "/clients/biam.png",
-    name: "Bangladesh Institute of Administration and Management (BIAM)",
+    logo: '/clients/biam.png',
+    name: 'Bangladesh Institute of Administration and Management (BIAM)',
   },
   {
     id: 29,
-    logo: "/clients/cu.png",
-    name: "Cumilla University",
+    logo: '/clients/cu.png',
+    name: 'Cumilla University',
   },
-    {
-    id : 99, 
-    logo : "/clients/ordance2.png",
-    name : "Central Ordnance Depot (COD)."
+  {
+    id: 99,
+    logo: '/clients/ordance2.png',
+    name: 'Central Ordnance Depot (COD).',
   },
   {
     id: 30,
 
-    logo: "/clients/du.png",
-    name: "University of Dhaka",
+    logo: '/clients/du.png',
+    name: 'University of Dhaka',
   },
   {
     id: 31,
-    logo: "/clients/ju.png",
-    name: "Jahangirnagar University",
+    logo: '/clients/ju.png',
+    name: 'Jahangirnagar University',
   },
   {
     id: 32,
-    logo: "/clients/pstu.png",
-    name: "Patuakhali Science and Technology University",
+    logo: '/clients/pstu.png',
+    name: 'Patuakhali Science and Technology University',
   },
   {
     id: 33,
-    logo: "/clients/ru.png",
-    name: "University of Rajshahi",
+    logo: '/clients/ru.png',
+    name: 'University of Rajshahi',
   },
   {
     id: 34,
-    logo: "/clients/ruet.png",
-    name: "Rajshahi University of Engineering and Technology",
+    logo: '/clients/ruet.png',
+    name: 'Rajshahi University of Engineering and Technology',
   },
-    {
+  {
     id: 42,
-    logo: "/clients/jolshiri.png",
-    name: "Jolshiri Abashon-Bangladesh Army",
+    logo: '/clients/jolshiri.png',
+    name: 'Jolshiri Abashon-Bangladesh Army',
   },
   {
     id: 43,
-    logo: "/clients/ovijatrik-17.png",
-    name: "17 ECB Bangladesh Army",
+    logo: '/clients/ovijatrik-17.png',
+    name: '17 ECB Bangladesh Army',
   },
   // ============================
   // Government Organizations
   // ============================
   {
     id: 35,
-    logo: "/clients/bcc.png",
-    name: "Bangladesh Computer Council",
+    logo: '/clients/bcc.png',
+    name: 'Bangladesh Computer Council',
   },
   {
     id: 36,
-    logo: "/clients/civilaviaton.png",
-    name: "Civil Aviation Authority of Bangladesh",
+    logo: '/clients/civilaviaton.png',
+    name: 'Civil Aviation Authority of Bangladesh',
   },
   {
     id: 37,
-    logo: "/clients/departmentofimmigrationandpassports.jpg",
-    name: "Department of Immigration and Passports",
+    logo: '/clients/departmentofimmigrationandpassports.jpg',
+    name: 'Department of Immigration and Passports',
   },
   {
     id: 38,
-    logo: "/clients/ictdivision.png",
-    name: "ICT Division",
+    logo: '/clients/ictdivision.png',
+    name: 'ICT Division',
   },
   {
     id: 39,
-    logo: "/clients/metro.svg",
-    name: "Dhaka Mass Transit Company Limited",
+    logo: '/clients/metro.svg',
+    name: 'Dhaka Mass Transit Company Limited',
   },
   {
     id: 40,
-    logo: "/clients/pwd.png",
-    name: "Public Works Department",
+    logo: '/clients/pwd.png',
+    name: 'Public Works Department',
   },
 
   // ============================
@@ -694,25 +682,24 @@ export const clients = [
   // ============================
   {
     id: 41,
-    logo: "/clients/daraz.png",
-    name: "Daraz Bangladesh",
+    logo: '/clients/daraz.png',
+    name: 'Daraz Bangladesh',
   },
-
 
   {
     id: 44,
-    logo: "/clients/RIC.png",
-    name: "Research and Innovation Centre",
+    logo: '/clients/RIC.png',
+    name: 'Research and Innovation Centre',
   },
   {
     id: 45,
-    logo: "/clients/rfl.png",
-    name: "RFL Group",
+    logo: '/clients/rfl.png',
+    name: 'RFL Group',
   },
   {
     id: 46,
-    logo: "/clients/uttrabank.png",
-    name: "Uttara Bank PLC",
+    logo: '/clients/uttrabank.png',
+    name: 'Uttara Bank PLC',
   },
 ];
 export interface Career {
@@ -721,13 +708,14 @@ export interface Career {
   slug: string;
   title: string;
   featured: boolean;
-
+  company?: string;
   // Hero Image
   image: string;
 
   // Job Summary
   summary: {
-    vacancy: number;
+    vacancy?: string | number;
+
     salary: string;
     experience: string;
     employmentStatus: string;
@@ -754,7 +742,8 @@ export interface Career {
   experienceRequirements: string[];
 
   additionalRequirements: string[];
-
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  sectionLabels?: any;
   compensationBenefits: string[];
   officeAddress?: {
     company: string;
@@ -766,142 +755,313 @@ export interface Career {
 }
 export const careerData: Career[] = [
   {
-    id: 3,
-    slug: "3d-architectural-visualizer",
-    title: "3D Architectural Visualizer",
-    featured: true,
-    image: "/interiornadexterior.jpg",
+    id: 4,
+    slug: 'site-engineer',
+    title: 'Site Engineer (Civil)',
+    company: 'RootTOP Group',
+    featured: false,
+    image: '/site-engineer-job.png',
 
     summary: {
-      vacancy: 1,
-      salary: "Negotiable",
-      experience: "Preferred (Based on Skills)",
-      employmentStatus: "Full-Time",
-      jobLevel: "Mid Level",
-      workplace: "Work at Office",
-      location: "Mohakhali DOHS, Dhaka",
-      age: "Not Specified",
-      deadline: "July 25, 2026",
+      vacancy: 5,
+      salary: 'Negotiable, based on experience',
+      experience: 'Minimum 3 years or 5 successfully completed projects',
+      employmentStatus: 'Full-Time',
+      jobLevel: 'Mid Level',
+      workplace: 'On Site',
+      location: 'Anywhere in Bangladesh',
+      age: 'Not Specified',
+      deadline: 'August 28, 2026',
     },
 
     application: {
-      applyLink: "https://forms.gle/GroZ6GZtaDqFYMxx5",
-      contactEmail: "roottopltd@gmail.com",
+      applyLink: 'https://forms.gle/9SiHzcJHu7obP4937',
+      contactEmail: 'roottopltd@gmail.com',
     },
 
     jobContext:
-      "RootTOP Ltd. is looking for a creative and detail-oriented 3D Architectural Visualizer to join our growing team. The ideal candidate will be responsible for creating high-quality 3D architectural models, photorealistic renderings, walkthrough animations, and assisting with architectural drafting and BOQ preparation. The candidate should possess a strong understanding of architectural drawings, construction materials, and visualization workflows while delivering projects with precision and within deadlines.",
+      'RootTOP Group is seeking responsible, detail-oriented, and technically skilled Site Engineers to supervise construction activities and ensure projects are completed according to approved drawings, specifications, quality standards, budgets, and schedules. The ideal candidate should have practical knowledge of construction methods, materials, site measurements, quantity estimation, and project documentation. The candidate must also be willing to work at project sites and coordinate effectively with project managers, consultants, subcontractors, suppliers, and site workers.',
 
     responsibilities: [
-      "Create high-quality 3D architectural models and photorealistic renderings.",
-      "Produce architectural walkthrough animations for residential and commercial projects.",
-      "Prepare 2D architectural drawings including floor plans, elevations, sections, and detailed working drawings.",
-      "Interpret architectural drawings and convert them into accurate 3D visualizations.",
-      "Prepare Bill of Quantities (BOQ) and quantity estimations.",
-      "Collaborate with architects, designers, and project teams to ensure project requirements are met.",
-      "Revise designs and visualizations based on client feedback and project updates.",
-      "Ensure timely delivery while maintaining high standards of quality and accuracy.",
-      "Maintain organized project files and documentation throughout the project lifecycle.",
+      'Possess a strong understanding of quantity estimates, material requisitions, measurements, and Bills of Quantities (BOQ).',
+      'Supervise day-to-day construction activities and ensure work follows approved drawings, specifications, and project schedules.',
+      'Monitor workmanship, materials, and project progress to maintain required quality standards.',
+      'Coordinate with authorities, employees, consultants, subcontractors, suppliers, and site workers.',
+      'Ensure compliance with site safety procedures and promote safe working practices.',
+      'Maintain daily progress reports, site records, measurements, and other project documentation.',
+      'Identify technical and site-related issues and support timely and practical solutions.',
+      'Verify completed work and assist with inspections, testing, and handover activities.',
+      'Monitor material usage, minimize waste, and support efficient project execution.',
+      'Assist in ensuring projects are completed within the approved timeline and specifications.',
+    ],
+
+    educationalRequirements: [
+      'Diploma in Civil Engineering or a relevant discipline.',
+    ],
+
+    experienceRequirements: [
+      'Minimum 3 years of relevant site engineering experience.',
+      'Alternatively, successful completion of at least 5 construction projects.',
+    ],
+
+    additionalRequirements: [
+      'Good knowledge of construction methods, materials, architectural and structural drawings, quantity estimation, and site measurements.',
+      'Basic proficiency in AutoCAD and Microsoft Office is preferred.',
+      'Knowledge of BOQ preparation and project documentation.',
+      'Strong communication, coordination, problem-solving, and time-management skills.',
+      'Willingness to work at project sites and travel or relocate when required.',
+      'Responsible, safety-conscious, and capable of working effectively as part of a project team.',
+      'Ability to work under pressure and meet project deadlines.',
+    ],
+
+    compensationBenefits: [
+      "Salary is negotiable and will depend on the candidate's experience and qualifications.",
+      'Performance-based salary review.',
+      'Career growth and professional development opportunities.',
+      'Paid leave and public holidays as per company policy.',
+      'Professional, collaborative, and growth-oriented working environment.',
+    ],
+
+    officeAddress: {
+      company: 'RootTOP Group',
+      address:
+        'House #263 (1st Floor), Road #19, Mohakhali DOHS, Dhaka Cantonment, Dhaka-1206',
+      email: 'roottopltd@gmail.com',
+      phone: '+8801705-918931',
+      website: 'https://www.roottopgroup.com',
+    },
+  },
+  {
+    id: 5,
+    slug: 'freelance-brand-designer',
+    title: 'Brand Designer — Project-Based / Freelance',
+    company: 'RootTOP Group',
+    featured: false,
+    image: '/brand-designer-job.png',
+
+    summary: {
+      vacancy: 'Individual or Team',
+      salary: 'Negotiable, based on experience, portfolio, and project scope',
+      experience: 'Proven corporate branding and identity design experience',
+      employmentStatus: 'One-Time Project / Freelance',
+      jobLevel: 'Experienced Professional or Team',
+      workplace: 'Remote or Hybrid',
+      location: 'Bangladesh',
+      age: 'Not Specified',
+      deadline: 'Open Until Filled',
+    },
+
+    application: {
+      applyLink: 'https://forms.gle/fs1SJPB6HW9Aeab36',
+      contactEmail: 'roottopltd@gmail.com',
+    },
+
+    jobContext:
+      'RootTOP Group is a diversified business group operating across multiple industries in Bangladesh. We are looking for a highly creative and experienced individual Brand Designer or design team to develop, refine, and standardize the corporate identity of RootTOP Group and its sister concerns. This is a one-time, project-based engagement. The selected designer or team will create a premium, professional, and consistent branding system that reflects our vision, values, and corporate identity across every company and application.',
+
+    responsibilities: [
+      'RootTOP Group (Corporate): logo development or refinement and a complete corporate identity system.',
+      'Corporate stationery: company brochure, letterhead, small and large envelopes, business or visiting card, employee ID card, and ID card ribbon or lanyard.',
+      'Financial documents: money receipt, convenience bill, bill voucher, credit voucher, and debit voucher.',
+      'Corporate templates: congratulations template, appreciation certificate template, and greeting or wishes template.',
+      'RootTOP Limited: logo refinement, letterhead, and envelope design.',
+      'AR International: new logo design and letterhead.',
+      'Khamarbari: new logo design and letterhead.',
+      'Orisyn: new logo design and letterhead.',
+      'Altertech: logo refinement and letterhead.',
+      'K3R: new logo design and letterhead.',
+      'Satellite: logo design or refinement and letterhead.',
+      'Cross Border: new logo design and letterhead.',
+      'Maintain a cohesive visual identity across the group while giving every sister concern an appropriate and distinctive brand presence.',
+    ],
+
+    educationalRequirements: [
+      'No specific academic qualification is mandatory; selection will be based primarily on portfolio quality, relevant experience, and ability to deliver the complete project scope.',
+      'Professional training or education in graphic design, visual communication, branding, or a related discipline is an advantage.',
+    ],
+
+    experienceRequirements: [
+      'Strong professional experience in corporate branding and brand identity design.',
+      'Demonstrated print-design expertise, including production-ready stationery and corporate documents.',
+      'Experience developing consistent branding systems for multiple companies or sub-brands.',
+      'A portfolio containing corporate branding projects, logo samples, and brand identity case studies.',
+    ],
+
+    additionalRequirements: [
+      'Modern, clean, and premium design aesthetics with excellent typography and layout skills.',
+      'Advanced proficiency in Adobe Illustrator, Photoshop, and InDesign, or equivalent professional software.',
+      'Ability to prepare accurate print-ready artwork and well-organized editable source files.',
+      'Strong communication, project planning, revision management, and deadline-management skills.',
+      'Applicants may be an experienced individual freelancer or a capable design team.',
+      'Applications must include a portfolio or Behance/Dribbble link, CV or professional profile, estimated total project cost, estimated timeline, and contact information.',
+      'Only shortlisted applicants will be contacted.',
+    ],
+
+    compensationBenefits: [
+      'Negotiable project fee based on experience, portfolio quality, proposed approach, and final project scope.',
+      'Editable source files in AI and EPS formats, plus editable or print-ready PDF files.',
+      'High-resolution PNG and scalable SVG files for approved brand assets.',
+      'Print-ready PDF files for all applicable stationery, financial documents, and templates.',
+      'Full-color, black, white, and monochrome variations of approved logos and brand assets.',
+      'Basic logo usage guidelines, font recommendations, and an approved color palette.',
+      'A complete, clearly organized final brand-assets package for RootTOP Group and all listed sister concerns.',
+      'Any other production files reasonably required for consistent digital and print use within the agreed scope.',
+    ],
+
+    sectionLabels: {
+      responsibilities: 'Project scope',
+      education: 'Selection basis',
+      experience: 'Portfolio requirements',
+      additional: 'Designer requirements & submission information',
+      compensation: 'Required deliverables',
+    },
+
+    officeAddress: {
+      company: 'RootTOP Group',
+      address:
+        'House #263 (1st Floor), Road #19, Mohakhali DOHS, Dhaka Cantonment, Dhaka-1206, Bangladesh',
+      email: 'roottop.it@gmail.com',
+      phone: '+880 1705-918931',
+      website: 'https://www.roottopgroup.com',
+    },
+  },
+  {
+    id: 3,
+    slug: '3d-architectural-visualizer',
+    title: '3D Architectural Visualizer',
+    featured: false,
+    image: '/interiornadexterior.jpg',
+
+    summary: {
+      vacancy: 1,
+      salary: 'Negotiable',
+      experience: 'Preferred (Based on Skills)',
+      employmentStatus: 'Full-Time',
+      jobLevel: 'Mid Level',
+      workplace: 'Work at Office',
+      location: 'Mohakhali DOHS, Dhaka',
+      age: 'Not Specified',
+      deadline: 'ASAP',
+    },
+
+    application: {
+      applyLink: 'https://forms.gle/GroZ6GZtaDqFYMxx5',
+      contactEmail: 'roottopltd@gmail.com',
+    },
+
+    jobContext:
+      'RootTOP Ltd. is looking for a creative and detail-oriented 3D Architectural Visualizer to join our growing team. The ideal candidate will be responsible for creating high-quality 3D architectural models, photorealistic renderings, walkthrough animations, and assisting with architectural drafting and BOQ preparation. The candidate should possess a strong understanding of architectural drawings, construction materials, and visualization workflows while delivering projects with precision and within deadlines.',
+
+    responsibilities: [
+      'Create high-quality 3D architectural models and photorealistic renderings.',
+      'Produce architectural walkthrough animations for residential and commercial projects.',
+      'Prepare 2D architectural drawings including floor plans, elevations, sections, and detailed working drawings.',
+      'Interpret architectural drawings and convert them into accurate 3D visualizations.',
+      'Prepare Bill of Quantities (BOQ) and quantity estimations.',
+      'Collaborate with architects, designers, and project teams to ensure project requirements are met.',
+      'Revise designs and visualizations based on client feedback and project updates.',
+      'Ensure timely delivery while maintaining high standards of quality and accuracy.',
+      'Maintain organized project files and documentation throughout the project lifecycle.',
     ],
 
     educationalRequirements: [
       "Diploma or Bachelor's degree in Architecture, Civil Engineering, Interior Design, or a related field.",
-      "Relevant certifications in 3D visualization software will be considered an advantage.",
+      'Relevant certifications in 3D visualization software will be considered an advantage.',
     ],
 
     experienceRequirements: [
-      "Previous experience in 3D architectural visualization is preferred.",
-      "Fresh candidates with an outstanding portfolio and strong visualization skills are encouraged to apply.",
+      'Previous experience in 3D architectural visualization is preferred.',
+      'Fresh candidates with an outstanding portfolio and strong visualization skills are encouraged to apply.',
     ],
 
     additionalRequirements: [
-      "Strong proficiency in SketchUp, Lumion, 3ds Max, V-Ray, or similar visualization software.",
-      "Excellent knowledge of AutoCAD for architectural drafting.",
-      "Understanding of architectural drawings, construction methods, and materials.",
-      "Ability to prepare BOQ and quantity estimations.",
-      "Creative mindset with strong attention to detail.",
-      "Good communication and teamwork skills.",
-      "Ability to manage multiple projects and meet deadlines.",
-      "Self-motivated, responsible, and eager to learn new technologies.",
+      'Strong proficiency in SketchUp, Lumion, 3ds Max, V-Ray, or similar visualization software.',
+      'Excellent knowledge of AutoCAD for architectural drafting.',
+      'Understanding of architectural drawings, construction methods, and materials.',
+      'Ability to prepare BOQ and quantity estimations.',
+      'Creative mindset with strong attention to detail.',
+      'Good communication and teamwork skills.',
+      'Ability to manage multiple projects and meet deadlines.',
+      'Self-motivated, responsible, and eager to learn new technologies.',
     ],
 
     compensationBenefits: [
-      "Salary: Negotiable based on experience and skills.",
-      "Performance-based salary review.",
-      "Career growth and professional development opportunities.",
-      "Paid leave and public holidays as per company policy.",
-      "Professional, collaborative, and growth-oriented working environment.",
+      'Salary: Negotiable based on experience and skills.',
+      'Performance-based salary review.',
+      'Career growth and professional development opportunities.',
+      'Paid leave and public holidays as per company policy.',
+      'Professional, collaborative, and growth-oriented working environment.',
     ],
 
     officeAddress: {
-      company: "RootTOP Ltd.",
+      company: 'RootTOP Ltd.',
       address:
-        "House #263 (1st Floor), Road #19, Mohakhali DOHS, Dhaka Cantonment, Dhaka-1206",
-      email: "roottopltd@gmail.com",
-      phone: "+8801746644478",
-      website: "https://www.roottopltd.com",
+        'House #263 (1st Floor), Road #19, Mohakhali DOHS, Dhaka Cantonment, Dhaka-1206',
+      email: 'roottopltd@gmail.com',
+      phone: '+8801746644478',
+      website: 'https://www.roottopltd.com',
     },
   },
 ];
-
 export const stats = [
   {
     id: 1,
     number: 150,
-    suffix: "+",
-    title: "Major Infrastructure",
-    subtitle: "Projects Completed",
+    suffix: '+',
+    title: 'Major Infrastructure',
+    subtitle: 'Projects Completed',
   },
   {
     id: 2,
     number: 10,
-    suffix: "+",
-    title: "Years of Experience",
-    subtitle: "With Pride",
+    suffix: '+',
+    title: 'Years of Experience',
+    subtitle: 'With Pride',
   },
   {
     id: 3,
     number: 7,
-    suffix: "+",
-    title: "Sister Concerns",
-    subtitle: "Group Companies",
+    suffix: '+',
+    title: 'Sister Concerns',
+    subtitle: 'Group Companies',
   },
   {
     id: 4,
     number: 150,
-    suffix: "+",
-    title: "Skilled Professionals",
-    subtitle: "Employed",
+    suffix: '+',
+    title: 'Skilled Professionals',
+    subtitle: 'Employed',
   },
 ];
 
 export const mapSrc =
-  "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d293.25362482263!2d90.3936811593706!3d23.784329668664885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjPCsDQ3JzAzLjQiTiA5MMKwMjMnMzcuMyJF!5e1!3m2!1sen!2sbd!4v1782813664823!5m2!1sen!2sbd";
+  'https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d293.25362482263!2d90.3936811593706!3d23.784329668664885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjPCsDQ3JzAzLjQiTiA5MMKwMjMnMzcuMyJF!5e1!3m2!1sen!2sbd!4v1782813664823!5m2!1sen!2sbd';
 
 export const contactInfo = {
-  company: "RootTOP Group",
-  office: "RootTOP Limited",
+  company: 'RootTOP Group',
+  office: 'RootTOP Limited',
 
-  address: "House #263 (2nd Floor), Road #19, Mohakhali DOHS, Dhaka Cantonment, Dhaka 1206, Bangladesh",
+  address:
+    'House #263 (2nd Floor), Road #19, Mohakhali DOHS, Dhaka Cantonment, Dhaka 1206, Bangladesh',
 
   phones: [
     {
-      label: "Sales",
-      number: "+88 01746-644478",
-      href: "tel:+8801746644478",
+      label: 'Sales',
+      number: '+88 01746-644478',
+      href: 'tel:+8801746644478',
     },
     {
-      label: "Support",
-      number: "+8801986-205401",
-      href: "tel:+8801986205401",
+      label: 'Support',
+      number: '+8801986-205401',
+      href: 'tel:+8801986205401',
     },
   ],
 
   emails: [
     {
-      label: "General",
-      address: "roottoplimited@gmail.com",
-      href: "mailto:roottoplimited@gmail.com",
+      label: 'General',
+      address: 'roottoplimited@gmail.com',
+      href: 'mailto:roottoplimited@gmail.com',
     },
     // Uncomment when needed
     // {
@@ -912,15 +1072,14 @@ export const contactInfo = {
   ],
 
   website: {
-    label: "www.roottopgroup.com",
-    href: "https://www.roottopgroup.com",
+    label: 'www.roottopgroup.com',
+    href: 'https://www.roottopgroup.com',
   },
 
   workingHours: {
-    days: "Sunday – Tuesday",
-    time: "9:00 AM – 6:00 PM",
+    days: 'Sunday – Tuesday',
+    time: '9:00 AM – 6:00 PM',
   },
 
-  direction:
-    "https://maps.google.com/?q=23.784329668664885,90.3936811593706",
+  direction: 'https://maps.google.com/?q=23.784329668664885,90.3936811593706',
 };

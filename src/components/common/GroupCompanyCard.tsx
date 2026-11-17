@@ -29,7 +29,7 @@ const companies: Company[] = [
     logo: '/arinternational2.png',
     description:
       'AR International offers global sourcing, import-export, supply chain, and trading solutions connecting businesses worldwide.',
-    website: 'https://roottopltd.com/',
+    website: 'http://arintlbd.com/',
   },
   {
     id: 3,
@@ -37,7 +37,7 @@ const companies: Company[] = [
     logo: '/orisyn.png',
     description:
       'Orisyn Limited delivers technology, engineering, consultancy, and digital solutions for business growth and efficiency.',
-    website: 'https://roottopltd.com/',
+    website: 'http://orisynltd.com/',
   },
   {
     id: 4,
@@ -45,16 +45,16 @@ const companies: Company[] = [
     logo: '/satelite.png',
     description:
       'Satellite Enterprise supplies construction materials, industrial products, engineering support, and procurement services.',
-    website: 'https://roottopltd.com/',
+    website: 'http://satelliteenterprise.com/',
   },
-  {
-    id: 5,
-    name: 'Cross Border Trading',
-    logo: '/crossborder.png',
-    description:
-      'Cross Border Trading provides import-export, sourcing, and logistics solutions for global business expansion.',
-    website: 'https://roottopltd.com/',
-  },
+  // {
+  //   id: 5,
+  //   name: 'Cross Border Trading',
+  //   logo: '/crossborder.png',
+  //   description:
+  //     'Cross Border Trading provides import-export, sourcing, and logistics solutions for global business expansion.',
+  //   website: 'https://roottopltd.com/',
+  // },
   {
     id: 69,
     name: 'Alter Tech',
@@ -69,7 +69,7 @@ const companies: Company[] = [
     logo: '/k3rf.png',
     description:
       'K3R Corporation specializes in import-export, sourcing, and logistics services with reliable global trade solutions.',
-    website: 'https://roottopltd.com/',
+    website: 'https://www.k3rcorporation.com/',
   },
   {
     id: 6,
@@ -77,7 +77,7 @@ const companies: Company[] = [
     logo: '/khamarbari.png',
     description:
       'Khamarbari Corporation focuses on agriculture, livestock, fisheries, and sustainable food production solutions.',
-    website: 'https://roottopltd.com/',
+    website: 'https://khamarbaricorp.com/',
   },
 ];
 
@@ -152,9 +152,7 @@ export default function GroupCompanyCard() {
             onMouseLeave={() => setActiveCompany(null)}
             onFocus={() => setActiveCompany(company.id)}
             onBlur={() => setActiveCompany(null)}
-            className={`relative h-full min-w-0 ${
-              isActive ? 'z-[80]' : 'z-0'
-            }`}
+            className={`relative h-full min-w-0 ${isActive ? 'z-[80]' : 'z-0'}`}
           >
             <Link
               href={websiteHref}
