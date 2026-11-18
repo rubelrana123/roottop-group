@@ -18,7 +18,8 @@ export const siteConfig = {
   foundingDate: '2015',
   defaultOgImage: '/og/default.jpg',
   logo: '/logo.png',
-  gaId: 'G-RQFFX4Z1PN',
+  /** Google Analytics 4 measurement ID (G-XXXXXXX). Set in .env; GA is skipped when empty. */
+  gaId: process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID ?? '',
   googleVerification: [
     'A7tRAt27KqSlVpZqVI2Fo1wi-NDQg_mPYZjF0ynLNMY',
     'jw-gQKycM6N8_P0OayaS1qCUHlUzvrvkXWFYwJFoPDk',

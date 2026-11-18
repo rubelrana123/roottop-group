@@ -42,18 +42,22 @@ export default function RootLayout({
           {children}
         </Providers>
 
-        <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=${siteConfig.gaId}`}
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${siteConfig.gaId}');
-          `}
-        </Script>
+        {siteConfig.gaId && (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${siteConfig.gaId}`}
+              strategy="afterInteractive"
+            />
+            <Script id="google-analytics" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${siteConfig.gaId}');
+              `}
+            </Script>
+          </>
+        )}
       </body>
     </html>
   );
